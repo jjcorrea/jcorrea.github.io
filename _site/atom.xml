@@ -4,7 +4,7 @@
  <title>Joel Correa</title>
  <link href="http://jjcorrea.github.io/atom.xml" rel="self"/>
  <link href="http://jjcorrea.github.io/"/>
- <updated>2014-08-24T20:20:36-03:00</updated>
+ <updated>2014-08-24T20:48:43-03:00</updated>
  <id>http://jjcorrea.github.io</id>
  <author>
    <name>Joel Correa</name>
@@ -13,26 +13,37 @@
 
  
  <entry>
-   <title>Big Data Reference</title>
-   <link href="http://jjcorrea.github.io/2014/08/24/big-data/"/>
+   <title>Elastic Search</title>
+   <link href="http://jjcorrea.github.io/2014/08/24/elastic-search/"/>
    <updated>2014-08-24T00:00:00-03:00</updated>
-   <id>http://jjcorrea.github.io/2014/08/24/big-data</id>
-   <content type="html">&lt;h3&gt;Challenges&lt;/h3&gt;
+   <id>http://jjcorrea.github.io/2014/08/24/elastic-search</id>
+   <content type="html">&lt;blockquote&gt;
+&lt;p&gt;An end-to-end search and analytics platform&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;&lt;span class=&quot;label label-primary&quot;&gt;Processing&lt;/span&gt;
-&lt;span class=&quot;label label-primary&quot;&gt;Compression&lt;/span&gt;
-&lt;span class=&quot;label label-primary&quot;&gt;Statistics&lt;/span&gt;
-&lt;span class=&quot;label label-primary&quot;&gt;Storage&lt;/span&gt;
-&lt;span class=&quot;label label-primary&quot;&gt;Search&lt;/span&gt;
-&lt;span class=&quot;label label-primary&quot;&gt;Analysis&lt;/span&gt;
+&lt;p&gt;By combining the massively popular &lt;strong&gt;E&lt;/strong&gt;lasticsearch, &lt;strong&gt;L&lt;/strong&gt;ogstash and &lt;strong&gt;K&lt;/strong&gt;ibana (&lt;a href=&quot;http://www.elasticsearch.org/overview/&quot;&gt;ELK platform overview&lt;/a&gt;) we have created an end-to-end stack that delivers actionable insights in real-time from almost any type of structured and unstructured data source. &lt;/p&gt;
+
+&lt;h3&gt;Challenges&lt;/h3&gt;
+
+&lt;p&gt;&lt;span class=&quot;label label-primary&quot;&gt;Search&lt;/span&gt;
+&lt;span class=&quot;label label-primary&quot;&gt;Analize&lt;/span&gt;
+&lt;span class=&quot;label label-primary&quot;&gt;Real time&lt;/span&gt;
 &lt;span class=&quot;label label-primary&quot;&gt;Visualization&lt;/span&gt;&lt;/p&gt;
 
-&lt;h3&gt;References &amp;amp; Related stuff&lt;/h3&gt;
+&lt;h3&gt;Tradeoff&lt;/h3&gt;
+
+&lt;p&gt;&lt;span class=&quot;label label-success&quot;&gt;?&lt;/span&gt;
+&lt;span class=&quot;label label-warning&quot;&gt;?&lt;/span&gt;
+&lt;span class=&quot;label label-danger&quot;&gt;?&lt;/span&gt;&lt;/p&gt;
+
+&lt;h3&gt;Who is using&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.edureka.co/about-big-data-and-hadoop&quot;&gt;Courses&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Q76-fCqVjhU&quot;&gt;Spark &amp;amp; Scala&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://howtojboss.com/2013/09/04/ampd-for-hadoop-alternatives/&quot;&gt;Hadoop alternatives&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://twitter.com&quot;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://ebay.com&quot;&gt;eBay&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://vimeo.com&quot;&gt;Vimeo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://paypal.com&quot;&gt;PayPal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://airbnb.com&quot;&gt;Airbnb&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
  </entry>
@@ -42,9 +53,7 @@
    <link href="http://jjcorrea.github.io/2014/08/24/apache-spark/"/>
    <updated>2014-08-24T00:00:00-03:00</updated>
    <id>http://jjcorrea.github.io/2014/08/24/apache-spark</id>
-   <content type="html">&lt;p&gt;&lt;a href=&quot;http://spark.apache.org/&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/public/img/apache-spark.png&quot; alt=&quot;Apache Spark logo&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
+   <content type="html">&lt;blockquote&gt;
 &lt;p&gt;An open-source clustered data analytics framework&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -53,6 +62,12 @@
 &lt;p&gt;&lt;span class=&quot;label label-primary&quot;&gt;Analytics&lt;/span&gt;
 &lt;span class=&quot;label label-primary&quot;&gt;Batch processing&lt;/span&gt;
 &lt;span class=&quot;label label-primary&quot;&gt;Stream processing (Real time)&lt;/span&gt;&lt;/p&gt;
+
+&lt;h3&gt;Tradeoff&lt;/h3&gt;
+
+&lt;p&gt;&lt;span class=&quot;label label-success&quot;&gt;?&lt;/span&gt;
+&lt;span class=&quot;label label-warning&quot;&gt;?&lt;/span&gt;
+&lt;span class=&quot;label label-danger&quot;&gt;?&lt;/span&gt;&lt;/p&gt;
 </content>
  </entry>
  
@@ -61,9 +76,7 @@
    <link href="http://jjcorrea.github.io/2014/08/24/apache-mesos/"/>
    <updated>2014-08-24T00:00:00-03:00</updated>
    <id>http://jjcorrea.github.io/2014/08/24/apache-mesos</id>
-   <content type="html">&lt;p&gt;&lt;a href=&quot;http://mesos.apache.org/&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/public/img/apache-mesos.png&quot; alt=&quot;Apache Mesos logo&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
+   <content type="html">&lt;blockquote&gt;
 &lt;p&gt;Apache Mesos is a cluster manager that simplifies the complexity of running applications on a shared pool of servers.&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -72,6 +85,12 @@
 &lt;p&gt;&lt;span class=&quot;label label-primary&quot;&gt;Cluster management&lt;/span&gt;
 &lt;span class=&quot;label label-primary&quot;&gt;Pool&lt;/span&gt;
 &lt;span class=&quot;label label-primary&quot;&gt;Scalability&lt;/span&gt;&lt;/p&gt;
+
+&lt;h3&gt;Tradeoff&lt;/h3&gt;
+
+&lt;p&gt;&lt;span class=&quot;label label-success&quot;&gt;?&lt;/span&gt;
+&lt;span class=&quot;label label-warning&quot;&gt;?&lt;/span&gt;
+&lt;span class=&quot;label label-danger&quot;&gt;?&lt;/span&gt;&lt;/p&gt;
 
 &lt;h3&gt;Who is using&lt;/h3&gt;
 
