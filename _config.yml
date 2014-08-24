@@ -15,7 +15,7 @@ author:
   name:           'Joel Correa'
   url:            https://twitter.com/joelcorrea_
 
-paginate:         1
+paginate:         10
 
 # Custom vars
 version:          2.0.0

@@ -36,191 +36,191 @@
  */
 
 * {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  -webkit-box-sizing: border-box!important;
+     -moz-box-sizing: border-box!important;
+          box-sizing: border-box!important;
 }
 
 html,
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0!important;
+  padding: 0!important;
 }
 
 html {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif!important;
+  font-size: 16px!important;
+  line-height: 1.5!important;
 }
 @media (min-width: 38rem) {
   html {
-    font-size: 20px;
+    font-size: 20px!important;
   }
 }
 
 body {
-  color: #515151;
-  background-color: #fff;
-  -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
+  color: #515151!important;
+  background-color: #fff!important;
+  -webkit-text-size-adjust: 100%!important;
+      -ms-text-size-adjust: 100%!important;
 }
 
 /* No `:visited` state is required by default (browsers will use `a`) */
 a {
-  color: #268bd2;
-  text-decoration: none;
+  color: #268bd2!important;
+  text-decoration: none!important;
 }
 /* `:focus` is linked to `:hover` for basic accessibility */
 a:hover,
 a:focus {
-  text-decoration: underline;
+  text-decoration: underline!important;
 }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  margin-bottom: .5rem;
-  font-weight: bold;
-  line-height: 1.25;
-  color: #313131;
-  text-rendering: optimizeLegibility;
+  margin-bottom: .5rem!important;
+  font-weight: bold!important;
+  line-height: 1.25!important;
+  color: #313131!important;
+  text-rendering: optimizeLegibility!important;
 }
 h1 {
-  font-size: 2rem;
+  font-size: 2rem!important;
 }
 h2 {
-  margin-top: 1rem;
-  font-size: 1.5rem;
+  margin-top: 1rem!important;
+  font-size: 1.5rem!important;
 }
 h3 {
-  margin-top: 1.5rem;
-  font-size: 1.25rem;
+  margin-top: 1.5rem!important;
+  font-size: 1.25rem!important;
 }
 h4, h5, h6 {
-  margin-top: 1rem;
-  font-size: 1rem;
+  margin-top: 1rem!important;
+  font-size: 1rem!important;
 }
 
 /* Body text */
 p {
-  margin-top: 0;
-  margin-bottom: 1rem;
+  margin-top: 0!important;
+  margin-bottom: 1rem!important;
 }
 
 strong {
-  color: #303030;
+  color: #303030!important;
 }
 
 
 /* Lists */
 ul, ol, dl {
-  margin-top: 0;
-  margin-bottom: 1rem;
+  margin-top: 0!important;
+  margin-bottom: 1rem!important;
 }
 
 dt {
-  font-weight: bold;
+  font-weight: bold!important;
 }
 dd {
-  margin-bottom: .5rem;
+  margin-bottom: .5rem!important;
 }
 
 /* Misc */
 hr {
-  position: relative;
-  margin: 1.5rem 0;
-  border: 0;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #fff;
+  position: relative!important;
+  margin: 1.5rem 0!important;
+  border: 0!important;
+  border-top: 1px solid #eee!important;
+  border-bottom: 1px solid #fff!important;
 }
 
 abbr {
-  font-size: 85%;
-  font-weight: bold;
-  color: #555;
-  text-transform: uppercase;
+  font-size: 85%!important;
+  font-weight: bold!important;
+  color: #555!important;
+  text-transform: uppercase!important;
 }
 abbr[title] {
-  cursor: help;
-  border-bottom: 1px dotted #e5e5e5;
+  cursor: help!important;
+  border-bottom: 1px dotted #e5e5e5!important;
 }
 
 /* Code */
 code,
 pre {
-  font-family: Menlo, Monaco, "Courier New", monospace;
+  font-family: Menlo, Monaco, "Courier New", monospace!important;
 }
 code {
-  padding: .25em .5em;
-  font-size: 85%;
-  color: #bf616a;
-  background-color: #f9f9f9;
-  border-radius: 3px;
+  padding: .25em .5em!important;
+  font-size: 85%!important;
+  color: #bf616a!important;
+  background-color: #f9f9f9!important;
+  border-radius: 3px!important;
 }
 pre {
-  display: block;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  font-size: .8rem;
-  line-height: 1.4;
-  white-space: pre;
-  white-space: pre-wrap;
-  word-break: break-all;
-  word-wrap: break-word;
-  background-color: #f9f9f9;
+  display: block!important;
+  margin-top: 0!important;
+  margin-bottom: 1rem!important;
+  padding: 1rem!important;
+  font-size: .8rem!important;
+  line-height: 1.4!important;
+  white-space: pre!important;
+  white-space: pre-wrap!important;
+  word-break: break-all!important;
+  word-wrap: break-word!important;
+  background-color: #f9f9f9!important;
 }
 pre code {
-  padding: 0;
-  font-size: 100%;
-  color: inherit;
-  background-color: transparent;
+  padding: 0!important;
+  font-size: 100%!important;
+  color: inherit!important;
+  background-color: transparent!important;
 }
 .highlight {
-  margin-bottom: 1rem;
-  border-radius: 4px;
+  margin-bottom: 1rem!important;
+  border-radius: 4px!important;
 }
 .highlight pre {
-  margin-bottom: 0;
+  margin-bottom: 0!important;
 }
 
 /* Quotes */
 blockquote {
-  padding: .5rem 1rem;
-  margin: .8rem 0;
-  color: #7a7a7a;
-  border-left: .25rem solid #e5e5e5;
+  padding: .5rem 1rem!important;
+  margin: .8rem 0!important;
+  color: #7a7a7a!important;
+  border-left: .25rem solid #e5e5e5!important;
 }
 blockquote p:last-child {
-  margin-bottom: 0;
+  margin-bottom: 0!important;
 }
 @media (min-width: 30rem) {
   blockquote {
-    padding-right: 5rem;
-    padding-left: 1.25rem;
+    padding-right: 5rem!important;
+    padding-left: 1.25rem!important;
   }
 }
 
 img {
-  display: block;
-  margin: 0 0 1rem;
-  border-radius: 5px;
+  display: block!important;
+  margin: 0 0 1rem!important;
+  border-radius: 5px!important;
 }
 
 /* Tables */
 table {
-  margin-bottom: 1rem;
-  width: 100%;
-  border: 1px solid #e5e5e5;
-  border-collapse: collapse;
+  margin-bottom: 1rem!important;
+  width: 100%!important;
+  border: 1px solid #e5e5e5!important;
+  border-collapse: collapse!important;
 }
 td,
 th {
-  padding: .25rem .5rem;
-  border: 1px solid #e5e5e5;
+  padding: .25rem .5rem!important;
+  border: 1px solid #e5e5e5!important;
 }
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
-  background-color: #f9f9f9;
+  background-color: #f9f9f9!important;
 }
 
 
@@ -231,8 +231,8 @@ tbody tr:nth-child(odd) th {
  */
 
 .lead {
-  font-size: 1.25rem;
-  font-weight: 300;
+  font-size: 1.25rem!important;
+  font-weight: 300!important;
 }
 
 
@@ -244,10 +244,10 @@ tbody tr:nth-child(odd) th {
  */
 
 .message {
-  margin-bottom: 1rem;
-  padding: 1rem;
-  color: #717171;
-  background-color: #f9f9f9;
+  margin-bottom: 1rem!important;
+  padding: 1rem!important;
+  color: #717171!important;
+  background-color: #f9f9f9!important;
 }
 
 
@@ -258,11 +258,11 @@ tbody tr:nth-child(odd) th {
  */
 
 .container {
-  max-width: 38rem;
-  padding-left:  1rem;
-  padding-right: 1rem;
-  margin-left:  auto;
-  margin-right: auto;
+  max-width: 38rem!important;
+  padding-left:  1rem!important;
+  padding-right: 1rem!important;
+  margin-left:  auto!important;
+  margin-right: auto!important;
 }
 
 
@@ -273,23 +273,23 @@ tbody tr:nth-child(odd) th {
  */
 
 .masthead {
-  padding-top:    1rem;
-  padding-bottom: 1rem;
-  margin-bottom: 3rem;
+  padding-top:    1rem!important;
+  padding-bottom: 1rem!important;
+  margin-bottom: 3rem!important;
 }
 .masthead-title {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: #505050;
+  margin-top: 0!important;
+  margin-bottom: 0!important;
+  color: #505050!important;
 }
 .masthead-title a {
-  color: #505050;
+  color: #505050!important;
 }
 .masthead-title small {
-  font-size: 75%;
-  font-weight: 400;
-  color: #c0c0c0;
-  letter-spacing: 0;
+  font-size: 75%!important;
+  font-weight: 400!important;
+  color: #c0c0c0!important;
+  letter-spacing: 0!important;
 }
 
 
@@ -302,51 +302,51 @@ tbody tr:nth-child(odd) th {
 
 .page,
 .post {
-  margin-bottom: 4em;
+  margin-bottom: 4em!important;
 }
 
 /* Blog post or page title */
 .page-title,
 .post-title,
 .post-title a {
-  color: #303030;
+  color: #303030!important;
 }
 .page-title,
 .post-title {
-  margin-top: 0;
+  margin-top: 0!important;
 }
 
 /* Meta data line below post title */
 .post-date {
-  display: block;
-  margin-top: -.5rem;
-  margin-bottom: 1rem;
-  color: #9a9a9a;
+  display: block!important;
+  margin-top: -.5rem!important;
+  margin-bottom: 1rem!important;
+  color: #9a9a9a!important;
 }
 
 /* Related posts */
 .related {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  border-top: 1px solid #eee;
+  padding-top: 2rem!important;
+  padding-bottom: 2rem!important;
+  border-top: 1px solid #eee!important;
 }
 .related-posts {
-  padding-left: 0;
-  list-style: none;
+  padding-left: 0!important;
+  list-style: none!important;
 }
 .related-posts h3 {
-  margin-top: 0;
+  margin-top: 0!important;
 }
 .related-posts li small {
-  font-size: 75%;
-  color: #999;
+  font-size: 75%!important;
+  color: #999!important;
 }
 .related-posts li a:hover {
-  color: #268bd2;
-  text-decoration: none;
+  color: #268bd2!important;
+  text-decoration: none!important;
 }
 .related-posts li a:hover small {
-  color: inherit;
+  color: inherit!important;
 }
 
 
@@ -358,45 +358,45 @@ tbody tr:nth-child(odd) th {
  */
 
 .pagination {
-  overflow: hidden; /* clearfix */
-  margin-left: -1rem;
-  margin-right: -1rem;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
-  color: #ccc;
-  text-align: center;
+  overflow: hidden!important; /* clearfix */
+  margin-left: -1rem!important;
+  margin-right: -1rem!important;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif!important;
+  color: #ccc!important;
+  text-align: center!important;
 }
 
 /* Pagination items can be `span`s or `a`s */
 .pagination-item {
-  display: block;
-  padding: 1rem;
-  border: 1px solid #eee;
+  display: block!important;
+  padding: 1rem!important;
+  border: 1px solid #eee!important;
 }
 .pagination-item:first-child {
-  margin-bottom: -1px;
+  margin-bottom: -1px!important;
 }
 
 /* Only provide a hover state for linked pagination items */
 a.pagination-item:hover {
-  background-color: #f5f5f5;
+  background-color: #f5f5f5!important;
 }
 
 @media (min-width: 30rem) {
   .pagination {
-    margin: 3rem 0;
+    margin: 3rem 0!important;
   }
   .pagination-item {
-    float: left;
-    width: 50%;
+    float: left!important;
+    width: 50%!important;
   }
   .pagination-item:first-child {
-    margin-bottom: 0;
-    border-top-left-radius:    4px;
-    border-bottom-left-radius: 4px;
+    margin-bottom: 0!important;
+    border-top-left-radius:    4px!important;
+    border-bottom-left-radius: 4px!important;
   }
   .pagination-item:last-child {
-    margin-left: -1px;
-    border-top-right-radius:    4px;
-    border-bottom-right-radius: 4px;
+    margin-left: -1px!important;
+    border-top-right-radius:    4px!important;
+    border-bottom-right-radius: 4px!important;
   }
 }

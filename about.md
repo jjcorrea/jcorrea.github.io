@@ -10,7 +10,3 @@ Experience in *JEE* web application development. *JMS* / *ActiveMQ*, *JPA*/ *Hib
 Python / Django and Scala / Play Framework in webapp development. 
 
 Unit, Integration and Acceptance automated tests (Continuous integration), using TDD. Also worked with Selenium's automated UI tests. CVS, GIT and SVN VCS.
-
-* [@twitter](https://twitter.com/joelcorrea_) 
-* [@linkedin](https://www.linkedin.com/profile/view?id=78338366)       
-* [@github](https://github.com/jjcorrea)
