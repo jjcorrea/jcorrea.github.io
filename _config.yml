@@ -6,23 +6,23 @@ pygments:         true
 permalink:        pretty
 
 # Setup
-title:            Hyde
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://hyde.getpoole.com
-baseurl:          /
+title:            'Joel Correa'
+tagline:          'Engineering Blog'
+description:      '<a href="https://twitter.com/joelcorrea_" target="_blank">@joelcorrea_</a>'
+url:              http://jjcorrea.github.io
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           'Joel Correa'
+  url:            https://twitter.com/joelcorrea_
 
-paginate:         5
+paginate:         1
 
 # Custom vars
-version:          2.1.0
+version:          2.0.0
 
-github:
-  repo:           https://github.com/poole/hyde
+personal:
+  linkedin: 'https://www.linkedin.com/profile/view?id=78338366'
+  github: 'https://github.com/jjcorrea'
 
 pages_list:       
   About: '/about'
