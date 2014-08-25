@@ -1,4 +1,5 @@
 # Dependencies
+template:         'lanyon.getpoole.com'
 markdown:         redcarpet
 pygments:         true
 
