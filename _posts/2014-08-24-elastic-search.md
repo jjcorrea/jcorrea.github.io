@@ -3,6 +3,8 @@ layout: post
 title: Elastic Search
 ---
 
+Version <span class="label label-default">1.3.2</span>
+
 > An end-to-end search and analytics platform
 
 By combining the massively popular **E**lasticsearch, **L**ogstash and **K**ibana (<a target="_blenk" href="http://www.elasticsearch.org/overview/">ELK platform overview</a>) we have created an end-to-end stack that delivers actionable insights in real-time from almost any type of structured and unstructured data source. 

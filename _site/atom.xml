@@ -4,7 +4,7 @@
  <title>Joel Correa</title>
  <link href="http://jjcorrea.github.io/atom.xml" rel="self"/>
  <link href="http://jjcorrea.github.io/"/>
- <updated>2014-08-24T21:13:04-03:00</updated>
+ <updated>2014-08-24T22:17:41-03:00</updated>
  <id>http://jjcorrea.github.io</id>
  <author>
    <name>Joel Correa</name>
@@ -17,7 +17,9 @@
    <link href="http://jjcorrea.github.io/2014/08/24/elastic-search/"/>
    <updated>2014-08-24T00:00:00-03:00</updated>
    <id>http://jjcorrea.github.io/2014/08/24/elastic-search</id>
-   <content type="html">&lt;blockquote&gt;
+   <content type="html">&lt;p&gt;Version &lt;span class=&quot;label label-default&quot;&gt;1.3.2&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
 &lt;p&gt;An end-to-end search and analytics platform&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -43,7 +45,9 @@
    <link href="http://jjcorrea.github.io/2014/08/24/couch-base/"/>
    <updated>2014-08-24T00:00:00-03:00</updated>
    <id>http://jjcorrea.github.io/2014/08/24/couch-base</id>
-   <content type="html">&lt;blockquote&gt;
+   <content type="html">&lt;p&gt;Version &lt;span class=&quot;label label-default&quot;&gt;2.5.1&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
 &lt;p&gt;World&amp;#39;s most complete, most scalable and best performing NoSQL database.&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -76,7 +80,9 @@
    <link href="http://jjcorrea.github.io/2014/08/24/apache-spark/"/>
    <updated>2014-08-24T00:00:00-03:00</updated>
    <id>http://jjcorrea.github.io/2014/08/24/apache-spark</id>
-   <content type="html">&lt;blockquote&gt;
+   <content type="html">&lt;p&gt;Version &lt;span class=&quot;label label-default&quot;&gt;1.0.2&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
 &lt;p&gt;An open-source clustered data analytics framework&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -99,7 +105,9 @@
    <link href="http://jjcorrea.github.io/2014/08/24/apache-mesos/"/>
    <updated>2014-08-24T00:00:00-03:00</updated>
    <id>http://jjcorrea.github.io/2014/08/24/apache-mesos</id>
-   <content type="html">&lt;blockquote&gt;
+   <content type="html">&lt;p&gt;Version &lt;span class=&quot;label label-default&quot;&gt;0.19&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
 &lt;p&gt;A cluster manager that simplifies the complexity of running applications on a shared pool of servers.&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -117,13 +125,11 @@
 
 &lt;h3&gt;Who is using&lt;/h3&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://twitter.com&quot;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://ebay.com&quot;&gt;eBay&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://vimeo.com&quot;&gt;Vimeo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://paypal.com&quot;&gt;PayPal&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://airbnb.com&quot;&gt;Airbnb&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;http://twitter.com&quot;&gt;Twitter&lt;/a&gt;, &lt;a href=&quot;http://ebay.com&quot;&gt;eBay&lt;/a&gt;, &lt;a href=&quot;http://vimeo.com&quot;&gt;Vimeo&lt;/a&gt;, &lt;a href=&quot;http://paypal.com&quot;&gt;PayPal&lt;/a&gt;, &lt;a href=&quot;http://airbnb.com&quot;&gt;Airbnb&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3&gt;Giving a try&lt;/h3&gt;
+
+&lt;div class=&quot;message&quot;&gt;...&lt;/div&gt;
 </content>
  </entry>
  

@@ -3,6 +3,8 @@ layout: post
 title: CouchBase
 ---
 
+Version <span class="label label-default">2.5.1</span>
+
 > World's most complete, most scalable and best performing NoSQL database.
 
 By combining the massively popular **E**lasticsearch, **L**ogstash and **K**ibana (<a target="_blenk" href="http://www.elasticsearch.org/overview/">ELK platform overview</a>) we have created an end-to-end stack that delivers actionable insights in real-time from almost any type of structured and unstructured data source. 

@@ -3,6 +3,8 @@ layout: post
 title: Apache Mesos
 ---
 
+Version <span class="label label-default">0.19</span>
+
 > A cluster manager that simplifies the complexity of running applications on a shared pool of servers.
 
 ### Highlights
@@ -18,9 +20,9 @@ title: Apache Mesos
 
 ### Who is using
 
-* [Twitter](http://twitter.com)
-* [eBay](http://ebay.com)
-* [Vimeo](http://vimeo.com)
-* [PayPal](http://paypal.com)
-* [Airbnb](http://airbnb.com)
+[Twitter](http://twitter.com), [eBay](http://ebay.com), [Vimeo](http://vimeo.com), [PayPal](http://paypal.com), [Airbnb](http://airbnb.com)
 
+
+### Giving a try
+
+<div class="message">...</div>
