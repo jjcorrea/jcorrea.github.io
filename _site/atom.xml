@@ -4,7 +4,7 @@
  <title>Joel Corrêa</title>
  <link href="http://jjcorrea.github.io/atom.xml" rel="self"/>
  <link href="http://jjcorrea.github.io/"/>
- <updated>2014-08-24T23:10:16-03:00</updated>
+ <updated>2014-08-25T19:24:39-03:00</updated>
  <id>http://jjcorrea.github.io</id>
  <author>
    <name>Joel Correa</name>
@@ -50,8 +50,6 @@
 &lt;blockquote&gt;
 &lt;p&gt;World&amp;#39;s most complete, most scalable and best performing NoSQL database.&lt;/p&gt;
 &lt;/blockquote&gt;
-
-&lt;p&gt;By combining the massively popular &lt;strong&gt;E&lt;/strong&gt;lasticsearch, &lt;strong&gt;L&lt;/strong&gt;ogstash and &lt;strong&gt;K&lt;/strong&gt;ibana (&lt;a target=&quot;_blenk&quot; href=&quot;http://www.elasticsearch.org/overview/&quot;&gt;ELK platform overview&lt;/a&gt;) we have created an end-to-end stack that delivers actionable insights in real-time from almost any type of structured and unstructured data source. &lt;/p&gt;
 
 &lt;h3&gt;Highlights&lt;/h3&gt;
 
