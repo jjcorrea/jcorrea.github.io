@@ -4,7 +4,7 @@
  <title>Joel Correa</title>
  <link href="http://jjcorrea.github.io/atom.xml" rel="self"/>
  <link href="http://jjcorrea.github.io/"/>
- <updated>2014-08-24T20:48:43-03:00</updated>
+ <updated>2014-08-24T21:13:04-03:00</updated>
  <id>http://jjcorrea.github.io</id>
  <author>
    <name>Joel Correa</name>
@@ -21,30 +21,53 @@
 &lt;p&gt;An end-to-end search and analytics platform&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;By combining the massively popular &lt;strong&gt;E&lt;/strong&gt;lasticsearch, &lt;strong&gt;L&lt;/strong&gt;ogstash and &lt;strong&gt;K&lt;/strong&gt;ibana (&lt;a href=&quot;http://www.elasticsearch.org/overview/&quot;&gt;ELK platform overview&lt;/a&gt;) we have created an end-to-end stack that delivers actionable insights in real-time from almost any type of structured and unstructured data source. &lt;/p&gt;
+&lt;p&gt;By combining the massively popular &lt;strong&gt;E&lt;/strong&gt;lasticsearch, &lt;strong&gt;L&lt;/strong&gt;ogstash and &lt;strong&gt;K&lt;/strong&gt;ibana (&lt;a target=&quot;_blenk&quot; href=&quot;http://www.elasticsearch.org/overview/&quot;&gt;ELK platform overview&lt;/a&gt;) we have created an end-to-end stack that delivers actionable insights in real-time from almost any type of structured and unstructured data source. &lt;/p&gt;
 
-&lt;h3&gt;Challenges&lt;/h3&gt;
+&lt;h3&gt;Highlights&lt;/h3&gt;
 
 &lt;p&gt;&lt;span class=&quot;label label-primary&quot;&gt;Search&lt;/span&gt;
 &lt;span class=&quot;label label-primary&quot;&gt;Analize&lt;/span&gt;
 &lt;span class=&quot;label label-primary&quot;&gt;Real time&lt;/span&gt;
 &lt;span class=&quot;label label-primary&quot;&gt;Visualization&lt;/span&gt;&lt;/p&gt;
 
-&lt;h3&gt;Tradeoff&lt;/h3&gt;
+&lt;h3&gt;Trade-off&lt;/h3&gt;
 
 &lt;p&gt;&lt;span class=&quot;label label-success&quot;&gt;?&lt;/span&gt;
 &lt;span class=&quot;label label-warning&quot;&gt;?&lt;/span&gt;
 &lt;span class=&quot;label label-danger&quot;&gt;?&lt;/span&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>CouchBase</title>
+   <link href="http://jjcorrea.github.io/2014/08/24/couch-base/"/>
+   <updated>2014-08-24T00:00:00-03:00</updated>
+   <id>http://jjcorrea.github.io/2014/08/24/couch-base</id>
+   <content type="html">&lt;blockquote&gt;
+&lt;p&gt;World&amp;#39;s most complete, most scalable and best performing NoSQL database.&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;h3&gt;Who is using&lt;/h3&gt;
+&lt;p&gt;By combining the massively popular &lt;strong&gt;E&lt;/strong&gt;lasticsearch, &lt;strong&gt;L&lt;/strong&gt;ogstash and &lt;strong&gt;K&lt;/strong&gt;ibana (&lt;a target=&quot;_blenk&quot; href=&quot;http://www.elasticsearch.org/overview/&quot;&gt;ELK platform overview&lt;/a&gt;) we have created an end-to-end stack that delivers actionable insights in real-time from almost any type of structured and unstructured data source. &lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://twitter.com&quot;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://ebay.com&quot;&gt;eBay&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://vimeo.com&quot;&gt;Vimeo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://paypal.com&quot;&gt;PayPal&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://airbnb.com&quot;&gt;Airbnb&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3&gt;Highlights&lt;/h3&gt;
+
+&lt;p&gt;&lt;span class=&quot;label label-primary&quot;&gt;Scalability&lt;/span&gt;
+&lt;span class=&quot;label label-primary&quot;&gt;Performance&lt;/span&gt;
+&lt;span class=&quot;label label-primary&quot;&gt;Availability&lt;/span&gt;&lt;/p&gt;
+
+&lt;h3&gt;Trade-off&lt;/h3&gt;
+
+&lt;p&gt;&lt;span class=&quot;label label-success&quot;&gt;Builtin Cache&lt;/span&gt;
+&lt;span class=&quot;label label-success&quot;&gt;Auto-sharding&lt;/span&gt;
+&lt;span class=&quot;label label-success&quot;&gt;Incremental Map-Reduce&lt;/span&gt;
+&lt;span class=&quot;label label-success&quot;&gt;Monitoring UI&lt;/span&gt;
+&lt;span class=&quot;label label-success&quot;&gt;Geographic strength&lt;/span&gt;
+&lt;span class=&quot;label label-success&quot;&gt;Multiple Connectors&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;label label-warning&quot;&gt;Key-Value&lt;/span&gt;
+&lt;span class=&quot;label label-warning&quot;&gt;Document based&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;label label-danger&quot;&gt;No HTTP API&lt;/span&gt;&lt;/p&gt;
 </content>
  </entry>
  
@@ -57,13 +80,13 @@
 &lt;p&gt;An open-source clustered data analytics framework&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3&gt;Challenges&lt;/h3&gt;
+&lt;h3&gt;Highlights&lt;/h3&gt;
 
 &lt;p&gt;&lt;span class=&quot;label label-primary&quot;&gt;Analytics&lt;/span&gt;
 &lt;span class=&quot;label label-primary&quot;&gt;Batch processing&lt;/span&gt;
 &lt;span class=&quot;label label-primary&quot;&gt;Stream processing (Real time)&lt;/span&gt;&lt;/p&gt;
 
-&lt;h3&gt;Tradeoff&lt;/h3&gt;
+&lt;h3&gt;Trade-off&lt;/h3&gt;
 
 &lt;p&gt;&lt;span class=&quot;label label-success&quot;&gt;?&lt;/span&gt;
 &lt;span class=&quot;label label-warning&quot;&gt;?&lt;/span&gt;
@@ -77,16 +100,16 @@
    <updated>2014-08-24T00:00:00-03:00</updated>
    <id>http://jjcorrea.github.io/2014/08/24/apache-mesos</id>
    <content type="html">&lt;blockquote&gt;
-&lt;p&gt;Apache Mesos is a cluster manager that simplifies the complexity of running applications on a shared pool of servers.&lt;/p&gt;
+&lt;p&gt;A cluster manager that simplifies the complexity of running applications on a shared pool of servers.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3&gt;Challenges&lt;/h3&gt;
+&lt;h3&gt;Highlights&lt;/h3&gt;
 
 &lt;p&gt;&lt;span class=&quot;label label-primary&quot;&gt;Cluster management&lt;/span&gt;
 &lt;span class=&quot;label label-primary&quot;&gt;Pool&lt;/span&gt;
 &lt;span class=&quot;label label-primary&quot;&gt;Scalability&lt;/span&gt;&lt;/p&gt;
 
-&lt;h3&gt;Tradeoff&lt;/h3&gt;
+&lt;h3&gt;Trade-off&lt;/h3&gt;
 
 &lt;p&gt;&lt;span class=&quot;label label-success&quot;&gt;?&lt;/span&gt;
 &lt;span class=&quot;label label-warning&quot;&gt;?&lt;/span&gt;

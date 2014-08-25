@@ -3,15 +3,15 @@ layout: post
 title: Apache Mesos
 ---
 
-> Apache Mesos is a cluster manager that simplifies the complexity of running applications on a shared pool of servers.
+> A cluster manager that simplifies the complexity of running applications on a shared pool of servers.
 
-### Challenges
+### Highlights
 
 <span class="label label-primary">Cluster management</span>
 <span class="label label-primary">Pool</span>
 <span class="label label-primary">Scalability</span>
 
-### Tradeoff
+### Trade-off
 <span class="label label-success">?</span>
 <span class="label label-warning">?</span>
 <span class="label label-danger">?</span>
