@@ -3,7 +3,7 @@ layout: post
 title: Elastic Search
 ---
 
-Version <span class="label label-default">1.3.2</span>
+Version checked <span class="label label-default">1.3.2</span>
 
 > An end-to-end search and analytics platform
 

@@ -75,6 +75,8 @@
     
       
     
+      
+    
     <a class="sidebar-nav-item" href="mailto:joel.correa@icloud.com">@mail</a>
     <a class="sidebar-nav-item" target="_blank" href="https://twitter.com/joelcorrea_">@twitter</a>
     <a class="sidebar-nav-item" target="_blank" href="https://www.linkedin.com/profile/view?id=78338366">@linkedin</a>
@@ -108,33 +110,56 @@
   
   <div class="post">
     <h1 class="post-title">
-      <a href="/2014/08/24/elastic-search/">
-        Elastic Search
+      <a href="/2014/08/25/logstash/">
+        Logstash
       </a>
     </h1>
 
-    <span class="post-date">24 Aug 2014</span>
+    <span class="post-date">25 Aug 2014</span>
 
-    <p>Version <span class="label label-default">1.3.2</span></p>
+    <p>Version checked <span class="label label-default">1.4.2</span></p>
 
 <blockquote>
-<p>An end-to-end search and analytics platform</p>
-</blockquote>
+<p>A tool for managing events and logs. </p>
 
-<p>By combining the massively popular <strong>E</strong>lasticsearch, <strong>L</strong>ogstash and <strong>K</strong>ibana (<a target="_blenk" href="http://www.elasticsearch.org/overview/">ELK platform overview</a>) we have created an end-to-end stack that delivers actionable insights in real-time from almost any type of structured and unstructured data source. </p>
+<p>You can use it to collect logs, parse them, and store them for later use (like, for searching). Speaking of searching, logstash comes with a web interface for searching and drilling into all of your logs.</p>
+</blockquote>
 
 <h3>Highlights</h3>
 
-<p><span class="label label-primary">Search</span>
-<span class="label label-primary">Analize</span>
-<span class="label label-primary">Real time</span>
-<span class="label label-primary">Visualization</span></p>
+<p><span class="label label-primary">Logs</span>
+<span class="label label-primary">Events</span>
+<span class="label label-primary">BigData</span>
+<span class="label label-primary">Filter</span></p>
 
 <h3>Trade-off</h3>
 
-<p><span class="label label-success">?</span>
-<span class="label label-warning">?</span>
-<span class="label label-danger">?</span></p>
+<p><span class="label label-success">Extensible</span>
+<span class="label label-warning"></span>
+<span class="label label-danger"></span></p>
+
+<h3>Features</h3>
+
+<ul>
+<li>Transform, and process logs to and from anywhere </li>
+<li>Provide search and analytics</li>
+</ul>
+
+<h3>Inputs, Filters and Outputs (Plugins)</h3>
+
+<ul>
+<li><em>Input</em>: Stream source</li>
+<li><em>Filter</em>: Extracts what you are interested from the stream.</li>
+<li><em>Output</em>: Sends the extracted stuff somewhere.</li>
+<li><em>Codec</em>: Decode (via inputs) and Encode (via outputs) a message</li>
+</ul>
+
+<h3>References</h3>
+
+<ul>
+<li><a href="http://logstash.net/docs/1.4.2/">Logstash 1.4.2 Docs</a></li>
+<li><a href="http://michael.bouvy.net/blog/en/2013/11/19/collect-visualize-your-logs-logstash-elasticsearch-redis-kibana/">Collect &amp; visualize your logs with Logstash, Elasticsearch &amp; Redis</a></li>
+</ul>
 
   </div>
   

@@ -3,7 +3,7 @@ layout: post
 title: Apache Spark
 ---
 
-Version <span class="label label-default">1.0.2</span>
+Version checked <span class="label label-default">1.0.2</span>
 
 > An open-source clustered data analytics framework
 

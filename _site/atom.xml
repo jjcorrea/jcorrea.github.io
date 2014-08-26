@@ -4,7 +4,7 @@
  <title>Joel Corrêa</title>
  <link href="http://jjcorrea.github.io/atom.xml" rel="self"/>
  <link href="http://jjcorrea.github.io/"/>
- <updated>2014-08-25T19:25:57-03:00</updated>
+ <updated>2014-08-25T23:25:52-03:00</updated>
  <id>http://jjcorrea.github.io</id>
  <author>
    <name>Joel Correa</name>
@@ -13,11 +13,62 @@
 
  
  <entry>
+   <title>Logstash</title>
+   <link href="http://jjcorrea.github.io/2014/08/25/logstash/"/>
+   <updated>2014-08-25T00:00:00-03:00</updated>
+   <id>http://jjcorrea.github.io/2014/08/25/logstash</id>
+   <content type="html">&lt;p&gt;Version checked &lt;span class=&quot;label label-default&quot;&gt;1.4.2&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;A tool for managing events and logs. &lt;/p&gt;
+
+&lt;p&gt;You can use it to collect logs, parse them, and store them for later use (like, for searching). Speaking of searching, logstash comes with a web interface for searching and drilling into all of your logs.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;Highlights&lt;/h3&gt;
+
+&lt;p&gt;&lt;span class=&quot;label label-primary&quot;&gt;Logs&lt;/span&gt;
+&lt;span class=&quot;label label-primary&quot;&gt;Events&lt;/span&gt;
+&lt;span class=&quot;label label-primary&quot;&gt;BigData&lt;/span&gt;
+&lt;span class=&quot;label label-primary&quot;&gt;Filter&lt;/span&gt;&lt;/p&gt;
+
+&lt;h3&gt;Trade-off&lt;/h3&gt;
+
+&lt;p&gt;&lt;span class=&quot;label label-success&quot;&gt;Extensible&lt;/span&gt;
+&lt;span class=&quot;label label-warning&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;label label-danger&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;h3&gt;Features&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Transform, and process logs to and from anywhere &lt;/li&gt;
+&lt;li&gt;Provide search and analytics&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Inputs, Filters and Outputs (Plugins)&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Input&lt;/em&gt;: Stream source&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Filter&lt;/em&gt;: Extracts what you are interested from the stream.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Output&lt;/em&gt;: Sends the extracted stuff somewhere.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Codec&lt;/em&gt;: Decode (via inputs) and Encode (via outputs) a message&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;References&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://logstash.net/docs/1.4.2/&quot;&gt;Logstash 1.4.2 Docs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://michael.bouvy.net/blog/en/2013/11/19/collect-visualize-your-logs-logstash-elasticsearch-redis-kibana/&quot;&gt;Collect &amp;amp; visualize your logs with Logstash, Elasticsearch &amp;amp; Redis&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>Elastic Search</title>
    <link href="http://jjcorrea.github.io/2014/08/24/elastic-search/"/>
    <updated>2014-08-24T00:00:00-03:00</updated>
    <id>http://jjcorrea.github.io/2014/08/24/elastic-search</id>
-   <content type="html">&lt;p&gt;Version &lt;span class=&quot;label label-default&quot;&gt;1.3.2&lt;/span&gt;&lt;/p&gt;
+   <content type="html">&lt;p&gt;Version checked &lt;span class=&quot;label label-default&quot;&gt;1.3.2&lt;/span&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;An end-to-end search and analytics platform&lt;/p&gt;
@@ -45,7 +96,7 @@
    <link href="http://jjcorrea.github.io/2014/08/24/couch-base/"/>
    <updated>2014-08-24T00:00:00-03:00</updated>
    <id>http://jjcorrea.github.io/2014/08/24/couch-base</id>
-   <content type="html">&lt;p&gt;Version &lt;span class=&quot;label label-default&quot;&gt;2.5.1&lt;/span&gt;&lt;/p&gt;
+   <content type="html">&lt;p&gt;Version checked &lt;span class=&quot;label label-default&quot;&gt;2.5.1&lt;/span&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;World&amp;#39;s most complete, most scalable and best performing NoSQL database.&lt;/p&gt;
@@ -78,7 +129,7 @@
    <link href="http://jjcorrea.github.io/2014/08/24/apache-spark/"/>
    <updated>2014-08-24T00:00:00-03:00</updated>
    <id>http://jjcorrea.github.io/2014/08/24/apache-spark</id>
-   <content type="html">&lt;p&gt;Version &lt;span class=&quot;label label-default&quot;&gt;1.0.2&lt;/span&gt;&lt;/p&gt;
+   <content type="html">&lt;p&gt;Version checked &lt;span class=&quot;label label-default&quot;&gt;1.0.2&lt;/span&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;An open-source clustered data analytics framework&lt;/p&gt;
@@ -103,9 +154,11 @@
    <link href="http://jjcorrea.github.io/2014/08/24/apache-mesos/"/>
    <updated>2014-08-24T00:00:00-03:00</updated>
    <id>http://jjcorrea.github.io/2014/08/24/apache-mesos</id>
-   <content type="html">&lt;p&gt;Version &lt;span class=&quot;label label-default&quot;&gt;0.19&lt;/span&gt;&lt;/p&gt;
+   <content type="html">&lt;p&gt;Version checked &lt;span class=&quot;label label-default&quot;&gt;0.19&lt;/span&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
+&lt;p&gt;Develop and run resource-efficient distributed systems&lt;/p&gt;
+
 &lt;p&gt;A cluster manager that simplifies the complexity of running applications on a shared pool of servers.&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -120,6 +173,17 @@
 &lt;p&gt;&lt;span class=&quot;label label-success&quot;&gt;?&lt;/span&gt;
 &lt;span class=&quot;label label-warning&quot;&gt;?&lt;/span&gt;
 &lt;span class=&quot;label label-danger&quot;&gt;?&lt;/span&gt;&lt;/p&gt;
+
+&lt;h3&gt;Features&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fault-tolerant replicated master using ZooKeeper&lt;/li&gt;
+&lt;li&gt;Scalability to 10,000s of nodes&lt;/li&gt;
+&lt;li&gt;Isolation between tasks with Linux Containers&lt;/li&gt;
+&lt;li&gt;Multi-resource scheduling (memory and CPU aware)&lt;/li&gt;
+&lt;li&gt;Java, Python and C++ APIs for developing new parallel applications&lt;/li&gt;
+&lt;li&gt;Web UI for viewing cluster state&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3&gt;Who is using&lt;/h3&gt;
 

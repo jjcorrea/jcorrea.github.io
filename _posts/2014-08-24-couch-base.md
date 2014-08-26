@@ -3,7 +3,7 @@ layout: post
 title: CouchBase
 ---
 
-Version <span class="label label-default">2.5.1</span>
+Version checked <span class="label label-default">2.5.1</span>
 
 > World's most complete, most scalable and best performing NoSQL database.
 
