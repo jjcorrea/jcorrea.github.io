@@ -4,7 +4,7 @@
  <title>Joel Corrêa</title>
  <link href="http://jjcorrea.github.io/atom.xml" rel="self"/>
  <link href="http://jjcorrea.github.io/"/>
- <updated>2014-08-26T00:06:50-03:00</updated>
+ <updated>2014-08-26T00:22:40-03:00</updated>
  <id>http://jjcorrea.github.io</id>
  <author>
    <name>Joel Correa</name>
@@ -35,6 +35,7 @@
 &lt;h3&gt;Trade-off&lt;/h3&gt;
 
 &lt;p&gt;&lt;span class=&quot;label label-success&quot;&gt;Extensible&lt;/span&gt;
+&lt;span class=&quot;label label-success&quot;&gt;SOC&lt;/span&gt;
 &lt;span class=&quot;label label-warning&quot;&gt;Ruby codebase &amp;amp; plugins&lt;/span&gt;
 &lt;span class=&quot;label label-danger&quot;&gt;Poor documentation&lt;/span&gt;&lt;/p&gt;
 
