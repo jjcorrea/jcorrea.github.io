@@ -135,8 +135,8 @@
 <h3>Trade-off</h3>
 
 <p><span class="label label-success">Extensible</span>
-<span class="label label-warning"></span>
-<span class="label label-danger"></span></p>
+<span class="label label-warning">Ruby codebase &amp; plugins</span>
+<span class="label label-danger">Poor documentation</span></p>
 
 <h3>Features</h3>
 
@@ -154,9 +154,67 @@
 <li><em>Codec</em>: Decode (via inputs) and Encode (via outputs) a message</li>
 </ul>
 
+<h3>Examples</h3>
+
+<p>Simplest configuration example</p>
+
+<pre class="message">
+input { stdin {} }
+output { stdout {} }
+</pre>
+
+<pre class="message">
+> ./logstash agent -f my.conf
+> 1
+2014-08-26T02:42:21.416+0000 joelcorrea.local 1
+</pre>
+
+<hr />
+
+<p>Using codecs</p>
+
+<pre class="message">
+input { stdin {} }
+
+output {
+  stdout { codec => json }
+}
+</pre>
+
+<pre class="message">
+> 1
+{"message":"1","@version":"1","@timestamp":"2014-08-26T02:44:29.809Z","host":"joelcorrea.local"}
+</pre>
+
+<hr />
+
+<p>Grok: A collection of pre-defined patterns </p>
+
+<p><a href="https://github.com/elasticsearch/logstash/tree/master/patterns/grok-patterns">Have a look on them</a> (<a href="https://grokdebug.herokuapp.com/">You can debug it</a>)
+<pre class="message">
+input {
+  stdin {}
+}
+filter {
+  grok { 
+    match =&gt; [ &quot;message&quot;, &quot;name: %{WORD:custom<em>name}&quot; ] 
+  }
+  mutate { lowercase =&gt; [ &quot;custom</em>name&quot; ]
+}
+output {
+    stdout{codec =&gt; json}
+}
+</pre></p>
+
+<pre class="message">
+> name: Joel
+{"message":"name: Joel","@version":"1","@timestamp":"2014-08-26T02:56:57.461Z","host":"joelcorrea.local","custom_name":"joel"}
+</pre>
+
 <h3>References</h3>
 
 <ul>
+<li><a href="http://writequit.org/articles/logstash-intro.html">Logstash Introduction</a></li>
 <li><a href="http://logstash.net/docs/1.4.2/">Logstash 1.4.2 Docs</a></li>
 <li><a href="http://michael.bouvy.net/blog/en/2013/11/19/collect-visualize-your-logs-logstash-elasticsearch-redis-kibana/">Collect &amp; visualize your logs with Logstash, Elasticsearch &amp; Redis</a></li>
 </ul>

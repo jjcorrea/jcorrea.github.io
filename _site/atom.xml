@@ -4,7 +4,7 @@
  <title>Joel Corrêa</title>
  <link href="http://jjcorrea.github.io/atom.xml" rel="self"/>
  <link href="http://jjcorrea.github.io/"/>
- <updated>2014-08-25T23:25:52-03:00</updated>
+ <updated>2014-08-26T00:06:50-03:00</updated>
  <id>http://jjcorrea.github.io</id>
  <author>
    <name>Joel Correa</name>
@@ -35,8 +35,8 @@
 &lt;h3&gt;Trade-off&lt;/h3&gt;
 
 &lt;p&gt;&lt;span class=&quot;label label-success&quot;&gt;Extensible&lt;/span&gt;
-&lt;span class=&quot;label label-warning&quot;&gt;&lt;/span&gt;
-&lt;span class=&quot;label label-danger&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;span class=&quot;label label-warning&quot;&gt;Ruby codebase &amp;amp; plugins&lt;/span&gt;
+&lt;span class=&quot;label label-danger&quot;&gt;Poor documentation&lt;/span&gt;&lt;/p&gt;
 
 &lt;h3&gt;Features&lt;/h3&gt;
 
@@ -54,9 +54,67 @@
 &lt;li&gt;&lt;em&gt;Codec&lt;/em&gt;: Decode (via inputs) and Encode (via outputs) a message&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;h3&gt;Examples&lt;/h3&gt;
+
+&lt;p&gt;Simplest configuration example&lt;/p&gt;
+
+&lt;pre class=&quot;message&quot;&gt;
+input { stdin {} }
+output { stdout {} }
+&lt;/pre&gt;
+
+&lt;pre class=&quot;message&quot;&gt;
+&gt; ./logstash agent -f my.conf
+&gt; 1
+2014-08-26T02:42:21.416+0000 joelcorrea.local 1
+&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Using codecs&lt;/p&gt;
+
+&lt;pre class=&quot;message&quot;&gt;
+input { stdin {} }
+
+output {
+  stdout { codec =&gt; json }
+}
+&lt;/pre&gt;
+
+&lt;pre class=&quot;message&quot;&gt;
+&gt; 1
+{&quot;message&quot;:&quot;1&quot;,&quot;@version&quot;:&quot;1&quot;,&quot;@timestamp&quot;:&quot;2014-08-26T02:44:29.809Z&quot;,&quot;host&quot;:&quot;joelcorrea.local&quot;}
+&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Grok: A collection of pre-defined patterns &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/elasticsearch/logstash/tree/master/patterns/grok-patterns&quot;&gt;Have a look on them&lt;/a&gt; (&lt;a href=&quot;https://grokdebug.herokuapp.com/&quot;&gt;You can debug it&lt;/a&gt;)
+&lt;pre class=&quot;message&quot;&gt;
+input {
+  stdin {}
+}
+filter {
+  grok { 
+    match =&amp;gt; [ &amp;quot;message&amp;quot;, &amp;quot;name: %{WORD:custom&lt;em&gt;name}&amp;quot; ] 
+  }
+  mutate { lowercase =&amp;gt; [ &amp;quot;custom&lt;/em&gt;name&amp;quot; ]
+}
+output {
+    stdout{codec =&amp;gt; json}
+}
+&lt;/pre&gt;&lt;/p&gt;
+
+&lt;pre class=&quot;message&quot;&gt;
+&gt; name: Joel
+{&quot;message&quot;:&quot;name: Joel&quot;,&quot;@version&quot;:&quot;1&quot;,&quot;@timestamp&quot;:&quot;2014-08-26T02:56:57.461Z&quot;,&quot;host&quot;:&quot;joelcorrea.local&quot;,&quot;custom_name&quot;:&quot;joel&quot;}
+&lt;/pre&gt;
+
 &lt;h3&gt;References&lt;/h3&gt;
 
 &lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://writequit.org/articles/logstash-intro.html&quot;&gt;Logstash Introduction&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://logstash.net/docs/1.4.2/&quot;&gt;Logstash 1.4.2 Docs&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://michael.bouvy.net/blog/en/2013/11/19/collect-visualize-your-logs-logstash-elasticsearch-redis-kibana/&quot;&gt;Collect &amp;amp; visualize your logs with Logstash, Elasticsearch &amp;amp; Redis&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
