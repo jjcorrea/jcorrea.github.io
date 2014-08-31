@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Big Data Reference
+title: Big Data / NoSQL Reference
 ---
 
 ### Challenges

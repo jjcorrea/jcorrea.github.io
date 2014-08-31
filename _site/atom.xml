@@ -4,13 +4,85 @@
  <title>Joel Corrêa</title>
  <link href="http://jjcorrea.github.io/atom.xml" rel="self"/>
  <link href="http://jjcorrea.github.io/"/>
- <updated>2014-08-26T00:22:40-03:00</updated>
+ <updated>2014-08-31T16:20:33-03:00</updated>
  <id>http://jjcorrea.github.io</id>
  <author>
    <name>Joel Correa</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Kibana</title>
+   <link href="http://jjcorrea.github.io/2014/08/31/kibana/"/>
+   <updated>2014-08-31T00:00:00-03:00</updated>
+   <id>http://jjcorrea.github.io/2014/08/31/kibana</id>
+   <content type="html">&lt;p&gt;Version checked &lt;span class=&quot;label label-default&quot;&gt;3.1.0&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Visualize logs and time-stamped data&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;Highlights&lt;/h3&gt;
+
+&lt;p&gt;&lt;span class=&quot;label label-primary&quot;&gt;Charts&lt;/span&gt;
+&lt;span class=&quot;label label-primary&quot;&gt;Logs&lt;/span&gt;
+&lt;span class=&quot;label label-primary&quot;&gt;Events&lt;/span&gt;
+&lt;span class=&quot;label label-primary&quot;&gt;Aggregation&lt;/span&gt;
+&lt;span class=&quot;label label-primary&quot;&gt;Monitoring&lt;/span&gt;
+&lt;span class=&quot;label label-primary&quot;&gt;Real-time&lt;/span&gt;&lt;/p&gt;
+
+&lt;h3&gt;Trade-off&lt;/h3&gt;
+
+&lt;p&gt;&lt;span class=&quot;label label-success&quot;&gt;No code required&lt;/span&gt;
+&lt;span class=&quot;label label-success&quot;&gt;Easy setup&lt;/span&gt;
+&lt;span class=&quot;label label-success&quot;&gt;Flume / FluentD Integration&lt;/span&gt;
+&lt;span class=&quot;label label-warning&quot;&gt;UX&lt;/span&gt;
+&lt;span class=&quot;label label-danger&quot;&gt;Few documentation&lt;/span&gt;
+&lt;span class=&quot;label label-danger&quot;&gt;Query + Filtering ?&lt;/span&gt;&lt;/p&gt;
+
+&lt;h3&gt;So, what&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Lucene powered queries through ElasticSearch&lt;/li&gt;
+&lt;li&gt;Nice sample dashboards&lt;/li&gt;
+&lt;li&gt;Really cool graph facets&lt;/li&gt;
+&lt;li&gt;Flexible graph configuration (multiple aggregation formulas &amp;amp; options)&lt;/li&gt;
+&lt;li&gt;Interesting configurable dashboard grid, but row management &amp;amp; alignment is poor&lt;/li&gt;
+&lt;li&gt;Dynamic dashboard (Auto-refresh) &amp;amp; Interval&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>ELK Platform</title>
+   <link href="http://jjcorrea.github.io/2014/08/31/elk-platform/"/>
+   <updated>2014-08-31T00:00:00-03:00</updated>
+   <id>http://jjcorrea.github.io/2014/08/31/elk-platform</id>
+   <content type="html">&lt;p&gt;By combining the massively popular &lt;strong&gt;E&lt;/strong&gt;lasticsearch, &lt;strong&gt;L&lt;/strong&gt;ogstash and &lt;strong&gt;K&lt;/strong&gt;ibana (&lt;a target=&quot;_blank&quot; href=&quot;http://www.elasticsearch.org/overview/&quot;&gt;ELK platform overview&lt;/a&gt;) we have created an end-to-end stack that delivers actionable insights in real-time from almost any type of structured and unstructured data source. &lt;/p&gt;
+
+&lt;h3&gt;Highlights&lt;/h3&gt;
+
+&lt;p&gt;&lt;span class=&quot;label label-primary&quot;&gt;Search&lt;/span&gt;
+&lt;span class=&quot;label label-primary&quot;&gt;Analize&lt;/span&gt;
+&lt;span class=&quot;label label-primary&quot;&gt;Real time&lt;/span&gt;
+&lt;span class=&quot;label label-primary&quot;&gt;Visualization&lt;/span&gt;&lt;/p&gt;
+
+&lt;h3&gt;Trade-off&lt;/h3&gt;
+
+&lt;p&gt;&lt;span class=&quot;label label-success&quot;&gt;?&lt;/span&gt;
+&lt;span class=&quot;label label-warning&quot;&gt;?&lt;/span&gt;
+&lt;span class=&quot;label label-danger&quot;&gt;?&lt;/span&gt;&lt;/p&gt;
+
+&lt;h3&gt;Dive in&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;/2014/08/24/elastic-search/&quot;&gt;Elastic Search Overview&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/2014/08/25/logstash/&quot;&gt;Logstash Overview&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/2014/08/31/kibana/&quot;&gt;Kibana Overview&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Logstash</title>
@@ -36,7 +108,8 @@
 
 &lt;p&gt;&lt;span class=&quot;label label-success&quot;&gt;Extensible&lt;/span&gt;
 &lt;span class=&quot;label label-success&quot;&gt;SOC&lt;/span&gt;
-&lt;span class=&quot;label label-warning&quot;&gt;Ruby codebase &amp;amp; plugins&lt;/span&gt;
+&lt;span class=&quot;label label-success&quot;&gt;ELK stack integration&lt;/span&gt;
+&lt;span class=&quot;label label-warning&quot;&gt;JRuby&lt;/span&gt;
 &lt;span class=&quot;label label-danger&quot;&gt;Poor documentation&lt;/span&gt;&lt;/p&gt;
 
 &lt;h3&gt;Features&lt;/h3&gt;
@@ -130,17 +203,12 @@ output {
    <content type="html">&lt;p&gt;Version checked &lt;span class=&quot;label label-default&quot;&gt;1.3.2&lt;/span&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;An end-to-end search and analytics platform&lt;/p&gt;
+&lt;p&gt;Search, analyze in real-time.&lt;/p&gt;
 &lt;/blockquote&gt;
-
-&lt;p&gt;By combining the massively popular &lt;strong&gt;E&lt;/strong&gt;lasticsearch, &lt;strong&gt;L&lt;/strong&gt;ogstash and &lt;strong&gt;K&lt;/strong&gt;ibana (&lt;a target=&quot;_blenk&quot; href=&quot;http://www.elasticsearch.org/overview/&quot;&gt;ELK platform overview&lt;/a&gt;) we have created an end-to-end stack that delivers actionable insights in real-time from almost any type of structured and unstructured data source. &lt;/p&gt;
 
 &lt;h3&gt;Highlights&lt;/h3&gt;
 
-&lt;p&gt;&lt;span class=&quot;label label-primary&quot;&gt;Search&lt;/span&gt;
-&lt;span class=&quot;label label-primary&quot;&gt;Analize&lt;/span&gt;
-&lt;span class=&quot;label label-primary&quot;&gt;Real time&lt;/span&gt;
-&lt;span class=&quot;label label-primary&quot;&gt;Visualization&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;label label-primary&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 
 &lt;h3&gt;Trade-off&lt;/h3&gt;
 
@@ -180,6 +248,40 @@ output {
 &lt;span class=&quot;label label-warning&quot;&gt;Document based&lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;span class=&quot;label label-danger&quot;&gt;No HTTP API&lt;/span&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Big Data / NoSQL Reference</title>
+   <link href="http://jjcorrea.github.io/2014/08/24/big-data-nosql/"/>
+   <updated>2014-08-24T00:00:00-03:00</updated>
+   <id>http://jjcorrea.github.io/2014/08/24/big-data-nosql</id>
+   <content type="html">&lt;h3&gt;Challenges&lt;/h3&gt;
+
+&lt;p&gt;&lt;span class=&quot;label label-primary&quot;&gt;Processing&lt;/span&gt;
+&lt;span class=&quot;label label-primary&quot;&gt;Compression&lt;/span&gt;
+&lt;span class=&quot;label label-primary&quot;&gt;Statistics&lt;/span&gt;
+&lt;span class=&quot;label label-primary&quot;&gt;Storage&lt;/span&gt;
+&lt;span class=&quot;label label-primary&quot;&gt;Search&lt;/span&gt;
+&lt;span class=&quot;label label-primary&quot;&gt;Analysis&lt;/span&gt;
+&lt;span class=&quot;label label-primary&quot;&gt;Visualization&lt;/span&gt;
+&lt;span class=&quot;label label-primary&quot;&gt;Transport&lt;/span&gt;&lt;/p&gt;
+
+&lt;h3&gt;Highlights&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Auto-sharding – A NoSQL database automatically spreads data across servers, without requiring applications to participate. Servers can be added or removed from the data layer without application downtime, with data (and I/O) automatically spread across the servers. Most NoSQL databases also support data replication, storing multiple copies of data across the cluster, and even across data centers, to ensure high availability and support disaster recovery. A properly managed NoSQL database system should never need to be taken offline, for any reason, supporting 24x365 continuous operation of applications.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Distributed query support – “Sharding” a relational database can reduce, or eliminate in certain cases, the ability to perform complex data queries. NoSQL database systems retain their full query expressive power even when distributed across hundreds of servers.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Integrated caching – To reduce latency and increase sustained data throughput, advanced NoSQL database technologies transparently cache data in system memory. This behavior is transparent to the application developer and the operations team, compared to relational technology where a caching tier is usually a separate infrastructure tier that must be developed to, deployed on separate servers, and explicitly managed by the ops team.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;References &amp;amp; Related stuff&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.edureka.co/about-big-data-and-hadoop&quot;&gt;Courses&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Q76-fCqVjhU&quot;&gt;Spark &amp;amp; Scala&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://howtojboss.com/2013/09/04/ampd-for-hadoop-alternatives/&quot;&gt;Hadoop alternatives&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </content>
  </entry>
  
