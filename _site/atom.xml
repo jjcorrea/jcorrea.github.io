@@ -4,7 +4,7 @@
  <title>Joel Corrêa</title>
  <link href="http://jjcorrea.github.io/atom.xml" rel="self"/>
  <link href="http://jjcorrea.github.io/"/>
- <updated>2014-08-31T16:36:52-03:00</updated>
+ <updated>2014-09-05T14:51:41-03:00</updated>
  <id>http://jjcorrea.github.io</id>
  <author>
    <name>Joel Correa</name>
@@ -73,6 +73,8 @@
 &lt;p&gt;&lt;span class=&quot;label label-success&quot;&gt;?&lt;/span&gt;
 &lt;span class=&quot;label label-warning&quot;&gt;?&lt;/span&gt;
 &lt;span class=&quot;label label-danger&quot;&gt;?&lt;/span&gt;&lt;/p&gt;
+
+&lt;iframe src=&quot;//slides.com/joelcorrea/elk-stack-for-application-events-monitoring/embed&quot; width=&quot;576&quot; height=&quot;420&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;h3&gt;Dive in&lt;/h3&gt;
 

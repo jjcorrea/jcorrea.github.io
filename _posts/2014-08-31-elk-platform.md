@@ -17,6 +17,9 @@ By combining the massively popular **E**lasticsearch, **L**ogstash and **K**iban
 <span class="label label-warning">?</span>
 <span class="label label-danger">?</span>
 
+
+<iframe src="//slides.com/joelcorrea/elk-stack-for-application-events-monitoring/embed" width="576" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 ### Dive in
 
 * [Elastic Search Overview](/2014/08/24/elastic-search/)
