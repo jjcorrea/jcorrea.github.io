@@ -25,7 +25,7 @@ The central idea in software engineering is to take advantage of engineering **p
 
 ## The Software systems nature
 
-What makes a system well architected? Someone could say it is when the system does what the user expects. However a more general quality evaluation requires the identification of the well architected software attributes. There are two important attributes in particular that deserves our attention: ***reliability** and **maintainability**.
+What makes a system well architected? Someone could say it is when the system does what the user expects. However a more general quality evaluation requires the identification of the well architected software attributes. There are two important attributes in particular that deserves our attention: **reliability** and **maintainability**.
 
 An appropriate level of **reliability** is essential to a software system, independent of its usage. The reliability is an important attribute of software **quality**, implying that the application will perform its functions as expected.
 
