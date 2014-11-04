@@ -30,6 +30,7 @@ What makes a system well architected? Someone could say it is when the system do
 An appropriate level of **reliability** is essential to a software system, independent of its usage. The reliability is an important attribute of software **quality**, implying that the application will perform its functions as expected.
 
 In this context, **maintainability** has two different aspects
+
 - Need of repair: Implementaion defects which require fixes.
 - Need of evolution: New requirements satisfaction
 
