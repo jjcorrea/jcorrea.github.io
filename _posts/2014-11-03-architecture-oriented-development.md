@@ -1,3 +1,7 @@
+---
+layout: post
+title: Architecture oriented development
+---
 
 Aproximately 50 years ago, software consisted on a tiny part of the overall technological landscape, in which the hardware (electronic components, circuits, etc) was the most important player.
 
