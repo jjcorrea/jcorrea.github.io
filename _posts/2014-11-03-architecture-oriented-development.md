@@ -43,7 +43,7 @@ The architectural software development comprehends structural issues as:
 
 - Project **alternatives**
 - **Performance** & **scalability**
-- Organization and general **control structure(())
+- Organization and general **control structure**
 - Communication **protocols**
 - Project **components functionality** assignment 
 
