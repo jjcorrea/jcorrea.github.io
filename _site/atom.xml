@@ -4,13 +4,108 @@
  <title>Joel Corrêa</title>
  <link href="http://jjcorrea.github.io/atom.xml" rel="self"/>
  <link href="http://jjcorrea.github.io/"/>
- <updated>2014-09-05T14:51:41-03:00</updated>
+ <updated>2014-11-03T23:47:23-02:00</updated>
  <id>http://jjcorrea.github.io</id>
  <author>
    <name>Joel Correa</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Architecture Oriented Development</title>
+   <link href="http://jjcorrea.github.io/2014/11/03/architecture-oriented-development/"/>
+   <updated>2014-11-03T00:00:00-02:00</updated>
+   <id>http://jjcorrea.github.io/2014/11/03/architecture-oriented-development</id>
+   <content type="html">&lt;p&gt;Aproximately 50 years ago, software consisted on a tiny part of the overall technological landscape, in which the hardware (electronic components, circuits, etc) was the most important player.&lt;/p&gt;
+
+&lt;p&gt;On the other hand, once software became significantly more important to computational systems, and once it started getting more popular, also being part of major of personal and professional activities ubiquitously, the &lt;strong&gt;size&lt;/strong&gt; and &lt;strong&gt;complexity&lt;/strong&gt; of those systems urged for better solutions than the existing &lt;strong&gt;abstraction&lt;/strong&gt; techniques which remained until the end of the 80s, as abstract data types (ADTs), high level programming languages, and modular decomposition techniques.&lt;/p&gt;
+
+&lt;p&gt;Notice &lt;strong&gt;abstraction&lt;/strong&gt; as a way to deal with the complexity of problems and systems. As human beings we are regularly rebuilding an existing pattern in a different context, so the abstration essence is to &lt;em&gt;recognize a pattern&lt;/em&gt;, give it a &lt;em&gt;name&lt;/em&gt;, define its &lt;em&gt;usage&lt;/em&gt; and look for consistent ways to &lt;em&gt;specify&lt;/em&gt; it.&lt;/p&gt;
+
+&lt;h2&gt;Technologial evolution&lt;/h2&gt;
+
+&lt;p&gt;After the first completely electronic general purpose computer (ENIAC) was created at the University of Pensilvania, between 1942 and 1945, until the 60s there was a very limited software production, and the size of them was small at all.&lt;/p&gt;
+
+&lt;p&gt;However, little by little, software has become a key technology for handling from the simpler applications to the most complex businesses. The technology industy started being one of the most competitive businesses in the world, and the &amp;quot;Software&amp;quot; component became a prevailing force in terms of &lt;strong&gt;technological innovation&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Despite the importance of this news technology had at that moment, there were no &lt;strong&gt;tools&lt;/strong&gt; supporting software development, and little is known about its &lt;strong&gt;development process&lt;/strong&gt;. On the same time, the role of &lt;strong&gt;maintenance&lt;/strong&gt; began to stand out.&lt;/p&gt;
+
+&lt;p&gt;All this factors contributed to the emmergence of the &lt;strong&gt;software engineering&lt;/strong&gt;, term coined in a seminal NATO conference which happened in 1968.&lt;/p&gt;
+
+&lt;h2&gt;Software Engineering&lt;/h2&gt;
+
+&lt;p&gt;The central idea in software engineering is to take advantage of engineering &lt;strong&gt;principles&lt;/strong&gt; to produce, with low cost, software which runs &lt;strong&gt;correctly&lt;/strong&gt; and &lt;strong&gt;efficiently&lt;/strong&gt; on the equipments in which they are installed. So once software started having more space, many &lt;strong&gt;software engineering paradigms&lt;/strong&gt; arised. &lt;/p&gt;
+
+&lt;h2&gt;The Software systems nature&lt;/h2&gt;
+
+&lt;p&gt;What makes a system well architected? Someone could say it is when the system does what the user expects. However a more general quality evaluation requires the identification of the well architected software attributes. There are two important attributes in particular that deserves our attention: &lt;em&gt;**reliability&lt;/em&gt;* and &lt;strong&gt;maintainability&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;An appropriate level of &lt;strong&gt;reliability&lt;/strong&gt; is essential to a software system, independent of its usage. The reliability is an important attribute of software &lt;strong&gt;quality&lt;/strong&gt;, implying that the application will perform its functions as expected.&lt;/p&gt;
+
+&lt;p&gt;In this context, &lt;strong&gt;maintainability&lt;/strong&gt; has two different aspects
+- Need of repair: Implementaion defects which require fixes.
+- Need of evolution: New requirements satisfaction&lt;/p&gt;
+
+&lt;h2&gt;Software architecture&lt;/h2&gt;
+
+&lt;p&gt;Given the growth in terms of &lt;strong&gt;size&lt;/strong&gt; and &lt;strong&gt;complexity&lt;/strong&gt;, the development problems started exceeding the &lt;strong&gt;data structures&lt;/strong&gt; and &lt;strong&gt;algorithms&lt;/strong&gt;... design the global system structure raises as a new problem, in other words, software development oriented to the architecture.&lt;/p&gt;
+
+&lt;p&gt;The architectural software development comprehends structural issues as:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Project &lt;strong&gt;alternatives&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Performance&lt;/strong&gt; &amp;amp; &lt;strong&gt;scalability&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Organization and general **control structure(())&lt;/li&gt;
+&lt;li&gt;Communication &lt;strong&gt;protocols&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Project &lt;strong&gt;components functionality&lt;/strong&gt; assignment &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It is important to be able to recognize common used structures, and also understand the existing architectures, what helps the engineers to make better decisions about the project alternatives. &lt;/p&gt;
+
+&lt;p&gt;Software architecture is the study of the global organization of sofware systems, as well as its subsystems &amp;amp; components relationships. It explores &lt;strong&gt;notations&lt;/strong&gt;, &lt;strong&gt;tools&lt;/strong&gt; and &lt;strong&gt;analysis&lt;/strong&gt; techniques and components &lt;strong&gt;reuse&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2&gt;The need of the software architecture role&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Act as an structure which enables attending the system requirements&lt;/li&gt;
+&lt;li&gt;Serve as the base for consistency and dependeny analysis&lt;/li&gt;
+&lt;li&gt;Support reuse&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;
+To be continued...&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Gatling</title>
+   <link href="http://jjcorrea.github.io/2014/10/19/gatling/"/>
+   <updated>2014-10-19T01:00:00-02:00</updated>
+   <id>http://jjcorrea.github.io/2014/10/19/gatling</id>
+   <content type="html">&lt;p&gt;Version checked &lt;span class=&quot;label label-default&quot;&gt;2.0.0-M3a&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Stress testing&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;Highlights&lt;/h3&gt;
+
+&lt;p&gt;&lt;span class=&quot;label label-primary&quot;&gt;...&lt;/span&gt;&lt;/p&gt;
+
+&lt;h3&gt;Trade-off&lt;/h3&gt;
+
+&lt;p&gt;&lt;span class=&quot;label label-success&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;label label-warning&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;label label-danger&quot;&gt;...&lt;/span&gt;&lt;/p&gt;
+
+&lt;h3&gt;So, what&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Kibana</title>

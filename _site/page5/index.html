@@ -96,6 +96,10 @@
     
       
     
+      
+    
+      
+    
     <a class="sidebar-nav-item" href="mailto:joel.correa@icloud.com">@mail</a>
     <a class="sidebar-nav-item" target="_blank" href="https://twitter.com/joelcorrea_">@twitter</a>
     <a class="sidebar-nav-item" target="_blank" href="https://www.linkedin.com/profile/view?id=78338366">@linkedin</a>
@@ -129,38 +133,116 @@
   
   <div class="post">
     <h1 class="post-title">
-      <a href="/2014/08/24/couch-base/">
-        CouchBase
+      <a href="/2014/08/25/logstash/">
+        Logstash
       </a>
     </h1>
 
-    <span class="post-date">24 Aug 2014</span>
+    <span class="post-date">25 Aug 2014</span>
 
-    <p>Version checked <span class="label label-default">2.5.1</span></p>
+    <p>Version checked <span class="label label-default">1.4.2</span></p>
 
 <blockquote>
-<p>World&#39;s most complete, most scalable and best performing NoSQL database.</p>
+<p>A tool for managing events and logs. </p>
+
+<p>You can use it to collect logs, parse them, and store them for later use (like, for searching). Speaking of searching, logstash comes with a web interface for searching and drilling into all of your logs.</p>
 </blockquote>
 
 <h3>Highlights</h3>
 
-<p><span class="label label-primary">Scalability</span>
-<span class="label label-primary">Performance</span>
-<span class="label label-primary">Availability</span></p>
+<p><span class="label label-primary">Logs</span>
+<span class="label label-primary">Events</span>
+<span class="label label-primary">BigData</span>
+<span class="label label-primary">Filter</span></p>
 
 <h3>Trade-off</h3>
 
-<p><span class="label label-success">Builtin Cache</span>
-<span class="label label-success">Auto-sharding</span>
-<span class="label label-success">Incremental Map-Reduce</span>
-<span class="label label-success">Monitoring UI</span>
-<span class="label label-success">Geographic strength</span>
-<span class="label label-success">Multiple Connectors</span></p>
+<p><span class="label label-success">Extensible</span>
+<span class="label label-success">SOC</span>
+<span class="label label-success">ELK stack integration</span>
+<span class="label label-warning">JRuby</span>
+<span class="label label-danger">Poor documentation</span></p>
 
-<p><span class="label label-warning">Key-Value</span>
-<span class="label label-warning">Document based</span></p>
+<h3>Features</h3>
 
-<p><span class="label label-danger">No HTTP API</span></p>
+<ul>
+<li>Transform, and process logs to and from anywhere </li>
+<li>Provide search and analytics</li>
+</ul>
+
+<h3>Inputs, Filters and Outputs (Plugins)</h3>
+
+<ul>
+<li><em>Input</em>: Stream source</li>
+<li><em>Filter</em>: Extracts what you are interested from the stream.</li>
+<li><em>Output</em>: Sends the extracted stuff somewhere.</li>
+<li><em>Codec</em>: Decode (via inputs) and Encode (via outputs) a message</li>
+</ul>
+
+<h3>Examples</h3>
+
+<p>Simplest configuration example</p>
+
+<pre class="message">
+input { stdin {} }
+output { stdout {} }
+</pre>
+
+<pre class="message">
+> ./logstash agent -f my.conf
+> 1
+2014-08-26T02:42:21.416+0000 joelcorrea.local 1
+</pre>
+
+<hr />
+
+<p>Using codecs</p>
+
+<pre class="message">
+input { stdin {} }
+
+output {
+  stdout { codec => json }
+}
+</pre>
+
+<pre class="message">
+> 1
+{"message":"1","@version":"1","@timestamp":"2014-08-26T02:44:29.809Z","host":"joelcorrea.local"}
+</pre>
+
+<hr />
+
+<p>Grok: A collection of pre-defined patterns </p>
+
+<p><a href="https://github.com/elasticsearch/logstash/tree/master/patterns/grok-patterns">Have a look on them</a> (<a href="https://grokdebug.herokuapp.com/">You can debug it</a>)
+<pre class="message">
+input {
+  stdin {}
+}
+filter {
+  grok { 
+    match =&gt; [ &quot;message&quot;, &quot;name: %{WORD:custom<em>name}&quot; ] 
+  }
+  mutate { lowercase =&gt; [ &quot;custom</em>name&quot; ]
+}
+output {
+    stdout{codec =&gt; json}
+}
+</pre></p>
+
+<pre class="message">
+> name: Joel
+{"message":"name: Joel","@version":"1","@timestamp":"2014-08-26T02:56:57.461Z","host":"joelcorrea.local","custom_name":"joel"}
+</pre>
+
+<h3>References</h3>
+
+<ul>
+<li><a href="http://writequit.org/articles/logstash-intro.html">Logstash Introduction</a></li>
+<li><a href="http://logstash.net/docs/1.4.2/">Logstash 1.4.2 Docs</a></li>
+<li><a href="http://michael.bouvy.net/blog/en/2013/11/19/collect-visualize-your-logs-logstash-elasticsearch-redis-kibana/">Collect &amp; visualize your logs with Logstash, Elasticsearch &amp; Redis</a></li>
+</ul>
 
   </div>
   
