@@ -4,7 +4,7 @@
  <title>Joel Corrêa</title>
  <link href="http://jjcorrea.github.io/atom.xml" rel="self"/>
  <link href="http://jjcorrea.github.io/"/>
- <updated>2014-11-08T18:58:56-02:00</updated>
+ <updated>2014-11-08T19:56:05-02:00</updated>
  <id>http://jjcorrea.github.io</id>
  <author>
    <name>Joel Correa</name>
@@ -49,6 +49,36 @@
 &lt;p&gt;Another example of pipes &amp;amp; filters architectural style can be found at the classical &lt;em&gt;compilers&lt;/em&gt; model. The first compilers used to work in two steps: &lt;em&gt;source language analysis&lt;/em&gt; and &lt;em&gt;code synthesis&lt;/em&gt; (Aho, 1987). With the hardware evolution, the need of &lt;strong&gt;portability&lt;/strong&gt; started raising, and the classical model needed to be enhanced to a new process, composed by 3-legged analysis (lexical, syntactic &amp;amp; semantic analysis), and 2-step synthesis (optimization &amp;amp; generation).&lt;/p&gt;
 
 &lt;p&gt;It is worth to comment that this architectural style is normally &lt;strong&gt;flexible&lt;/strong&gt;, enabling the pipes and filters reorganization. Although this style provides &lt;em&gt;maintainability&lt;/em&gt; support in terms of easy reorganization, it is clear that frequent changes on a component (filter) can impact the other components, so maintainability support is limited on this style.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2&gt;#2 Layers&lt;/h2&gt;
+
+&lt;p&gt;The &lt;strong&gt;layered&lt;/strong&gt; architectural style structures a system into a set of layers, where each of them groups a set of &lt;em&gt;tasks&lt;/em&gt; in a certain level of &lt;em&gt;abstraction&lt;/em&gt;. &lt;/p&gt;
+
+&lt;p&gt;In a layered architecture, a layer on the N level normally offers a set of functionalities to the above level (N + 1). N uses its functions as well as it uses the functionality provided by the below layer (n - 1). &lt;/p&gt;
+
+&lt;p&gt;A variation of this style could enable the N layer to access N-2, N-3 and so on, but notice that doing so the system &lt;strong&gt;maintainability can be affected&lt;/strong&gt;. Having a bigger dependency level between layers imply on more layers to be changed once having a new requirement or change. &lt;/p&gt;
+
+&lt;p&gt;A good example of this style is the &lt;strong&gt;OSI&lt;/strong&gt; (Open Systems Interconnection) reference model (Tanenbaum, 1988). On this model each &lt;em&gt;layer&lt;/em&gt; can be seen as a &lt;em&gt;component&lt;/em&gt; which can be implemented by software or hardware. It is composed by 7 layers and serves as the computer network protocol architecture.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;7. Application&lt;/li&gt;
+&lt;li&gt;6. Presentation&lt;/li&gt;
+&lt;li&gt;5. Session&lt;/li&gt;
+&lt;li&gt;4. Transport&lt;/li&gt;
+&lt;li&gt;3. Network&lt;/li&gt;
+&lt;li&gt;2. Data link&lt;/li&gt;
+&lt;li&gt;1. Physical&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In fact a layered architecture gives a higher level of &lt;em&gt;flexibility&lt;/em&gt;, however this has an associate &lt;strong&gt;cost&lt;/strong&gt; on the system &lt;strong&gt;performance&lt;/strong&gt;, as an external request needs to pass through many layers in order to be handled. Anyway, implementing a &lt;strong&gt;monolithic&lt;/strong&gt; system / protocol isn&amp;#39;t an appropriate solution as well.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2&gt;#3 Objects&lt;/h2&gt;
+
+&lt;p&gt;The object oriented paradigm adds another sort of abstraction to software designers. The fundamental idea behind this approach is &lt;em&gt;combining&lt;/em&gt; in a single entity &lt;strong&gt;both data and functions which operates on this data&lt;/strong&gt;. This entity is nominated &lt;strong&gt;object&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;
 To be continued...&lt;/p&gt;
