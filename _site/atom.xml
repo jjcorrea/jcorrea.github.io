@@ -4,7 +4,7 @@
  <title>Joel Corrêa</title>
  <link href="http://jjcorrea.github.io/atom.xml" rel="self"/>
  <link href="http://jjcorrea.github.io/"/>
- <updated>2014-11-03T23:47:23-02:00</updated>
+ <updated>2014-11-08T16:19:43-02:00</updated>
  <id>http://jjcorrea.github.io</id>
  <author>
    <name>Joel Correa</name>
@@ -13,7 +13,17 @@
 
  
  <entry>
-   <title>Architecture Oriented Development</title>
+   <title>Architectural styles</title>
+   <link href="http://jjcorrea.github.io/2014/11/08/architecture-oriented-development-architectural-styles/"/>
+   <updated>2014-11-08T00:00:00-02:00</updated>
+   <id>http://jjcorrea.github.io/2014/11/08/architecture-oriented-development-architectural-styles</id>
+   <content type="html">&lt;p&gt;&lt;br /&gt;
+To be continued...&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Architecture oriented development</title>
    <link href="http://jjcorrea.github.io/2014/11/03/architecture-oriented-development/"/>
    <updated>2014-11-03T00:00:00-02:00</updated>
    <id>http://jjcorrea.github.io/2014/11/03/architecture-oriented-development</id>
@@ -39,13 +49,16 @@
 
 &lt;h2&gt;The Software systems nature&lt;/h2&gt;
 
-&lt;p&gt;What makes a system well architected? Someone could say it is when the system does what the user expects. However a more general quality evaluation requires the identification of the well architected software attributes. There are two important attributes in particular that deserves our attention: &lt;em&gt;**reliability&lt;/em&gt;* and &lt;strong&gt;maintainability&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;What makes a system well architected? Someone could say it is when the system does what the user expects. However a more general quality evaluation requires the identification of the well architected software attributes. There are two important attributes in particular that deserves our attention: &lt;strong&gt;reliability&lt;/strong&gt; and &lt;strong&gt;maintainability&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;An appropriate level of &lt;strong&gt;reliability&lt;/strong&gt; is essential to a software system, independent of its usage. The reliability is an important attribute of software &lt;strong&gt;quality&lt;/strong&gt;, implying that the application will perform its functions as expected.&lt;/p&gt;
 
-&lt;p&gt;In this context, &lt;strong&gt;maintainability&lt;/strong&gt; has two different aspects
-- Need of repair: Implementaion defects which require fixes.
-- Need of evolution: New requirements satisfaction&lt;/p&gt;
+&lt;p&gt;In this context, &lt;strong&gt;maintainability&lt;/strong&gt; has two different aspects&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Need of repair: Implementaion defects which require fixes.&lt;/li&gt;
+&lt;li&gt;Need of evolution: New requirements satisfaction&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2&gt;Software architecture&lt;/h2&gt;
 
@@ -56,7 +69,7 @@
 &lt;ul&gt;
 &lt;li&gt;Project &lt;strong&gt;alternatives&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Performance&lt;/strong&gt; &amp;amp; &lt;strong&gt;scalability&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Organization and general **control structure(())&lt;/li&gt;
+&lt;li&gt;Organization and general &lt;strong&gt;control structure&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;Communication &lt;strong&gt;protocols&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;Project &lt;strong&gt;components functionality&lt;/strong&gt; assignment &lt;/li&gt;
 &lt;/ul&gt;
