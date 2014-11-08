@@ -142,7 +142,40 @@
 
     <span class="post-date">08 Nov 2014</span>
 
-    <p><br />
+    <p>Given the importance, and the growing need of dealing with <strong>quality</strong> and <strong>maintainability</strong> targets, through software architecture techniques (as exposed on the <a href="/2014/11/03/architecture-oriented-development/">previous post</a>), there are categorizations of architectural styles which supports the required characteristics of software systems. </p>
+
+<p>The <strong>architectural styles</strong> use clear <strong>terminologies</strong>, <strong>properties</strong> and <strong>restrictions</strong> to identify the components (a.k.a subsystems) and interaction mechanisms between them, what is specially usefull for software engineers to <strong>reuse</strong> the architectural patterns on scenarios in which they are needed. </p>
+
+<p>Each <strong>style</strong> supports a set of <strong>non-functional requirements</strong> and <strong>project attributes</strong> what makes possible distinguish between different architectures.</p>
+
+<p><br /></p>
+
+<h2>#1 Pipes and filters</h2>
+
+<p>Characteristics:</p>
+
+<ul>
+<li>Data flow which goes from an edge (<strong>origin</strong>) to another (<strong>destination</strong>)</li>
+<li>Data is processed and transformed on <strong>filters</strong></li>
+<li><strong>Unidirectional</strong> flow = Operations chaining</li>
+</ul>
+
+<p>An example of pipes and filters would be the following UNIX command:</p>
+
+<div class="highlight"><pre><code class="bash">sample<span class="nv">$ </span>who <span class="p">|</span> sort
+</code></pre></div>
+
+<p>The result of <em>who</em> is a list of currently connected users, and its output is used as the input of <em>sort</em>, which orders the values alphabetically.</p>
+
+<p><img src="/assets/arch-styles-pipe-and-filter.png" alt="Unix who | sort"></p>
+
+<p>The two programs, <em>who</em> and <em>sort</em> are <strong>components</strong> called <strong>filters</strong>. Notice that the filters can start putting the transformation outcome on the pipes <em>before all the input data is processed</em>, and that the sort output could lead to another filter represented on the picture by the dotted box.</p>
+
+<p>Another example of pipes &amp; filters architectural style can be found at the classical <em>compilers</em> model. The first compilers used to work in two steps: <em>source language analysis</em> and <em>code synthesis</em> (Aho, 1987). With the hardware evolution, the need of <strong>portability</strong> started raising, and the classical model needed to be enhanced to a new process, composed by 3-legged analysis (lexical, syntactic &amp; semantic analysis), and 2-step synthesis (optimization &amp; generation).</p>
+
+<p>It is worth to comment that this architectural style is normally <strong>flexible</strong>, enabling the pipes and filters reorganization. Although this style provides <em>maintainability</em> support in terms of easy reorganization, it is clear that frequent changes on a component (filter) can impact the other components, so maintainability support is limited on this style.</p>
+
+<p><br />
 To be continued...</p>
 
   </div>
