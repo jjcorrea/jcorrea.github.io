@@ -4,7 +4,7 @@
  <title>Joel Corrêa</title>
  <link href="http://jjcorrea.github.io/atom.xml" rel="self"/>
  <link href="http://jjcorrea.github.io/"/>
- <updated>2014-11-08T19:56:05-02:00</updated>
+ <updated>2014-11-08T19:58:51-02:00</updated>
  <id>http://jjcorrea.github.io</id>
  <author>
    <name>Joel Correa</name>
@@ -78,7 +78,7 @@
 
 &lt;h2&gt;#3 Objects&lt;/h2&gt;
 
-&lt;p&gt;The object oriented paradigm adds another sort of abstraction to software designers. The fundamental idea behind this approach is &lt;em&gt;combining&lt;/em&gt; in a single entity &lt;strong&gt;both data and functions which operates on this data&lt;/strong&gt;. This entity is nominated &lt;strong&gt;object&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The object oriented paradigm adds another sort of abstraction to software designers. The fundamental idea behind this approach is &lt;em&gt;combining&lt;/em&gt; in a single entity &lt;strong&gt;both data and functions which operates on this data&lt;/strong&gt;. This entity is named &lt;strong&gt;object&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;
 To be continued...&lt;/p&gt;

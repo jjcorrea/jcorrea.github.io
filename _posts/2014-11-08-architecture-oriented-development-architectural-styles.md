@@ -58,7 +58,7 @@ In fact a layered architecture gives a higher level of *flexibility*, however th
 <br />
 ## #3 Objects
 
-The object oriented paradigm adds another sort of abstraction to software designers. The fundamental idea behind this approach is *combining* in a single entity **both data and functions which operates on this data**. This entity is nominated **object**.
+The object oriented paradigm adds another sort of abstraction to software designers. The fundamental idea behind this approach is *combining* in a single entity **both data and functions which operates on this data**. This entity is named **object**.
 
 
 <br />
