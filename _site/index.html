@@ -132,173 +132,53 @@
 
       <div class="container content">
         <div class="posts">
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/2014/11/08/architecture-oriented-development-architectural-styles/">
-        Architectural styles
-      </a>
-    </h1>
-
-    <span class="post-date">08 Nov 2014</span>
-
-    <p>Given the importance, and the growing need of dealing with <strong>quality</strong> and <strong>maintainability</strong> targets, through software architecture techniques (as exposed on the <a href="/2014/11/03/architecture-oriented-development/">previous post</a>), there are categorizations of architectural styles which supports the required characteristics of software systems. </p>
-
-<p>The <strong>architectural styles</strong> use clear <strong>terminologies</strong>, <strong>properties</strong> and <strong>restrictions</strong> to identify the components (a.k.a subsystems) and interaction mechanisms between them, what is specially usefull for software engineers to <strong>reuse</strong> the architectural patterns on scenarios in which they are needed. </p>
-
-<p>Each <strong>style</strong> supports a set of <strong>non-functional requirements</strong> and <strong>project attributes</strong> what makes possible distinguish between different architectures.</p>
-
-<p><br /></p>
-
-<h2>#1 Pipes and filters</h2>
-
-<p>Characteristics:</p>
-
-<ul>
-<li>Data flow which goes from an edge (<strong>origin</strong>) to another (<strong>destination</strong>)</li>
-<li>Data is processed and transformed on <strong>filters</strong></li>
-<li><strong>Unidirectional</strong> flow = Operations chaining</li>
-</ul>
-
-<p>An example of pipes and filters would be the following UNIX command:</p>
-
-<div class="highlight"><pre><code class="bash">sample<span class="nv">$ </span>who <span class="p">|</span> sort
-</code></pre></div>
-
-<p>The result of <em>who</em> is a list of currently connected users, and its output is used as the input of <em>sort</em>, which orders the values alphabetically.</p>
-
-<p><img src="/assets/arch-styles-pipe-and-filter.png" alt="Unix who | sort"></p>
-
-<p>The two programs, <em>who</em> and <em>sort</em> are <strong>components</strong> called <strong>filters</strong>. Notice that the filters can start putting the transformation outcome on the pipes <em>before all the input data is processed</em>, and that the sort output could lead to another filter represented on the picture by the dotted box.</p>
-
-<p>Another example of pipes &amp; filters architectural style can be found at the classical <em>compilers</em> model. The first compilers used to work in two steps: <em>source language analysis</em> and <em>code synthesis</em> (Aho, 1987). With the hardware evolution, the need of <strong>portability</strong> started raising, and the classical model needed to be enhanced to a new process, composed by 3-legged analysis (lexical, syntactic &amp; semantic analysis), and 2-step synthesis (optimization &amp; generation).</p>
-
-<p>It is worth to comment that this architectural style is normally <strong>flexible</strong>, enabling the pipes and filters reorganization. Although this style provides <em>maintainability</em> support in terms of easy reorganization, it is clear that frequent changes on a component (filter) can impact the other components, so maintainability support is limited on this style.</p>
-
-<p><br /></p>
-
-<h2>#2 Layers</h2>
-
-<p>The <strong>layered</strong> architectural style structures a system into a set of layers, where each of them groups a set of <em>tasks</em> in a certain level of <em>abstraction</em>. </p>
-
-<p>In a layered architecture, a layer on the N level normally offers a set of functionalities to the above level (N + 1). N uses its functions as well as it uses the functionality provided by the below layer (n - 1). </p>
-
-<p>A variation of this style could enable the N layer to access N-2, N-3 and so on, but notice that doing so the system <strong>maintainability can be affected</strong>. Having a bigger dependency level between layers imply on more layers to be changed once having a new requirement or change. </p>
-
-<p>A good example of this style is the <strong>OSI</strong> (Open Systems Interconnection) reference model (Tanenbaum, 1988). On this model each <em>layer</em> can be seen as a <em>component</em> which can be implemented by software or hardware. It is composed by 7 layers and serves as the computer network protocol architecture.</p>
-
-<ul>
-<li>7. Application</li>
-<li>6. Presentation</li>
-<li>5. Session</li>
-<li>4. Transport</li>
-<li>3. Network</li>
-<li>2. Data link</li>
-<li>1. Physical</li>
-</ul>
-
-<p>In fact a layered architecture gives a higher level of <em>flexibility</em>, however this has an associate <strong>cost</strong> on the system <strong>performance</strong>, as an external request needs to pass through many layers in order to be handled. Anyway, implementing a <strong>monolithic</strong> system / protocol isn&#39;t an appropriate solution as well.</p>
-
-<p><br /></p>
-
-<h2>#3 Implicit invocation (Event driven)</h2>
-
-<p>Differently than the architectural style based on objects, on which one object (component) invokes the other directly through message passing, the implicit invocation style requires the components interested on an <strong>event</strong> <em>registering</em> themselves in order to receive it. In this case, the system provides a mechanism for forwarding the events to the registered components.</p>
-
-<p><br /></p>
-
-<h2>#4 Blackboard</h2>
-
-<p>The blackboard architectural style emerged on artificial intelligence field, in which it was used as a mechanism for sharing the knowlege (data) between many intelligent components. This style considers the existence of a main data <strong>repository</strong> surrounded by a set of components called knowlege sources (KSs).</p>
-
-<p>The blackboard architectural style is based on a sproblem solving model which provides a conceptual structure for organizing the domain knowlege as well as a strategy to apply that knowlege.</p>
-
-<p>The style consists on 3 basic components:</p>
-
-<ul>
-<li><strong>Knowlege sources</strong>: The knowlege needed for solving a problem is partitioned in knowlege sources. Each source is <strong>separated</strong> and <strong>independant</strong>.</li>
-<li><strong>Blackboard data structure</strong>: The problem solving data is maintained in a <strong>shared database</strong>, called blackboard. The knowlege sources causes modifications on the blackboard, what triggers changes until having a final <strong>solution</strong>. All interactions and communication between sources occurs only though this blackboard.</li>
-<li><strong>Control</strong>: The knowlege sources <strong>reacts</strong> to changes on the blackboard.</li>
-</ul>
-
-<p><img src="/assets/arch-styles-blackboard.png" alt="Blackboard organization"></p>
-
-<p>This architectural style is recommented on applications where several types of knowlege should be considered in order to interpret a set of initial data. It was tipically used on cases where there was <em>no general solution</em> for a problem. One or more components (KSs) interacts with the shared database (blackboard) looking for a <strong>partial</strong> or <strong>total</strong> solution for the problem (in the case of a <em>partial solution</em>, another component can be activated then).</p>
-
-<p><br /></p>
-
-<h2>#5 Distributed systems</h2>
-
-<p>There are several architectural models in which regards distributed systems. We are going to see two of the most common styles: <strong>Multiprocessor</strong> and <strong>multicomputer</strong>.</p>
-
-<p>A <strong>multiprocessor</strong> architecture comprehends many processors <em>sharing</em> a primary memory. This style is appropriate to <em>execute several subtasks simultaneously</em> in a <em>same program</em>. On the other hand, a <strong>multicomputer</strong> architecture is similar to multiprocessors, except that the processors <em>doesn&#39;t share memory</em>.</p>
-
-<p><img src="/assets/arch-styles-distributed.png" alt="Distributed system"></p>
-
-<p>The distributed system consists on <em>multiple processors</em> which uses message passing mechanisms to communicate to each other. In other words, a distributed application can be seen as a concurrent program in which the processes communicate through message passing. Consists on four (4) types of processes (components):</p>
-
-<ul>
-<li><strong>Filter</strong>: A data <em>transformer</em>. Receives a data flow as input, runs computations and put the outcomes on the output</li>
-<li><strong>Client</strong>: Can be seen as a <em>process</em>. In a client-server interaction, a <em>client</em> is a component which starts some activity.</li>
-<li><strong>Server</strong>: Different than a client, a <em>server</em> waits for client requests to handle them. In other words, a server is a <strong>reactive</strong> process.</li>
-<li><strong>Peer</strong>: One in a set of identical processes which interacts to offer some service or perform some parallel computation.</li>
-</ul>
-
-<p><br /></p>
-
-<h2>#6 Communicating processes</h2>
-
-<p>Fits in the set of distributed application architectures. The communicating processes style is used when the priority goals of the system are <strong>scalability</strong> and <strong>ease of change</strong>.</p>
-
-<p>An example is a system in which there is a set replicated of <strong>workers</strong> (computational components) which share a single task repository. Different than descentralized servers which holds multiple <em>copies of data</em>, this style provides several <em>copies of the components</em>.</p>
-
-<p>This style is used in parallel systems when dealing with the <a href="http://en.wikipedia.org/wiki/SIMD">SIMD</a> (Single Instruction, Multiple Data) paradigm.</p>
-
-<p><br /></p>
-
-<h2>#7 Client-Server</h2>
-
-<p>Another architectural style which fits in distributed architectures is client-server. This style allows the tasks being divided between data <strong>producers</strong> and <strong>consumers</strong>. A <em>server</em> is a process which waits for requests from one or more <em>clients</em>.</p>
-
-<ul>
-<li>Ease of removing and / or adding clients, due to the processes <em>independence</em>.</li>
-<li>Ease of changing <em>client functionalities</em> given other clients are not affected.</li>
-</ul>
-
-<p><br /></p>
-
-<h2>Style variations</h2>
-
-<p>There is a significant amount of architectural styles nowadays, and there are also variations of that styles. When presenting a style it is important to notice the system <strong>non-functional / quality requirements</strong>, which can be for example:</p>
-
-<ul>
-<li>Ease of change</li>
-<li>Maintainability</li>
-<li>Reliability</li>
-<li>Availability</li>
-<li>Extensibility</li>
-<li>Fault tolerance</li>
-<li>Interoperability</li>
-<li>Resilience</li>
-<li>Security</li>
-</ul>
-
-<p>It is important to notice that in practice a system architecture is almost never obtained from a single style. Given that, a software architect needs to understand the <em>relationships</em> between styles, what requires knowing the project <strong>attributes</strong>, <strong>non-functional requirements</strong> as well as requires an <strong>architectural analysis</strong> process, anwering questions like:</p>
-
-<ul>
-<li>Which is the architectural style <strong>topology</strong>?</li>
-<li>How does the <strong>data transfer</strong> and / or <strong>control</strong> occurs between components?</li>
-<li>Which type of components and <strong>connectors</strong> are used on this style?</li>
-<li>How is the control shared between components?</li>
-<li>Is there some interaction between data and control?</li>
-<li>Has the type of analysis have any influence on the style?</li>
-<li>Does the components interact <strong>synchronously</strong> or <strong>asynchronously</strong>?</li>
-</ul>
-
-<p>One of the main aspects of an architectural project is the use of system <strong>organization patterns</strong>. Many of this patterns, also called <strong>architectural styles</strong>, have been developed across the time once software engineers recognized the value of organization and structure principles for certain categories of software.</p>
-
-  </div>
-  
+    <ul>
+    
+      <li>
+      08 Nov 2014 - <a href="/2014/11/08/architecture-oriented-development-architectural-styles/">Architectural styles</a>
+      </li>
+    
+      <li>
+      03 Nov 2014 - <a href="/2014/11/03/architecture-oriented-development/">Architecture oriented development</a>
+      </li>
+    
+      <li>
+      19 Oct 2014 - <a href="/2014/10/19/gatling/">Gatling</a>
+      </li>
+    
+      <li>
+      31 Aug 2014 - <a href="/2014/08/31/kibana/">Kibana</a>
+      </li>
+    
+      <li>
+      31 Aug 2014 - <a href="/2014/08/31/elk-platform/">ELK Platform</a>
+      </li>
+    
+      <li>
+      25 Aug 2014 - <a href="/2014/08/25/logstash/">Logstash</a>
+      </li>
+    
+      <li>
+      24 Aug 2014 - <a href="/2014/08/24/elastic-search/">Elastic Search</a>
+      </li>
+    
+      <li>
+      24 Aug 2014 - <a href="/2014/08/24/couch-base/">CouchBase</a>
+      </li>
+    
+      <li>
+      24 Aug 2014 - <a href="/2014/08/24/big-data-nosql/">Big Data / NoSQL Reference</a>
+      </li>
+    
+      <li>
+      24 Aug 2014 - <a href="/2014/08/24/apache-spark/">Apache Spark</a>
+      </li>
+    
+      <li>
+      24 Aug 2014 - <a href="/2014/08/24/apache-mesos/">Apache Mesos</a>
+      </li>
+    
+    </ul>
 </div>
 
 <div class="pagination">
