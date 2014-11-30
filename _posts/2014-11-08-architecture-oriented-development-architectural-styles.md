@@ -9,7 +9,6 @@ The **architectural styles** use clear **terminologies**, **properties** and **r
 
 Each **style** supports a set of **non-functional requirements** and **project attributes** what makes possible distinguish between different architectures.
 
-<br />
 ## #1 Pipes and filters
 
 Characteristics:
@@ -34,7 +33,6 @@ Another example of pipes & filters architectural style can be found at the class
 
 It is worth to comment that this architectural style is normally **flexible**, enabling the pipes and filters reorganization. Although this style provides *maintainability* support in terms of easy reorganization, it is clear that frequent changes on a component (filter) can impact the other components, so maintainability support is limited on this style.
 
-<br />
 ## #2 Layers
 
 The **layered** architectural style structures a system into a set of layers, where each of them groups a set of *tasks* in a certain level of *abstraction*. 
@@ -55,12 +53,10 @@ A good example of this style is the **OSI** (Open Systems Interconnection) refer
 
 In fact a layered architecture gives a higher level of *flexibility*, however this has an associate **cost** on the system **performance**, as an external request needs to pass through many layers in order to be handled. Anyway, implementing a **monolithic** system / protocol isn't an appropriate solution as well.
 
-<br />
 ## #3 Implicit invocation (Event driven)
 
 Differently than the architectural style based on objects, on which one object (component) invokes the other directly through message passing, the implicit invocation style requires the components interested on an **event** *registering* themselves in order to receive it. In this case, the system provides a mechanism for forwarding the events to the registered components.
 
-<br />
 ## #4 Blackboard
 
 The blackboard architectural style emerged on artificial intelligence field, in which it was used as a mechanism for sharing the knowlege (data) between many intelligent components. This style considers the existence of a main data **repository** surrounded by a set of components called knowlege sources (KSs).
@@ -77,7 +73,6 @@ The style consists on 3 basic components:
 
 This architectural style is recommented on applications where several types of knowlege should be considered in order to interpret a set of initial data. It was tipically used on cases where there was *no general solution* for a problem. One or more components (KSs) interacts with the shared database (blackboard) looking for a **partial** or **total** solution for the problem (in the case of a *partial solution*, another component can be activated then).
 
-<br />
 ## #5 Distributed systems
 
 There are several architectural models in which regards distributed systems. We are going to see two of the most common styles: **Multiprocessor** and **multicomputer**.
@@ -93,8 +88,6 @@ The distributed system consists on *multiple processors* which uses message pass
 - **Server**: Different than a client, a *server* waits for client requests to handle them. In other words, a server is a **reactive** process.
 - **Peer**: One in a set of identical processes which interacts to offer some service or perform some parallel computation.
 
-
-<br />
 ## #6 Communicating processes
 
 Fits in the set of distributed application architectures. The communicating processes style is used when the priority goals of the system are **scalability** and **ease of change**.
@@ -103,7 +96,6 @@ An example is a system in which there is a set replicated of **workers** (comput
 
 This style is used in parallel systems when dealing with the [SIMD](http://en.wikipedia.org/wiki/SIMD) (Single Instruction, Multiple Data) paradigm.
 
-<br />
 ## #7 Client-Server
 
 Another architectural style which fits in distributed architectures is client-server. This style allows the tasks being divided between data **producers** and **consumers**. A *server* is a process which waits for requests from one or more *clients*.
@@ -111,8 +103,6 @@ Another architectural style which fits in distributed architectures is client-se
 - Ease of removing and / or adding clients, due to the processes *independence*.
 - Ease of changing *client functionalities* given other clients are not affected.
 
-
-<br />
 ## Style variations
 
 There is a significant amount of architectural styles nowadays, and there are also variations of that styles. When presenting a style it is important to notice the system **non-functional / quality requirements**, which can be for example:

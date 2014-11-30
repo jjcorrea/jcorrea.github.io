@@ -4,13 +4,159 @@
  <title>Joel Corrêa</title>
  <link href="http://jjcorrea.github.io/atom.xml" rel="self"/>
  <link href="http://jjcorrea.github.io/"/>
- <updated>2014-11-16T19:46:26-02:00</updated>
+ <updated>2014-11-30T17:40:41-02:00</updated>
  <id>http://jjcorrea.github.io</id>
  <author>
    <name>Joel Correa</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Architectural requirements</title>
+   <link href="http://jjcorrea.github.io/2014/11/30/architectural-requirements/"/>
+   <updated>2014-11-30T00:00:00-02:00</updated>
+   <id>http://jjcorrea.github.io/2014/11/30/architectural-requirements</id>
+   <content type="html">&lt;p&gt;Generally the set of system requirements are defined during the initial steps of the development cycle. It should be seen as the &lt;strong&gt;specification&lt;/strong&gt; of what needs to be implemented. The requirements are descriptions of how the system should &lt;strong&gt;behave&lt;/strong&gt;, contains &lt;strong&gt;domain information&lt;/strong&gt; and &lt;strong&gt;restrictions&lt;/strong&gt; about the system operation.&lt;/p&gt;
+
+&lt;p&gt;During the requirement elucidation phase the software architect / engineer tries to identify the system&amp;#39;m specificities which needs to be supported. Once the set of requirements is obtained, it is then posssible to start the architectural project.&lt;/p&gt;
+
+&lt;p&gt;The software development process based on the architecture puts the architecture as a &lt;strong&gt;guidance&lt;/strong&gt;, as the &lt;strong&gt;orientation&lt;/strong&gt; factor of the process, so we can also say that in an architecture oriented development the requirements are part of the main aspects of the development process.&lt;/p&gt;
+
+&lt;p&gt;The system &lt;strong&gt;complexity&lt;/strong&gt; can be determined by its &lt;strong&gt;functional requirements&lt;/strong&gt; - what it does - and by its &lt;strong&gt;quality / non-functional requirements&lt;/strong&gt; - how it does. The distinction can be done using the following definitions:&lt;/p&gt;
+
+&lt;h2&gt;Functional requirement&lt;/h2&gt;
+
+&lt;p&gt;A software requirement which specifies a &lt;strong&gt;funcionality&lt;/strong&gt; that the system or a software component needs to be able to perform. This requirements define the system &lt;strong&gt;behavior&lt;/strong&gt;, in other words, the transformation process that software or hardware components do on the inputs to generate the outputs (Thayer, 1990).&lt;/p&gt;
+
+&lt;h2&gt;Quality / Non-functional requirement&lt;/h2&gt;
+
+&lt;p&gt;Describes &lt;strong&gt;how&lt;/strong&gt; the software performs its tasks, not what it does. Thus, there are the &lt;em&gt;performance&lt;/em&gt; requirements, &lt;em&gt;restrictions&lt;/em&gt; and software &lt;em&gt;quality&lt;/em&gt; attributes. Non-functional requirements are difficult to test, then they are normally evaluated subjectively (Thayer, 1990).&lt;/p&gt;
+
+&lt;h2&gt;Project attributes&lt;/h2&gt;
+
+&lt;p&gt;There are several &lt;strong&gt;principles&lt;/strong&gt; which guide the software development process, focused on obtaining a final product which satisfies the identified requirements during the process. They are called project attributes.&lt;/p&gt;
+
+&lt;h3&gt;Separation of concerns (SOC)&lt;/h3&gt;
+
+&lt;p&gt;The separation of concerns allows to deal ith &lt;em&gt;different aspects of a problem&lt;/em&gt; focusing in each of them &lt;strong&gt;isolatedly&lt;/strong&gt;. This idea can be applied in order to deal with inherent complexity. The separation of concerns has been applied when a system is &lt;strong&gt;decomposed&lt;/strong&gt; in several modules, with the architecture containing more than one component. &lt;/p&gt;
+
+&lt;p&gt;In this case it allows to separate or isolate part of the system functionality, but how can we determine &lt;em&gt;which part of the system should be separated&lt;/em&gt;? The interest to isolate specific components and its functionalities comes from the target to provide support to a set of quality requirements. So, doing a separation in terms of the system quality requirements is essential to support them appropriately. &lt;/p&gt;
+
+&lt;h3&gt;Abstraction&lt;/h3&gt;
+
+&lt;p&gt;One of the main ways to deal with complexity. It is, in fact, a process in which we can &lt;em&gt;identify the important aspects of some phenomenon and ignore its details&lt;/em&gt;. Abstraction can also be seen as a special case of SOC, where we separate the important aspects concern of the non-important details. By doing so, the engineers can concentrate in what they judge relevant and ignore the details.&lt;/p&gt;
+
+&lt;h3&gt;Modularization&lt;/h3&gt;
+
+&lt;p&gt;When software engineers face a big / complex system they generally divide them into smaller pieces or &lt;strong&gt;modules&lt;/strong&gt; A system composed by a set of modules is called &lt;strong&gt;modular&lt;/strong&gt;. &lt;/p&gt;
+
+&lt;p&gt;One of the main benefits of this attribute is that it allows SOC being applied in two steps:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;When dealing with each module details isolatedly, and then ignoring other modules details&lt;/li&gt;
+&lt;li&gt;When dealing with general characteristics of all modules, and the existing relations between them, enabling integrating them into a system. &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;There are three targets that modularization tries to obtain:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Decompose&lt;/strong&gt; a big / complex system&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Compose&lt;/strong&gt; a system using a set of modules&lt;/li&gt;
+&lt;li&gt;Understand the system modularization&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Its important to notice that a modular system implies in modules with a high level of &lt;strong&gt;cohesion&lt;/strong&gt; and low level of &lt;strong&gt;coupling&lt;/strong&gt;, what allows to consider the modules as black boxes.&lt;/p&gt;
+
+&lt;h3&gt;Resources sharing&lt;/h3&gt;
+
+&lt;p&gt;In modular systems, the components should have a low level of coupling ideally, as it can become difficult to analyze, comprehend, change, test and even reuse highly coupled systems. However, it still possible to have low coupled components even when sharing resources. The resources can be &lt;em&gt;data or services&lt;/em&gt; which are shared across several &lt;strong&gt;independent&lt;/strong&gt; components. &lt;/p&gt;
+
+&lt;p&gt;Notice that sharing resources normally implies in increasing the &lt;strong&gt;integration&lt;/strong&gt; and &lt;strong&gt;portability&lt;/strong&gt; of systems.&lt;/p&gt;
+
+&lt;h2&gt;Non-functional requirements&lt;/h2&gt;
+
+&lt;p&gt;Non-functional requirements have a main role during the system development, they may be used as selection criteria for project alternatives, architectural style and implementation method.
+Disregard, of not consider this requirements properly is &lt;strong&gt;admittedly expensive&lt;/strong&gt; and makes it difficult to correct once the system has been implemented (Brooks, 1987).&lt;/p&gt;
+
+&lt;p&gt;Consider the &lt;a href=&quot;http://www.utdallas.edu/%7Echung/RE/IEEE830-1993.pdf&quot;&gt;IEEE-Std 830-1993&lt;/a&gt; (IEEE, 1993) standard. It lists a set of 13 non-functional requirements to be considered in software requirement specification. This pattern includes &lt;strong&gt;performance&lt;/strong&gt; requirements, &lt;strong&gt;reliability&lt;/strong&gt;, &lt;strong&gt;portability&lt;/strong&gt; &amp;amp; &lt;strong&gt;security&lt;/strong&gt;, similarly to another classification presented by Boehm, who looked to list a set of, what he nominated, quality requirements (Boehm, 1976).&lt;/p&gt;
+
+&lt;p&gt;The following picture is an adaptation of Sommerville classification (Sommervile, 1992) summarizes a set of quality requirements important to consider:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/non-functional-requirements.png&quot; alt=&quot;Non-functional requirements&quot;&gt;&lt;/p&gt;
+
+&lt;h3&gt;Usability&lt;/h3&gt;
+
+&lt;p&gt;A quality requirement  of any &lt;strong&gt;interactive&lt;/strong&gt; system. Usability notion comes from the fact that any system designed to be used by people should be easy to &lt;strong&gt;learn&lt;/strong&gt; and &lt;strong&gt;use&lt;/strong&gt;, making it easier and enjoyable to perform any task.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Ease to learn: Associated to the time and minimal efford required to reach a given level of performance using the system.&lt;/li&gt;
+&lt;li&gt;Ease to use: Related to the task execution speed and reduction of errors while using a system.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Some relevant usability metrics:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Time spent performing a task&lt;/li&gt;
+&lt;li&gt;Task completion percentage&lt;/li&gt;
+&lt;li&gt;Task completion percentage by time unit&lt;/li&gt;
+&lt;li&gt;Success / failure rates&lt;/li&gt;
+&lt;li&gt;Time consumed by errors&lt;/li&gt;
+&lt;li&gt;Error percentage&lt;/li&gt;
+&lt;li&gt;Number of commands used&lt;/li&gt;
+&lt;li&gt;Number of commands available not used&lt;/li&gt;
+&lt;li&gt;&amp;#39;Help&amp;#39; usage frequency&lt;/li&gt;
+&lt;li&gt;Number of times the user expresses he&amp;#39;s satisfaction or frustation&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3&gt;Maintainability&lt;/h3&gt;
+
+&lt;p&gt;A quality requirement normally applied when refering to changes done after the system is available to use. It is a wide term, involving &lt;strong&gt;repair&lt;/strong&gt; (of some existing error), as &lt;strong&gt;change / evolution&lt;/strong&gt; activities.&lt;/p&gt;
+
+&lt;p&gt;The ease of change, adding or modifying some functionality, depends directly on the system architecture. Its important to notice that the architecture define the components and their connections, then also defines under which circumstances they can be changed.&lt;/p&gt;
+
+&lt;h3&gt;Reliability&lt;/h3&gt;
+
+&lt;p&gt;Software reliability is a property of a software not causing a failure during a certain amount of time, under specific conditions. The reliability is generally defined on &lt;strong&gt;statistical behavior&lt;/strong&gt;, it is the probability that a software &lt;em&gt;will operate as expected&lt;/em&gt; during a known interval.&lt;/p&gt;
+
+&lt;p&gt;Some of the metrics used to evaluate software reliability:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Availability&lt;/strong&gt;: Its a metric of how available the system would be, in other words, how much available the system would be to perform a task requested by some user.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Failure rate&lt;/strong&gt;: A metric for calculating the &lt;em&gt;frequency in which the system fails&lt;/em&gt; in performing a task requested by a user.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Failure probability&lt;/strong&gt; during operational phase: Metric of the probability that a system will behave in an unexpected way while operating.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Mean_time_between_failures#MTTF_and_MTTFd_calculation&quot;&gt;Mean time to failure (MTTF)&lt;/a&gt;: Metric of time between observable failures.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Performance&lt;/h3&gt;
+
+&lt;p&gt;Another important quality attribute for software systems. Given the impact it can cause, the performance requirements in the most important quality requirements. Furthermore, performance is important because it affects the system &lt;strong&gt;usability&lt;/strong&gt;, impacting then the users &lt;strong&gt;productivity&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;The performance requirement restricts the speed of operation of a software system. This can be seen, for example, in terms of:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Response requirements&lt;/strong&gt;: Indicates a acceptable response time for system users.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Throughput requirements&lt;/strong&gt;: Indicates the amount of data that should be processed in a certain time period.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Reuse&lt;/h3&gt;
+
+&lt;p&gt;One of the characteristics of engineering is to make use of existing projects to minimize the efford of new projects. On this way, components which have been already developed and tested could be reused. &lt;/p&gt;
+
+&lt;p&gt;The reuse can be seen on different perspectives. It can be component oriented, process oriented or domain specific. There can be also requirements reuse. About component reuse, it can happen in some of the following ways:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Application&lt;/strong&gt;: All application could be reused.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Subsystems&lt;/strong&gt;: The main subsystems of an application could be reused.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Objects or modules&lt;/strong&gt;: System components, containing a set of functions, could be reused.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Functions&lt;/strong&gt;: Components which implement a single function could be reused.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;This post basically walked through a generic process of architectural requirements analysis. The outcome of this process there is a set of &lt;strong&gt;functional requirements&lt;/strong&gt;, supported by &lt;strong&gt;use cases&lt;/strong&gt;, a list of &lt;strong&gt;architectural requirements&lt;/strong&gt;, &lt;strong&gt;project attributes&lt;/strong&gt; and &lt;strong&gt;quality (non-functional)&lt;/strong&gt; requirements, which indicate &lt;strong&gt;how&lt;/strong&gt; the system will behave in a set of &lt;strong&gt;quality scenarios&lt;/strong&gt;.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Architectural styles</title>
@@ -22,8 +168,6 @@
 &lt;p&gt;The &lt;strong&gt;architectural styles&lt;/strong&gt; use clear &lt;strong&gt;terminologies&lt;/strong&gt;, &lt;strong&gt;properties&lt;/strong&gt; and &lt;strong&gt;restrictions&lt;/strong&gt; to identify the components (a.k.a subsystems) and interaction mechanisms between them, what is specially usefull for software engineers to &lt;strong&gt;reuse&lt;/strong&gt; the architectural patterns on scenarios in which they are needed. &lt;/p&gt;
 
 &lt;p&gt;Each &lt;strong&gt;style&lt;/strong&gt; supports a set of &lt;strong&gt;non-functional requirements&lt;/strong&gt; and &lt;strong&gt;project attributes&lt;/strong&gt; what makes possible distinguish between different architectures.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2&gt;#1 Pipes and filters&lt;/h2&gt;
 
@@ -50,8 +194,6 @@
 
 &lt;p&gt;It is worth to comment that this architectural style is normally &lt;strong&gt;flexible&lt;/strong&gt;, enabling the pipes and filters reorganization. Although this style provides &lt;em&gt;maintainability&lt;/em&gt; support in terms of easy reorganization, it is clear that frequent changes on a component (filter) can impact the other components, so maintainability support is limited on this style.&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
 &lt;h2&gt;#2 Layers&lt;/h2&gt;
 
 &lt;p&gt;The &lt;strong&gt;layered&lt;/strong&gt; architectural style structures a system into a set of layers, where each of them groups a set of &lt;em&gt;tasks&lt;/em&gt; in a certain level of &lt;em&gt;abstraction&lt;/em&gt;. &lt;/p&gt;
@@ -74,13 +216,9 @@
 
 &lt;p&gt;In fact a layered architecture gives a higher level of &lt;em&gt;flexibility&lt;/em&gt;, however this has an associate &lt;strong&gt;cost&lt;/strong&gt; on the system &lt;strong&gt;performance&lt;/strong&gt;, as an external request needs to pass through many layers in order to be handled. Anyway, implementing a &lt;strong&gt;monolithic&lt;/strong&gt; system / protocol isn&amp;#39;t an appropriate solution as well.&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
 &lt;h2&gt;#3 Implicit invocation (Event driven)&lt;/h2&gt;
 
 &lt;p&gt;Differently than the architectural style based on objects, on which one object (component) invokes the other directly through message passing, the implicit invocation style requires the components interested on an &lt;strong&gt;event&lt;/strong&gt; &lt;em&gt;registering&lt;/em&gt; themselves in order to receive it. In this case, the system provides a mechanism for forwarding the events to the registered components.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2&gt;#4 Blackboard&lt;/h2&gt;
 
@@ -100,8 +238,6 @@
 
 &lt;p&gt;This architectural style is recommented on applications where several types of knowlege should be considered in order to interpret a set of initial data. It was tipically used on cases where there was &lt;em&gt;no general solution&lt;/em&gt; for a problem. One or more components (KSs) interacts with the shared database (blackboard) looking for a &lt;strong&gt;partial&lt;/strong&gt; or &lt;strong&gt;total&lt;/strong&gt; solution for the problem (in the case of a &lt;em&gt;partial solution&lt;/em&gt;, another component can be activated then).&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
 &lt;h2&gt;#5 Distributed systems&lt;/h2&gt;
 
 &lt;p&gt;There are several architectural models in which regards distributed systems. We are going to see two of the most common styles: &lt;strong&gt;Multiprocessor&lt;/strong&gt; and &lt;strong&gt;multicomputer&lt;/strong&gt;.&lt;/p&gt;
@@ -119,8 +255,6 @@
 &lt;li&gt;&lt;strong&gt;Peer&lt;/strong&gt;: One in a set of identical processes which interacts to offer some service or perform some parallel computation.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
 &lt;h2&gt;#6 Communicating processes&lt;/h2&gt;
 
 &lt;p&gt;Fits in the set of distributed application architectures. The communicating processes style is used when the priority goals of the system are &lt;strong&gt;scalability&lt;/strong&gt; and &lt;strong&gt;ease of change&lt;/strong&gt;.&lt;/p&gt;
@@ -128,8 +262,6 @@
 &lt;p&gt;An example is a system in which there is a set replicated of &lt;strong&gt;workers&lt;/strong&gt; (computational components) which share a single task repository. Different than descentralized servers which holds multiple &lt;em&gt;copies of data&lt;/em&gt;, this style provides several &lt;em&gt;copies of the components&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;This style is used in parallel systems when dealing with the &lt;a href=&quot;http://en.wikipedia.org/wiki/SIMD&quot;&gt;SIMD&lt;/a&gt; (Single Instruction, Multiple Data) paradigm.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2&gt;#7 Client-Server&lt;/h2&gt;
 
@@ -139,8 +271,6 @@
 &lt;li&gt;Ease of removing and / or adding clients, due to the processes &lt;em&gt;independence&lt;/em&gt;.&lt;/li&gt;
 &lt;li&gt;Ease of changing &lt;em&gt;client functionalities&lt;/em&gt; given other clients are not affected.&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2&gt;Style variations&lt;/h2&gt;
 
