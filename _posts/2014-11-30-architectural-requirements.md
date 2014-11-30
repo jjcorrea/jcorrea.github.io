@@ -116,4 +116,4 @@ The reuse can be seen on different perspectives. It can be component oriented, p
 
 <hr />
 
-This post basically walked through a generic process of architectural requirements analysis. The outcome of this process there is a set of **functional requirements**, supported by **use cases**, a list of **architectural requirements**, **project attributes** and **quality (non-functional)** requirements, which indicate **how** the system will behave in a set of **quality scenarios**.
+This post basically walked through a generic process of architectural requirements analysis. The outcome of this process is a set of **functional requirements**, supported by **use cases**, a list of **architectural requirements**, **project attributes** and **quality (non-functional)** requirements, which indicate **how** the system will behave under different **quality scenarios**.
