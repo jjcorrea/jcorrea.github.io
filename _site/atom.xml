@@ -4,7 +4,7 @@
  <title>Joel Corrêa</title>
  <link href="http://jjcorrea.github.io/atom.xml" rel="self"/>
  <link href="http://jjcorrea.github.io/"/>
- <updated>2014-11-30T17:40:41-02:00</updated>
+ <updated>2014-12-06T20:38:50-02:00</updated>
  <id>http://jjcorrea.github.io</id>
  <author>
    <name>Joel Correa</name>
@@ -154,7 +154,7 @@ Disregard, of not consider this requirements properly is &lt;strong&gt;admittedl
 
 &lt;hr /&gt;
 
-&lt;p&gt;This post basically walked through a generic process of architectural requirements analysis. The outcome of this process there is a set of &lt;strong&gt;functional requirements&lt;/strong&gt;, supported by &lt;strong&gt;use cases&lt;/strong&gt;, a list of &lt;strong&gt;architectural requirements&lt;/strong&gt;, &lt;strong&gt;project attributes&lt;/strong&gt; and &lt;strong&gt;quality (non-functional)&lt;/strong&gt; requirements, which indicate &lt;strong&gt;how&lt;/strong&gt; the system will behave in a set of &lt;strong&gt;quality scenarios&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;This post basically walked through a generic process of architectural requirements analysis. The outcome of this process is a set of &lt;strong&gt;functional requirements&lt;/strong&gt;, supported by &lt;strong&gt;use cases&lt;/strong&gt;, a list of &lt;strong&gt;architectural requirements&lt;/strong&gt;, &lt;strong&gt;project attributes&lt;/strong&gt; and &lt;strong&gt;quality (non-functional)&lt;/strong&gt; requirements, which indicate &lt;strong&gt;how&lt;/strong&gt; the system will behave under different &lt;strong&gt;quality scenarios&lt;/strong&gt;.&lt;/p&gt;
 </content>
  </entry>
  
@@ -690,15 +690,62 @@ output {
 
 &lt;h3&gt;Highlights&lt;/h3&gt;
 
-&lt;p&gt;&lt;span class=&quot;label label-primary&quot;&gt;Analytics&lt;/span&gt;
+&lt;p&gt;&lt;span class=&quot;label label-primary&quot;&gt;Cluster computing&lt;/span&gt;
+&lt;span class=&quot;label label-primary&quot;&gt;Scala, Java &amp;amp; Python API&lt;/span&gt;
+&lt;span class=&quot;label label-primary&quot;&gt;Analytics&lt;/span&gt;
 &lt;span class=&quot;label label-primary&quot;&gt;Batch processing&lt;/span&gt;
 &lt;span class=&quot;label label-primary&quot;&gt;Stream processing (Real time)&lt;/span&gt;&lt;/p&gt;
 
 &lt;h3&gt;Trade-off&lt;/h3&gt;
 
-&lt;p&gt;&lt;span class=&quot;label label-success&quot;&gt;?&lt;/span&gt;
-&lt;span class=&quot;label label-warning&quot;&gt;?&lt;/span&gt;
+&lt;p&gt;&lt;span class=&quot;label label-success&quot;&gt;Spark SQL&lt;/span&gt; 
+&lt;span class=&quot;label label-success&quot;&gt;MLib&lt;/span&gt; 
+&lt;span class=&quot;label label-success&quot;&gt;GraphX&lt;/span&gt; 
+&lt;span class=&quot;label label-success&quot;&gt;Spark Streaming&lt;/span&gt; 
+&lt;span class=&quot;label label-warning&quot;&gt;Storage = Hadoop FS&lt;/span&gt;
+&lt;span class=&quot;label label-warning&quot;&gt;Shared variables&lt;/span&gt;
 &lt;span class=&quot;label label-danger&quot;&gt;?&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2&gt;Overview&lt;/h2&gt;
+
+&lt;p&gt;http://spark.apache.org/docs/latest/programming-guide.html&lt;/p&gt;
+
+&lt;p&gt;The main spark abstraction provides RDDs (&lt;strong&gt;Resilient distributed dataset&lt;/strong&gt;) - A collection of elements &lt;strong&gt;partitioned&lt;/strong&gt; across the nodes of a cluster, which can be operated in &lt;strong&gt;parallel&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;RDDs are created by starting with a file in &lt;strong&gt;Hadoop filesystem&lt;/strong&gt; (or any other &lt;em&gt;Hadoop supported filesystem&lt;/em&gt;), it is possible to persist RDD &lt;strong&gt;in memory&lt;/strong&gt;, allowing it to be reused efficiently across parallel operations. RDDs also &lt;strong&gt;recover node failures&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;There is also the notion of &lt;strong&gt;shared variables&lt;/strong&gt;. which &lt;em&gt;can be used&lt;/em&gt; in parallel operations. Two possible types:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Broadcast variables&lt;/strong&gt; - Cache a value in memory (all nodes)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Accumulators&lt;/strong&gt; - Counters, Sums, etc&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/spark-rdd.png&quot; alt=&quot;RDD&quot;&gt;&lt;/p&gt;
+
+&lt;h2&gt;Shell&lt;/h2&gt;
+
+&lt;p&gt;http://spark.apache.org/docs/latest/sql-programming-guide.html&lt;/p&gt;
+
+&lt;h2&gt;Spark SQL&lt;/h2&gt;
+
+&lt;p&gt;http://spark.apache.org/docs/latest/sql-programming-guide.html&lt;/p&gt;
+
+&lt;h2&gt;MLib&lt;/h2&gt;
+
+&lt;p&gt;http://spark.apache.org/docs/latest/mllib-guide.html&lt;/p&gt;
+
+&lt;h2&gt;GraphX&lt;/h2&gt;
+
+&lt;p&gt;http://spark.apache.org/docs/latest/graphx-programming-guide.html&lt;/p&gt;
+
+&lt;h2&gt;Cluster mode&lt;/h2&gt;
+
+&lt;p&gt;http://spark.apache.org/docs/latest/cluster-overview.html&lt;/p&gt;
+
+&lt;h2&gt;Spark Streaming&lt;/h2&gt;
+
+&lt;p&gt;http://spark.apache.org/docs/latest/streaming-programming-guide.html&lt;/p&gt;
 </content>
  </entry>
  

@@ -144,15 +144,62 @@
 
 <h3>Highlights</h3>
 
-<p><span class="label label-primary">Analytics</span>
+<p><span class="label label-primary">Cluster computing</span>
+<span class="label label-primary">Scala, Java &amp; Python API</span>
+<span class="label label-primary">Analytics</span>
 <span class="label label-primary">Batch processing</span>
 <span class="label label-primary">Stream processing (Real time)</span></p>
 
 <h3>Trade-off</h3>
 
-<p><span class="label label-success">?</span>
-<span class="label label-warning">?</span>
+<p><span class="label label-success">Spark SQL</span> 
+<span class="label label-success">MLib</span> 
+<span class="label label-success">GraphX</span> 
+<span class="label label-success">Spark Streaming</span> 
+<span class="label label-warning">Storage = Hadoop FS</span>
+<span class="label label-warning">Shared variables</span>
 <span class="label label-danger">?</span></p>
+
+<h2>Overview</h2>
+
+<p>http://spark.apache.org/docs/latest/programming-guide.html</p>
+
+<p>The main spark abstraction provides RDDs (<strong>Resilient distributed dataset</strong>) - A collection of elements <strong>partitioned</strong> across the nodes of a cluster, which can be operated in <strong>parallel</strong>.</p>
+
+<p>RDDs are created by starting with a file in <strong>Hadoop filesystem</strong> (or any other <em>Hadoop supported filesystem</em>), it is possible to persist RDD <strong>in memory</strong>, allowing it to be reused efficiently across parallel operations. RDDs also <strong>recover node failures</strong>.</p>
+
+<p>There is also the notion of <strong>shared variables</strong>. which <em>can be used</em> in parallel operations. Two possible types:</p>
+
+<ol>
+<li><strong>Broadcast variables</strong> - Cache a value in memory (all nodes)</li>
+<li><strong>Accumulators</strong> - Counters, Sums, etc</li>
+</ol>
+
+<p><img src="/assets/spark-rdd.png" alt="RDD"></p>
+
+<h2>Shell</h2>
+
+<p>http://spark.apache.org/docs/latest/sql-programming-guide.html</p>
+
+<h2>Spark SQL</h2>
+
+<p>http://spark.apache.org/docs/latest/sql-programming-guide.html</p>
+
+<h2>MLib</h2>
+
+<p>http://spark.apache.org/docs/latest/mllib-guide.html</p>
+
+<h2>GraphX</h2>
+
+<p>http://spark.apache.org/docs/latest/graphx-programming-guide.html</p>
+
+<h2>Cluster mode</h2>
+
+<p>http://spark.apache.org/docs/latest/cluster-overview.html</p>
+
+<h2>Spark Streaming</h2>
+
+<p>http://spark.apache.org/docs/latest/streaming-programming-guide.html</p>
 
 </div>
 
