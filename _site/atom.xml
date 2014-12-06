@@ -4,13 +4,84 @@
  <title>Joel Corrêa</title>
  <link href="http://jjcorrea.github.io/atom.xml" rel="self"/>
  <link href="http://jjcorrea.github.io/"/>
- <updated>2014-12-06T20:38:50-02:00</updated>
+ <updated>2014-12-06T21:02:51-02:00</updated>
  <id>http://jjcorrea.github.io</id>
  <author>
    <name>Joel Correa</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Spring 4</title>
+   <link href="http://jjcorrea.github.io/2014/12/06/spring-4/"/>
+   <updated>2014-12-06T00:00:00-02:00</updated>
+   <id>http://jjcorrea.github.io/2014/12/06/spring-4</id>
+   <content type="html">&lt;blockquote&gt;
+&lt;p&gt;The Spring Framework was first released in 2004; since then there have been significant major revisions: Spring 2.0 provided XML namespaces and AspectJ support; Spring 2.5 embraced annotation-driven configuration; Spring 3.0 introduced a strong Java 5+ foundation across the framework codebase, and features such as the Java-based @Configuration model.&lt;/p&gt;
+
+&lt;p&gt;Version 4.0 is the latest major release of the Spring Framework and the first to fully support Java 8 features. You can still use Spring with older versions of Java, however, the minimum requirement has now been raised to Java SE 6. We have also taken the opportunity of a major release to remove many deprecated classes and methods.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2&gt;Removed deprecated stuff&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://docs.spring.io/spring-framework/docs/3.2.4.RELEASE_to_4.0.0.RELEASE/&quot;&gt;Details&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2&gt;Java 8 support&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Support for &lt;strong&gt;lambda expressions&lt;/strong&gt; &amp;amp; &lt;strong&gt;method references&lt;/strong&gt; with Spring callback interfaces.&lt;/li&gt;
+&lt;li&gt;First class support to &lt;strong&gt;java.time&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Compatibility with Java 6 &amp;amp; 7 maintained.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Groovy Bean Definition DSL&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Bean configuration using Groovy DSL&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Sample:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;def reader = new GroovyBeanDefinitionReader(myApplicationContext)
+reader.beans {
+    dataSource(BasicDataSource) {
+        driverClassName = &amp;quot;org.hsqldb.jdbcDriver&amp;quot;
+        url = &amp;quot;jdbc:hsqldb:mem:grailsDB&amp;quot;
+        username = &amp;quot;sa&amp;quot;
+        password = &amp;quot;&amp;quot;
+        settings = [mynew:&amp;quot;setting&amp;quot;]
+    }
+    sessionFactory(SessionFactory) {
+        dataSource = dataSource
+    }
+    myService(MyService) {
+        nestedBean = { AnotherBean bean -&amp;gt;
+            dataSource = dataSource
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Container improvements&lt;/h2&gt;
+
+&lt;p&gt;TODO...&lt;/p&gt;
+
+&lt;h2&gt;Web improvements&lt;/h2&gt;
+
+&lt;p&gt;TODO...&lt;/p&gt;
+
+&lt;h2&gt;WebSocket, SockJS, and STOMP Messaging&lt;/h2&gt;
+
+&lt;p&gt;TODO...&lt;/p&gt;
+
+&lt;h2&gt;Testing Improvements&lt;/h2&gt;
+
+&lt;p&gt;TODO... &lt;/p&gt;
+
+&lt;h2&gt;Reference&lt;/h2&gt;
+
+&lt;p&gt;http://docs.spring.io/spring/docs/current/spring-framework-reference/html/new-in-4.0.html&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Architectural requirements</title>
