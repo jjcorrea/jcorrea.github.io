@@ -4,13 +4,111 @@
  <title>Joel Corrêa</title>
  <link href="http://jjcorrea.github.io/atom.xml" rel="self"/>
  <link href="http://jjcorrea.github.io/"/>
- <updated>2014-12-06T21:02:51-02:00</updated>
+ <updated>2014-12-15T23:44:23-02:00</updated>
  <id>http://jjcorrea.github.io</id>
  <author>
    <name>Joel Correa</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Service design patterns - Web services</title>
+   <link href="http://jjcorrea.github.io/2014/12/15/service-design-patterns-web-services/"/>
+   <updated>2014-12-15T00:00:00-02:00</updated>
+   <id>http://jjcorrea.github.io/2014/12/15/service-design-patterns-web-services</id>
+   <content type="html">&lt;p&gt;Challenges:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;When should a particular api style be used&lt;/li&gt;
+&lt;li&gt;client-service &lt;strong&gt;communication&lt;/strong&gt; + foundations for complex conversations (multiple parties, extended periods of time)&lt;/li&gt;
+&lt;li&gt;Approaches for implementing service &lt;strong&gt;logic&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Decoupling&lt;/strong&gt; clients from the underlying systems used by the service&lt;/li&gt;
+&lt;li&gt;Discover &lt;strong&gt;information about a service&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;How to support generic functions (authentication, validation, caching) on client / service&lt;/li&gt;
+&lt;li&gt;Service changes which &lt;strong&gt;break clients&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Version&lt;/strong&gt; services&lt;/li&gt;
+&lt;li&gt;Support continuous evolution (business logic) without requiring users to &lt;strong&gt;upgrade&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;What are Webservices&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Software function which carries a &lt;strong&gt;business task&lt;/strong&gt;, provide access to files or perform generic functions (authenticating, logging, etc)&lt;/li&gt;
+&lt;li&gt;Many different stacks&lt;/li&gt;
+&lt;li&gt;Share logical functions&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Webservices&lt;/strong&gt; integrate disparate systems and &lt;strong&gt;expose reusable business functions&lt;/strong&gt; over HTTP&lt;/li&gt;
+&lt;li&gt;Either leverage to HTTP as simple &lt;strong&gt;transport&lt;/strong&gt; over which the data is transfered (SOAP/WSDL) or use it as a complete application protocol that defines the &lt;strong&gt;semantics&lt;/strong&gt; for service behavior (RESTful services) &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;From local objects to distributed objects&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Objects = encapsulate behavior (e.g &lt;strong&gt;business logic&lt;/strong&gt;) and &lt;strong&gt;data&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;White-box &lt;strong&gt;reuse&lt;/strong&gt; = access objects internals&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;State&lt;/strong&gt; between client calls&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Components&lt;/strong&gt; = group related objects into deployable binary software units, that can be plugged into applications. Blackbox reuse - normally not accessible internal objects.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Remoting&lt;/strong&gt; technologies to support distribution (e.g. CORBA, DCOM, Java RMI)&lt;/li&gt;
+&lt;li&gt;Complex implementation. &lt;/li&gt;
+&lt;li&gt;Lack of standards (different vendor toolkits had problems to communicate).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;State issue&lt;/h2&gt;
+
+&lt;p&gt;Distributed objects typically maintained state between client calls, what led to a number of &lt;strong&gt;scalability&lt;/strong&gt; problems.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Memory utilization degradation with increased client load&lt;/li&gt;
+&lt;li&gt;Effective load balance difficulty: User state was hold on a single server, coupling the user to that specific node.&lt;/li&gt;
+&lt;li&gt;Server needs to implement a strategy to free memory&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Why Webservices&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Share common logic with different clients (mobile, desktop, web apps)&lt;/li&gt;
+&lt;li&gt;Open standards: independent on the underlying technologies. &lt;/li&gt;
+&lt;li&gt;Facilitate complex business processes through &lt;strong&gt;composition&lt;/strong&gt; - possible assembling simple services into workflows&lt;/li&gt;
+&lt;li&gt;Clients and services may evolve independently = &lt;strong&gt;indirection&lt;/strong&gt; = &lt;strong&gt;isolation&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;When to use&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Client and service belongs to different domains&lt;/li&gt;
+&lt;li&gt;Service functions cannot be easily imported on client&lt;/li&gt;
+&lt;li&gt;Client is a complex business process&lt;/li&gt;
+&lt;li&gt;Separation between clients and services is natural.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Downs&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Expensive calls (e.g serialization / desserialization)&lt;/li&gt;
+&lt;li&gt;Network latency&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Partial failures&lt;/strong&gt;: Client, service or network fails while the others continue operating - requires strategies to detect and handle them&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Alternatives&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Service libraries: Imported and executed on the client application&lt;/li&gt;
+&lt;li&gt;If client and service were implemented on different platforms, there are ways to integrate them (e.g. JNI / Third-party bridging techniques).&lt;/li&gt;
+&lt;li&gt;Network overhead (high-performance / high-load scenario). A &lt;strong&gt;connectionless protocol like UDP&lt;/strong&gt; may be an alternative.&lt;/li&gt;
+&lt;li&gt;HTTP is Good for large documents / messages. There are better alternatives for real-time delivery, such as RTSP (real time streaming protocol), RTP (real time transport protocol), RTCP (real time control protocol).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Loose coupling&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;There will be always some sort of coupling&lt;/li&gt;
+&lt;li&gt;Function coupling: Clients indirectly depend on the service implementation.&lt;/li&gt;
+&lt;li&gt;Data structure coupling: Clients need to know which are the input / output formats, encoding, http status codes, etc.&lt;/li&gt;
+&lt;li&gt;Temporal coupling: Occurs when the message needs to be processed as soon as it is received. Synchronous (blocking) processes increase this kind of coupling, and asynchronous processes reduces it, despite it adds complexity&lt;/li&gt;
+&lt;li&gt;URI coupling: Clients are normally tighly coupled to service URIs. There are a number of patterns to reduce this coupling, as Linked service, service connector, etc.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Spring 4</title>
