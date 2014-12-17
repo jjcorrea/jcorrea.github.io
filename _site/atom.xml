@@ -4,13 +4,34 @@
  <title>Joel Corrêa</title>
  <link href="http://jjcorrea.github.io/atom.xml" rel="self"/>
  <link href="http://jjcorrea.github.io/"/>
- <updated>2014-12-15T23:44:23-02:00</updated>
+ <updated>2014-12-16T23:30:20-02:00</updated>
  <id>http://jjcorrea.github.io</id>
  <author>
    <name>Joel Correa</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Lean architecture - Introduction</title>
+   <link href="http://jjcorrea.github.io/2014/12/16/lean-architecture-introduction/"/>
+   <updated>2014-12-16T00:00:00-02:00</updated>
+   <id>http://jjcorrea.github.io/2014/12/16/lean-architecture-introduction</id>
+   <content type="html">&lt;h2&gt;Touchstones: Lean &amp;amp; Agile&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Buzzwords ahead.&lt;/li&gt;
+&lt;li&gt;90s management culture = Toyota way / Lean term coined&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Value stream&lt;/strong&gt; = primary focus = &amp;quot;Every single activity adds value&amp;quot;&lt;/li&gt;
+&lt;li&gt;Waste &lt;em&gt;reduces&lt;/em&gt; value. Constant improvement &lt;em&gt;increases&lt;/em&gt; value&lt;/li&gt;
+&lt;li&gt;&amp;quot;All hands on deck&amp;quot; mentality = &lt;strong&gt;Team&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Agile manifesto enphasizes the &lt;strong&gt;customer&lt;/strong&gt;, Lean = &lt;strong&gt;stakeholders&lt;/strong&gt; (everybody in sight)&lt;/li&gt;
+&lt;li&gt;Not about working: harder, &amp;quot;smarter&amp;quot;, but more about &lt;strong&gt;focus&lt;/strong&gt; and &lt;strong&gt;discipline&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;The architecture should support the company value stream&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Just in time deliver&lt;/em&gt; instead of &lt;em&gt;stockpilling&lt;/em&gt; software library warehouses = &lt;strong&gt;Continuous flow&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Service design patterns - Web services</title>
@@ -107,6 +128,8 @@
 &lt;li&gt;Temporal coupling: Occurs when the message needs to be processed as soon as it is received. Synchronous (blocking) processes increase this kind of coupling, and asynchronous processes reduces it, despite it adds complexity&lt;/li&gt;
 &lt;li&gt;URI coupling: Clients are normally tighly coupled to service URIs. There are a number of patterns to reduce this coupling, as Linked service, service connector, etc.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;To be continued...&lt;/p&gt;
 </content>
  </entry>
  
