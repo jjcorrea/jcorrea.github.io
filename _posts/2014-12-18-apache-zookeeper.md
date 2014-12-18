@@ -3,6 +3,8 @@ layout: post
 title: Apache ZooKeeper
 ---
 
+> DRAFT
+
 Version checked <span class="label label-default">...</span>
 
 > Enables highly reliable distributed coordination

@@ -3,6 +3,7 @@ layout: post
 title: Requirement patterns - Introduction
 ---
 
+> DRAFT
 
 ## Definition
 

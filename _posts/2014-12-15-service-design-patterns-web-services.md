@@ -3,6 +3,7 @@ layout: post
 title: Service design patterns - Web services
 ---
 
+> DRAFT
 
 Challenges:
 

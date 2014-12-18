@@ -3,6 +3,7 @@ layout: post
 title: Lean architecture - Introduction
 ---
 
+> DRAFT
 
 ## Touchstones: Lean & Agile
 
