@@ -4,13 +4,51 @@
  <title>Joel Corrêa</title>
  <link href="http://jjcorrea.github.io/atom.xml" rel="self"/>
  <link href="http://jjcorrea.github.io/"/>
- <updated>2014-12-16T23:30:20-02:00</updated>
+ <updated>2014-12-17T23:37:50-02:00</updated>
  <id>http://jjcorrea.github.io</id>
  <author>
    <name>Joel Correa</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Requirement patterns - Introduction</title>
+   <link href="http://jjcorrea.github.io/2014/12/17/software-requirement-patterns/"/>
+   <updated>2014-12-17T00:00:00-02:00</updated>
+   <id>http://jjcorrea.github.io/2014/12/17/software-requirement-patterns</id>
+   <content type="html">&lt;h2&gt;Definition&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Traditional approach&lt;/strong&gt;: Up-to-front. Requirements specified before moving to development.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Extreme approach&lt;/strong&gt;: software production as rapidly as possible.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Incremental approach&lt;/strong&gt;: Partially up-to-front, partially later on.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&amp;quot;What a software system is for and what it must do&amp;quot;&lt;/em&gt;. &lt;strong&gt;What&lt;/strong&gt; the system needs to do, but not &lt;strong&gt;how&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;The &lt;strong&gt;problem&lt;/strong&gt; that has to be solved. Does not define a &lt;strong&gt;solution&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;A single, &lt;strong&gt;measurable objective&lt;/strong&gt; that a system must satisfy.&lt;/li&gt;
+&lt;li&gt;Specification = Requirement documents&lt;/li&gt;
+&lt;li&gt;Levels = Structure = Epics / Stories / etc.&lt;/li&gt;
+&lt;li&gt;Functional vs Non-Functional&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Requirements position on the big picture&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Stages&lt;/strong&gt; of development&lt;/li&gt;
+&lt;li&gt;Sample stages (not necessarily isolating one od each other): Scope &amp;gt; &lt;strong&gt;Requirements&lt;/strong&gt; &amp;gt; Design &amp;gt; Development &amp;gt; Testing &amp;gt; Deployment&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Iterative&lt;/strong&gt; processes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Principles&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Specify the &lt;strong&gt;problem&lt;/strong&gt;, not the &lt;strong&gt;solution&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Specify the &lt;strong&gt;system&lt;/strong&gt; not the &lt;strong&gt;project&lt;/strong&gt;. Write every specification to be &lt;strong&gt;timeless&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Specify the &lt;strong&gt;formal and informal&lt;/strong&gt; parts. Requirements as a &lt;strong&gt;contract&lt;/strong&gt; of what must be delivered. The readers need &lt;em&gt;background&lt;/em&gt;, &lt;em&gt;context&lt;/em&gt;, &lt;em&gt;flow&lt;/em&gt; and &lt;em&gt;structure&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Avoid &lt;strong&gt;repeatition&lt;/strong&gt; = Less inconsistencies and Extra work&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Lean architecture - Introduction</title>
