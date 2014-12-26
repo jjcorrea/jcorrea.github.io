@@ -4,13 +4,137 @@
  <title>Joel Corrêa</title>
  <link href="http://jjcorrea.github.io/atom.xml" rel="self"/>
  <link href="http://jjcorrea.github.io/"/>
- <updated>2014-12-20T18:20:58-02:00</updated>
+ <updated>2014-12-26T18:38:21-02:00</updated>
  <id>http://jjcorrea.github.io</id>
  <author>
    <name>Joel Correa</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Architectural analysis</title>
+   <link href="http://jjcorrea.github.io/2014/12/26/architectural-analysis/"/>
+   <updated>2014-12-26T00:00:00-02:00</updated>
+   <id>http://jjcorrea.github.io/2014/12/26/architectural-analysis</id>
+   <content type="html">&lt;p&gt;There are many different approaches for analyzing software systems, generally consisted of the following activities:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Development of &lt;strong&gt;architectural models&lt;/strong&gt;: The data is collected during the requirements gathering to be analyzed and incorporated to the architectural model.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Enhancement and synthesis&lt;/strong&gt; of a solution: Enhances the information described on the initial architectural model.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Solution&lt;/strong&gt; analysis: Analysis of the solution performed in terms of architectural model.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Notice the architectural model as an initial &lt;strong&gt;draft&lt;/strong&gt; of the (under development) system architecture. The architectural models are defined from a set of &lt;em&gt;architectural requirements&lt;/em&gt; on an iterative process.&lt;/p&gt;
+
+&lt;h2&gt;Software architecture properties&lt;/h2&gt;
+
+&lt;p&gt;Apart from the &lt;a href=&quot;http://jjcorrea.github.io/2014/11/30/architectural-requirements/&quot;&gt;architectural requirements&lt;/a&gt; which has been showed on a previous post, an architecture also presents some properties which can be seen as intrinsic to it, which are: &lt;strong&gt;Efficiency&lt;/strong&gt;, &lt;strong&gt;integrity&lt;/strong&gt; and &lt;strong&gt;flexibility&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h3&gt;Efficiency&lt;/h3&gt;
+
+&lt;p&gt;The amount of computational resources required by a system to perform its activities indicates its efficiency. The resources can be seen in terms of &lt;strong&gt;storage&lt;/strong&gt; and &lt;strong&gt;processment&lt;/strong&gt;. &lt;/p&gt;
+
+&lt;p&gt;One of the main requirements related to efficiency is &lt;strong&gt;performance&lt;/strong&gt;. &lt;/p&gt;
+
+&lt;h3&gt;Integrity&lt;/h3&gt;
+
+&lt;p&gt;The architectural integrity is measured in terms of the project &lt;strong&gt;unification in different levels&lt;/strong&gt;. The software architecture describes the system organization in a high level, and targets the objects unification, in other words it serves as a reference to the project.&lt;/p&gt;
+
+&lt;h3&gt;Flexibility&lt;/h3&gt;
+
+&lt;p&gt;The efford required to &lt;strong&gt;change&lt;/strong&gt; a software system.&lt;/p&gt;
+
+&lt;h2&gt;SAAM - Software architecture analysis method&lt;/h2&gt;
+
+&lt;p&gt;Initially designed for supporting software architects to &lt;strong&gt;compare architectural solutions&lt;/strong&gt; (Kazman, 1994). Initial targets:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Define a set of &lt;strong&gt;usage scenarios&lt;/strong&gt; which are important on the &lt;em&gt;domain&lt;/em&gt;, to the system main stakeholders.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Domain functional partitioning&lt;/strong&gt;, followed by linking the existing functions in a partition to usage scenarios.&lt;/li&gt;
+&lt;li&gt;Use the functional partition and the scenarios to &lt;strong&gt;analyze the proposed architectures&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;All the &lt;strong&gt;candidate architectures&lt;/strong&gt; receive an &lt;strong&gt;score&lt;/strong&gt; per usage scenario, and in the end, a global score.&lt;/p&gt;
+
+&lt;p&gt;SAAM consists on the following 5 interdependent steps:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Scenario&lt;/strong&gt; development: Develop scenarios of tasks that illustrate the sorts of activities which the system must support. Those will cover the &lt;em&gt;non-functional requirements&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Architectural description: Describe the &lt;strong&gt;components&lt;/strong&gt; and &lt;strong&gt;connections&lt;/strong&gt; used on the architecture specification.&lt;/li&gt;
+&lt;li&gt;Scenario evaluation: Determine whether the candidate architecture directly supports the tasks associated to the scenario, or if any change is necessary.&lt;/li&gt;
+&lt;li&gt;Scenario interaction: Indicates the tasks that the components are associated to. &lt;strong&gt;SOC&lt;/strong&gt;. &lt;strong&gt;Isolation&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Scenario and interaction &lt;strong&gt;evaluation&lt;/strong&gt;: The most subjective step on the analysis, the outcome is a global score composed of each scenario and interaction supported by each architecture.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;ATAM - Architecture tradeoff analysis method&lt;/h2&gt;
+
+&lt;p&gt;Indicates the &lt;strong&gt;consequences of architectural decisions&lt;/strong&gt; related to the quality requirements of a system (Kazman, 1999). Evaluates the &lt;strong&gt;architectural solution&lt;/strong&gt;, identifying potential &lt;strong&gt;risks&lt;/strong&gt; associated to it.&lt;/p&gt;
+
+&lt;p&gt;The fundamental aspects under which the method was developed:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Quality attributes characterization&lt;/li&gt;
+&lt;li&gt;Scenario analysis to obtain a consensus between system stakeholders.&lt;/li&gt;
+&lt;li&gt;Architectural decision analysis, based on &lt;a href=&quot;http://resources.sei.cmu.edu/library/asset-view.cfm?assetid=13505&quot;&gt;ABAS&lt;/a&gt; (attribute-based architectural style) which illustrate how architectural decisions can affect quality attributes.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The ATAM method comprehends nine steps which are distributed on four phases as follows:&lt;/p&gt;
+
+&lt;h3&gt;1st step: Presentation&lt;/h3&gt;
+
+&lt;h4&gt;1. ATAM method presentation&lt;/h4&gt;
+
+&lt;p&gt;Describe the method to the sistem&amp;#39;s stakeholders. The set of stakeholders includes: software architects, users / clients, managers, testing &amp;amp; QA team.&lt;/p&gt;
+
+&lt;h4&gt;2. Company targets presentation&lt;/h4&gt;
+
+&lt;p&gt;The project manager describes which are the business targets which are triggering the development efford, and consequently which are the main architectural requirements (as security level, availability, etc).&lt;/p&gt;
+
+&lt;h4&gt;3. Architecture presentation&lt;/h4&gt;
+
+&lt;p&gt;The architect presents the proposed architecture, focusing on how the business targets will be fulfilled.&lt;/p&gt;
+
+&lt;h3&gt;2nd step: Investigation and analysis&lt;/h3&gt;
+
+&lt;h4&gt;4. Architectural approaches identification&lt;/h4&gt;
+
+&lt;p&gt;The architects identifies the possible architectural approaches, but doesn&amp;#39;t analyze them.&lt;/p&gt;
+
+&lt;h4&gt;5. Quality attributes utility tree generation&lt;/h4&gt;
+
+&lt;p&gt;The quality attributes are clarified, and specified using scenarios, including priorities where they exist.&lt;/p&gt;
+
+&lt;h4&gt;6. Architectural approach analysis (1)&lt;/h4&gt;
+
+&lt;p&gt;The architectural approaches which satisfies the quality attributes mapped on step 5 are analyzed.&lt;/p&gt;
+
+&lt;h3&gt;3rd step: Test&lt;/h3&gt;
+
+&lt;h4&gt;7. Analysis, discussion and scenario priorization&lt;/h4&gt;
+
+&lt;p&gt;All the stakeholders participate of a voting process giving priorities to the set of scenarios specified on step 5.&lt;/p&gt;
+
+&lt;h4&gt;8. Architectural approach analysis (2)&lt;/h4&gt;
+
+&lt;p&gt;The architectural approach analysis performed on step 6 is now repeated, but specifically for scenarios which derivates from step 7.&lt;/p&gt;
+
+&lt;h3&gt;4th step: Report&lt;/h3&gt;
+
+&lt;h4&gt;9. Results presentation&lt;/h4&gt;
+
+&lt;p&gt;The ATAM work team presents the results obtained based on the information collected though the method. This information includes scenarios, architectural styles, utility tree, quality attributes, risks. A report is elaborated detailing the results and presenting the strategy to be taken.&lt;/p&gt;
+
+&lt;h3&gt;Highlights&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;There are &lt;strong&gt;architectural properties&lt;/strong&gt; instrinsic to the system structure&lt;/li&gt;
+&lt;li&gt;These properties, plus the architectural requirements (non-functional and project attributes) are used as the base of the &lt;strong&gt;architectural analysis&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SAAM (Software architecture analysis method)&lt;/strong&gt;: method to compare architectural solutions&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ATAM (Architecture tradeoff analysis method)&lt;/strong&gt;: evaluates the risks and consequences of architectural decisions.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Wildfly 8</title>
@@ -484,8 +608,66 @@
 &lt;li&gt;&amp;quot;All hands on deck&amp;quot; mentality = &lt;strong&gt;Team&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;Agile manifesto enphasizes the &lt;strong&gt;customer&lt;/strong&gt;, Lean = &lt;strong&gt;stakeholders&lt;/strong&gt; (everybody in sight)&lt;/li&gt;
 &lt;li&gt;Not about working: harder, &amp;quot;smarter&amp;quot;, but more about &lt;strong&gt;focus&lt;/strong&gt; and &lt;strong&gt;discipline&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;The architecture should support the company value stream&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Just in time deliver&lt;/em&gt; instead of &lt;em&gt;stockpilling&lt;/em&gt; software library warehouses = &lt;strong&gt;Continuous flow&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;The architecture should support the company &lt;strong&gt;value stream&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;Just in time deliver&lt;/em&gt; instead of &lt;em&gt;stockpilling&lt;/em&gt; software library warehouses = &lt;strong&gt;Continuous flow&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Source code itself should reflect the end-user mental model of the world&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Continuous flow&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Team mentality&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Lightweight architecture&lt;/h3&gt;
+
+&lt;p&gt;Arch with reduced waste incurred by:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Rework (inadequate planning)&lt;/li&gt;
+&lt;li&gt;Unused artifacts (such as comprehensive documentation and &lt;strong&gt;speculative code&lt;/strong&gt;).&lt;/li&gt;
+&lt;li&gt;Wait states (handoffs between functional teams, review lifecycle of arch / design documents)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;People say architecture is hard&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Complexity&lt;/li&gt;
+&lt;li&gt;Takes-a-long-time vs Complexity&lt;/li&gt;
+&lt;li&gt;Unite specialists, everybody all together, from early on&lt;/li&gt;
+&lt;li&gt;Neither lean nor agile make architecture look easy, but they illuminate the architecture&amp;#39;s value&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Architecture value&lt;/h3&gt;
+
+&lt;p&gt;Lean brings that:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Careful, up-front planning&lt;/li&gt;
+&lt;li&gt;&amp;quot;Everybody, all together, from early on&amp;quot;&lt;/li&gt;
+&lt;li&gt;How the architecture can &lt;strong&gt;reduce waste&lt;/strong&gt;, &lt;strong&gt;inconsistency&lt;/strong&gt; and &lt;strong&gt;irregular development&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Agile:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Feedback&lt;/li&gt;
+&lt;li&gt;How user &lt;strong&gt;engagement and feedback&lt;/strong&gt; can drive down long-term cost&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Lean architecture and Agile feature development&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Classic approach embraces engineering &lt;em&gt;too early&lt;/em&gt; = Rushes into implementation.&lt;/li&gt;
+&lt;li&gt;Lean + Agile encourages changes in those parts of the system which are likely to change - because they aren&amp;#39;t pre-filled with premature structures&lt;/li&gt;
+&lt;li&gt;Standards are valuable at level of form, protocols and APIs rather than their implementation&lt;/li&gt;
+&lt;li&gt;Agile = Communication and sometimes written documentation in the right medium&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Agile production&lt;/h2&gt;
+
+&lt;h3&gt;Agile builds on Lean&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Agile production plans for &lt;strong&gt;change&lt;/strong&gt;. Stakeholder changes can be propagated without being lost.&lt;/li&gt;
+&lt;li&gt;Agile stays lean with its focus on code. &lt;strong&gt;Code isn&amp;#39;t the design&lt;/strong&gt;. The code is the vest way to capture the end-user mental model, and the techniques, problem solving strategies are part of the &lt;strong&gt;design&lt;/strong&gt; process.&lt;/li&gt;
+&lt;li&gt;Lean: value sream starts with end-users = Agile: Individuals and interactions over processes and tools.&lt;/li&gt;
 &lt;/ul&gt;
 </content>
  </entry>
@@ -623,6 +805,7 @@
 &lt;li&gt;&lt;strong&gt;Repeatable annotations&lt;/strong&gt; (only possible with JDK8)&lt;/li&gt;
 &lt;li&gt;Spring formatting framework supporting &lt;em&gt;new Java Date &amp;amp; Time API&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;Messaging and WebSocket support&lt;/li&gt;
+&lt;li&gt;Testing annotations as &lt;a href=&quot;http://docs.spring.io/spring/docs/current/spring-framework-reference/html/testing.html#integration-testing-annotations-meta&quot;&gt;Meta Annotations&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2&gt;Java 8 support&lt;/h2&gt;
@@ -689,6 +872,38 @@
 &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CustomerService&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;service2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;CustomerServiceImpl2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Testing meta annotations&lt;/h2&gt;
+
+&lt;p&gt;If we discover that we are repeating the following configuration across our JUnit-based test suite:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;nd&quot;&gt;@RunWith&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SpringJUnit4ClassRunner&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;@ContextConfiguration&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/app-config.xml&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;/test-data-access-config.xml&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;})&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;@ActiveProfiles&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;dev&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;@Transactional&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;OrderRepositoryTests&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nd&quot;&gt;@RunWith&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SpringJUnit4ClassRunner&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;@ContextConfiguration&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/app-config.xml&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;/test-data-access-config.xml&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;})&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;@ActiveProfiles&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;dev&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;@Transactional&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;UserRepositoryTests&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We can reduce it by introducing a custom composed annotation:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;nd&quot;&gt;@Target&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ElementType&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;TYPE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;@Retention&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RetentionPolicy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;RUNTIME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;@ContextConfiguration&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/app-config.xml&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;/test-data-access-config.xml&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;})&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;@ActiveProfiles&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;dev&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;@Transactional&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nd&quot;&gt;@interface&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TransactionalDevTest&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then we can use our custom @TransactionalDevTest annotation to simplify the configuration of individual test classes:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;nd&quot;&gt;@RunWith&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SpringJUnit4ClassRunner&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;@TransactionalDevTest&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;OrderRepositoryTests&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nd&quot;&gt;@RunWith&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SpringJUnit4ClassRunner&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;@TransactionalDevTest&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;UserRepositoryTests&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;Groovy Bean Definition DSL&lt;/h2&gt;
 
@@ -886,6 +1101,7 @@
 &lt;li&gt;http://www.infoq.com/presentations/spring-4-java8&lt;/li&gt;
 &lt;li&gt;http://dsyer.com/presos/decks/spring4.html&lt;/li&gt;
 &lt;li&gt;http://www.javacodegeeks.com/2013/10/spring-4-conditional.html&lt;/li&gt;
+&lt;li&gt;http://docs.spring.io/spring/docs/current/spring-framework-reference/html/testing.html#integration-testing-annotations-meta&lt;/li&gt;
 &lt;/ul&gt;
 </content>
  </entry>
