@@ -65,7 +65,24 @@ Agile:
 - Agile stays lean with its focus on code. **Code isn't the design**. The code is the vest way to capture the end-user mental model, and the techniques, problem solving strategies are part of the **design** process.
 - Lean: value sream starts with end-users = Agile: Individuals and interactions over processes and tools.
 
+### The scope of agile systems
 
+- Architecture = Stability. Agile = Change
+- Plan for change (70s, 80s) vs Change directly
+- "User **expectation** as the father of change"
+- Modern markets = Speed = Adaptation
+- Agile adapts to this market due to its accomodation for change
+- Fits independently of the feedback value: Formally specified systems (little value) vs No obvious interaction between systems (high value)
+- "Lean is an overkill for simple systems"
+- Agile can draw on lean to estabilish the boundary conditions necessary for **progress** 
 
+### Highlights
+
+- Software architecture should reflect the end-user mental model of the world
+- System **form**: Users thought process while viewing the screen, and *what the system is*
+- System **functionality**: How the system respond to user input, *what the system do*
+- Stakeholders (early) insight exploration
+- Code expresses *form* concretely
+- Communication
 
 

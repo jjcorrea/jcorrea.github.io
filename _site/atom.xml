@@ -4,7 +4,7 @@
  <title>Joel Corrêa</title>
  <link href="http://jjcorrea.github.io/atom.xml" rel="self"/>
  <link href="http://jjcorrea.github.io/"/>
- <updated>2014-12-26T18:38:21-02:00</updated>
+ <updated>2014-12-27T13:42:03-02:00</updated>
  <id>http://jjcorrea.github.io</id>
  <author>
    <name>Joel Correa</name>
@@ -668,6 +668,30 @@
 &lt;li&gt;Agile production plans for &lt;strong&gt;change&lt;/strong&gt;. Stakeholder changes can be propagated without being lost.&lt;/li&gt;
 &lt;li&gt;Agile stays lean with its focus on code. &lt;strong&gt;Code isn&amp;#39;t the design&lt;/strong&gt;. The code is the vest way to capture the end-user mental model, and the techniques, problem solving strategies are part of the &lt;strong&gt;design&lt;/strong&gt; process.&lt;/li&gt;
 &lt;li&gt;Lean: value sream starts with end-users = Agile: Individuals and interactions over processes and tools.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;The scope of agile systems&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Architecture = Stability. Agile = Change&lt;/li&gt;
+&lt;li&gt;Plan for change (70s, 80s) vs Change directly&lt;/li&gt;
+&lt;li&gt;&amp;quot;User &lt;strong&gt;expectation&lt;/strong&gt; as the father of change&amp;quot;&lt;/li&gt;
+&lt;li&gt;Modern markets = Speed = Adaptation&lt;/li&gt;
+&lt;li&gt;Agile adapts to this market due to its accomodation for change&lt;/li&gt;
+&lt;li&gt;Fits independently of the feedback value: Formally specified systems (little value) vs No obvious interaction between systems (high value)&lt;/li&gt;
+&lt;li&gt;&amp;quot;Lean is an overkill for simple systems&amp;quot;&lt;/li&gt;
+&lt;li&gt;Agile can draw on lean to estabilish the boundary conditions necessary for &lt;strong&gt;progress&lt;/strong&gt; &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Highlights&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Software architecture should reflect the end-user mental model of the world&lt;/li&gt;
+&lt;li&gt;System &lt;strong&gt;form&lt;/strong&gt;: Users thought process while viewing the screen, and &lt;em&gt;what the system is&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;System &lt;strong&gt;functionality&lt;/strong&gt;: How the system respond to user input, &lt;em&gt;what the system do&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Stakeholders (early) insight exploration&lt;/li&gt;
+&lt;li&gt;Code expresses &lt;em&gt;form&lt;/em&gt; concretely&lt;/li&gt;
+&lt;li&gt;Communication&lt;/li&gt;
 &lt;/ul&gt;
 </content>
  </entry>
