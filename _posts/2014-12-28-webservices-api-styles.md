@@ -75,7 +75,7 @@ title: Webservices API styles
 - Signature changes may be breaking
 - Determines the procedure based on message content
 - Style is normally used when external entities **drive the requirements** definition
-- Messages are typycally defined using XML Schema language (XSL), however messages can be defined through other means (e.g. Google protocol buffers / ProtoBuff).
+- Messages are typycally defined using XML Schema language, however messages can be defined through other means (e.g. Google protocol buffers / ProtoBuff).
 - API provides **endpoints**
 - Messages are generically of three types: *Command messages* (triggers a specific task on the receiver) *Event messages* (notify) or *Document messages* (like business documents).
 - WSDL as **service descriptor** and for **specifications** (WS-Policy, WS-Security, etc)
