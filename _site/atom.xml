@@ -4,13 +4,80 @@
  <title>Joel Corrêa</title>
  <link href="http://jjcorrea.github.io/atom.xml" rel="self"/>
  <link href="http://jjcorrea.github.io/"/>
- <updated>2014-12-28T19:58:15-02:00</updated>
+ <updated>2015-01-02T17:21:00-02:00</updated>
  <id>http://jjcorrea.github.io</id>
  <author>
    <name>Joel Correa</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Agile production</title>
+   <link href="http://jjcorrea.github.io/2015/01/02/agile-production/"/>
+   <updated>2015-01-02T00:00:00-02:00</updated>
+   <id>http://jjcorrea.github.io/2015/01/02/agile-production</id>
+   <content type="html">&lt;h2&gt;Stakeholders engagement&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Stakeholders = Team members, engineers, architects, testers...&lt;/li&gt;
+&lt;li&gt;What the system is = Architecture / Platform. Stable structures of the business over time. &lt;strong&gt;Key stakeholders are&lt;/strong&gt;: Domain experts, system architects, business people.&lt;/li&gt;
+&lt;li&gt;What the system does = End user&amp;#39;s view of the services provided by the system. &lt;strong&gt;Key stakeholders are&lt;/strong&gt;: End user, UX, interface designers, requirements folks.&lt;/li&gt;
+&lt;li&gt;Remember lean: &amp;quot;everybody, all together, from early on&amp;quot;&lt;/li&gt;
+&lt;li&gt;Customer engagement is one of the strongest agile principles&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Problem definition&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&amp;quot;The difference between the current state and the desired state&amp;quot;&lt;/li&gt;
+&lt;li&gt;Short description - if everyone knows what the problem is, everyone knows when it is done&lt;/li&gt;
+&lt;li&gt;Revisit the problem definition once in a while&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;What the system is - System form&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&amp;quot;Every system has two designs (reflects two kinds of intents): The design of its functionalities - what it &lt;em&gt;does&lt;/em&gt; and the design of its form - what it &lt;em&gt;is&lt;/em&gt;&amp;quot;&lt;/li&gt;
+&lt;li&gt;The form provides a firm *&lt;em&gt;foundation&lt;/em&gt; for change*&lt;/li&gt;
+&lt;li&gt;The &lt;strong&gt;structure&lt;/strong&gt; of a system follows its form&lt;/li&gt;
+&lt;li&gt;The &lt;strong&gt;end-user mental model&lt;/strong&gt; is one sound foundation for architecture&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We do architecture:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;To &lt;strong&gt;capture stakeholders perspectives&lt;/strong&gt; that affect design&lt;/li&gt;
+&lt;li&gt;To &lt;strong&gt;embrace change&lt;/strong&gt; and &lt;strong&gt;reduce the cost of solving problems&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;To create a &lt;strong&gt;shared vision&lt;/strong&gt; across the team &amp;amp; stakeholders&lt;/li&gt;
+&lt;li&gt;To &lt;strong&gt;smooth the decision making&lt;/strong&gt; process&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;&amp;quot;Good form up front reduces cost in long term&amp;quot;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2&gt;What the system does - System functionality&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Captures end-user mental model as &lt;strong&gt;roles&lt;/strong&gt; or &lt;strong&gt;actors&lt;/strong&gt;, and by the interaction between these roles.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Use cases&lt;/strong&gt; capture role and its interactions as well. Good tool for elicit, explore, refine and capture end-user mental models and also for organizing requirements (functional grouping, mutual dependency and priority ordering).&lt;/li&gt;
+&lt;li&gt;A sound architecture provides a context in which users scenarios can unfold.&lt;/li&gt;
+&lt;li&gt;The scenarios have two parts: The pure business logic and the domain logic that supports the scenario&lt;/li&gt;
+&lt;li&gt;Testers pay close heed to what the system &lt;strong&gt;is supposed to&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Design and Code&lt;/h2&gt;
+
+&lt;p&gt;The main activities at this point are:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Turn use case scenarios into algorithms.&lt;/li&gt;
+&lt;li&gt;Write system tests&lt;/li&gt;
+&lt;li&gt;Tailor the domain class interfaces to the new algorithms&lt;/li&gt;
+&lt;li&gt;Code up the algorithms in the role code and the support logic in the domain code (+refactoring along the way)&lt;/li&gt;
+&lt;li&gt;Run the newly written system tests against the new code&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Webservices API styles</title>
@@ -112,7 +179,7 @@
 &lt;li&gt;Signature changes may be breaking&lt;/li&gt;
 &lt;li&gt;Determines the procedure based on message content&lt;/li&gt;
 &lt;li&gt;Style is normally used when external entities &lt;strong&gt;drive the requirements&lt;/strong&gt; definition&lt;/li&gt;
-&lt;li&gt;Messages are typycally defined using XML Schema language (XSL), however messages can be defined through other means (e.g. Google protocol buffers / ProtoBuff).&lt;/li&gt;
+&lt;li&gt;Messages are typycally defined using XML Schema language, however messages can be defined through other means (e.g. Google protocol buffers / ProtoBuff).&lt;/li&gt;
 &lt;li&gt;API provides &lt;strong&gt;endpoints&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;Messages are generically of three types: &lt;em&gt;Command messages&lt;/em&gt; (triggers a specific task on the receiver) &lt;em&gt;Event messages&lt;/em&gt; (notify) or &lt;em&gt;Document messages&lt;/em&gt; (like business documents).&lt;/li&gt;
 &lt;li&gt;WSDL as &lt;strong&gt;service descriptor&lt;/strong&gt; and for &lt;strong&gt;specifications&lt;/strong&gt; (WS-Policy, WS-Security, etc)&lt;/li&gt;
