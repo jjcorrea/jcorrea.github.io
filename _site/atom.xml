@@ -4,13 +4,131 @@
  <title>Joel Corrêa</title>
  <link href="http://jjcorrea.github.io/atom.xml" rel="self"/>
  <link href="http://jjcorrea.github.io/"/>
- <updated>2015-01-02T17:21:00-02:00</updated>
+ <updated>2015-01-02T18:30:01-02:00</updated>
  <id>http://jjcorrea.github.io</id>
  <author>
    <name>Joel Correa</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Contents of requirement specification</title>
+   <link href="http://jjcorrea.github.io/2015/01/02/the-contents-of-requirement-specification/"/>
+   <updated>2015-01-02T00:00:00-02:00</updated>
+   <id>http://jjcorrea.github.io/2015/01/02/the-contents-of-requirement-specification</id>
+   <content type="html">&lt;p&gt;There is not a single right way to &lt;strong&gt;organize requirements specification&lt;/strong&gt;, but certain topics recur in most systems and deserve their own sections. The following model is a suggested &lt;strong&gt;structure&lt;/strong&gt; for requirements specification.&lt;/p&gt;
+
+&lt;h2&gt;Introduction section&lt;/h2&gt;
+
+&lt;h3&gt;System purpose&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;What the system &lt;strong&gt;is for&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Who wants it&lt;/strong&gt;, and &lt;strong&gt;why&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Who will use&lt;/strong&gt; it&lt;/li&gt;
+&lt;li&gt;what is the &lt;strong&gt;business motivation&lt;/strong&gt; behind it?&lt;/li&gt;
+&lt;li&gt;Describe the &lt;strong&gt;system itself&lt;/strong&gt;, not the project which implements it&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Document purpose&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The &lt;strong&gt;role the document plays&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Brief and concise explanation&lt;/li&gt;
+&lt;li&gt;Identify the &lt;strong&gt;audience&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;State disclaimers&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Requirement format&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Requirement ID&lt;/strong&gt;: Unique identifier. Should be concise, distinctive and sequential&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Definition&lt;/strong&gt;: Description, in a free-text format&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Priority&lt;/strong&gt;: How important the requirement is&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Summary&lt;/strong&gt; description: Sums up the requirement as briefly as possible&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3&gt;Glossary&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Relevant items&lt;/li&gt;
+&lt;li&gt;Term + Definition&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;References&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Documents&lt;/strong&gt; and &lt;strong&gt;sources&lt;/strong&gt; used&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Document history&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Details of &lt;strong&gt;each version&lt;/strong&gt; of the document&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Context section&lt;/h2&gt;
+
+&lt;h3&gt;Scope&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;How the system fits on real world&lt;/strong&gt; around it&lt;/li&gt;
+&lt;li&gt;A local map showing where our territory ends, and that of the neighbors starts&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Context diagram&lt;/strong&gt; is a good starting point&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Main kinds of information are:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Components&lt;/strong&gt;: All &lt;strong&gt;distinct pieces&lt;/strong&gt; that must be in-place and &lt;strong&gt;how they connect to each other&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;User roles&lt;/strong&gt;: Main &lt;strong&gt;roles&lt;/strong&gt; in which people interact with the system. System &lt;strong&gt;actors&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Scope boundary&lt;/strong&gt;: What is the system &lt;strong&gt;responsability&lt;/strong&gt; and what isn&amp;#39;t&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Intersystem interfaces&lt;/strong&gt;: All interfaces via each component &lt;strong&gt;interacts with other systems&lt;/strong&gt; and logical components&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3&gt;Major assumptions&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Each thing which is &lt;strong&gt;assumed to be true&lt;/strong&gt; and that would have a &lt;strong&gt;significant impact&lt;/strong&gt; on the system if it were not so&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Major exclusions&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Something the system &lt;strong&gt;does not&lt;/strong&gt; do&lt;/li&gt;
+&lt;li&gt;Any feature &lt;strong&gt;not planned to be supported&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Key business entities&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Major system entities around which the system performs a set of activities&lt;/li&gt;
+&lt;li&gt;State transition diagram to express it&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Infrastructures&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The underlying set of &lt;strong&gt;capabilities needed&lt;/strong&gt; to support one or more requirements&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Functional area sections&lt;/h2&gt;
+
+&lt;h3&gt;Functional areas&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Top-level section for each logical grouping of functions&lt;/li&gt;
+&lt;li&gt;Order sections according to their importance&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Major non-functional capabilities section&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Describe important non-functional aspects of a system&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Agile production</title>
