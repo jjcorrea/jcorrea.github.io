@@ -86,7 +86,9 @@ Main kinds of information are:
 
 - Describe important non-functional aspects of a system
 
+## References
 
+- Software requirement patterns - Stephen Withall
 
 
 
