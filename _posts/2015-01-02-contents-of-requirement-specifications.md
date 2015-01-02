@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Contents of requirement specification
+title: Contents of requirement specifications
 ---
 
 There is not a single right way to **organize requirements specification**, but certain topics recur in most systems and deserve their own sections. The following model is a suggested **structure** for requirements specification.
