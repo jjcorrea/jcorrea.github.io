@@ -68,7 +68,7 @@ title: Webservices API styles
 - Async: RPC APIs often use **request-acknowlege** instead of **request-response** interaction pattern. 
 - Avoid blocking: Clients can use an **async response handler** pattern to avoid being blocked during the service processment
 
-## Messaging API
+## Message API
 
 > How can clients send commands, notifications or other information to remote systems over HTTP while avoiding direct coupling to remote procedures
 

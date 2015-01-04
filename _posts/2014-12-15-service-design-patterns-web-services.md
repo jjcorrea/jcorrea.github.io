@@ -3,8 +3,6 @@ layout: post
 title: Service design patterns - Web services
 ---
 
-> DRAFT
-
 Challenges:
 
 - When should a particular api style be used
