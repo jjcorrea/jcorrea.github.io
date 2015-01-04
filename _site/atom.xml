@@ -4,7 +4,7 @@
  <title>Joel Corrêa</title>
  <link href="http://jjcorrea.github.io/atom.xml" rel="self"/>
  <link href="http://jjcorrea.github.io/"/>
- <updated>2015-01-02T18:30:01-02:00</updated>
+ <updated>2015-01-04T16:31:34-02:00</updated>
  <id>http://jjcorrea.github.io</id>
  <author>
    <name>Joel Correa</name>
@@ -13,10 +13,80 @@
 
  
  <entry>
-   <title>Contents of requirement specification</title>
-   <link href="http://jjcorrea.github.io/2015/01/02/the-contents-of-requirement-specification/"/>
+   <title>Requirement pattern concepts</title>
+   <link href="http://jjcorrea.github.io/2015/01/04/requirement-pattern-concepts/"/>
+   <updated>2015-01-04T00:00:00-02:00</updated>
+   <id>http://jjcorrea.github.io/2015/01/04/requirement-pattern-concepts</id>
+   <content type="html">&lt;blockquote&gt;
+&lt;p&gt;&amp;quot;Each pattern describes a problem which occurs over and over again in our environment&amp;quot; - Christopher Alexander&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Projects have requirements which are &lt;strong&gt;similar&lt;/strong&gt; in nature&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Requirement pattern&lt;/strong&gt;: An approach for specifying a particular &lt;strong&gt;type of requirement&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Follow-on&lt;/strong&gt; requirements: Expand the original requirement&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Pervasive&lt;/strong&gt; requirements: Supports the pattern itself &lt;/li&gt;
+&lt;li&gt;Patterns can vary on their &lt;strong&gt;level of detail&lt;/strong&gt; (their &lt;strong&gt;preciseness&lt;/strong&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Benefits of requirement patterns:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Guidance&lt;/strong&gt;: Suggests information to include, advices, warning of common pitfalls.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Time save&lt;/strong&gt;: Don&amp;#39;t have to write each requirement from &lt;strong&gt;scratch&lt;/strong&gt;, gives a suitable starting point, a foundation to build on.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Consistency&lt;/strong&gt; across requirements of the same &lt;strong&gt;type&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;The anatomy of a requirement pattern&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;What it contains, how it is organized and why&lt;/li&gt;
+&lt;li&gt;A requirement pattern needs to say &lt;strong&gt;when to use it&lt;/strong&gt;, &lt;strong&gt;how to write requirements based on it&lt;/strong&gt;. Can also give hints on how to &lt;strong&gt;implement&lt;/strong&gt; and how to &lt;strong&gt;test&lt;/strong&gt; it.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To convey these sorts of information, each requirement pattern should contain&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Basic details&lt;/strong&gt;: Pattern classification, author, related patterns, etc&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Applicability&lt;/strong&gt;: In what situations can this pattern be applied?&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Discussion&lt;/strong&gt;: How to write a requirement of this type? What needs to be considered?&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Content&lt;/strong&gt;: What must a requirement of this type say?&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Template(s)&lt;/strong&gt;: Starting point for writing a requirement of this type&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Example(s)&lt;/strong&gt;: One or more representative examples&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Extra requirements&lt;/strong&gt;: What sorts of requirements often &lt;strong&gt;follow on&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Considerations for development&lt;/strong&gt;: Hints for software designers and engineers on how to implement a requirement of this type&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Considerations for testing&lt;/strong&gt;: What do we need to bear in mind when deciding how to test this type of requirement?&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;Domain&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;For classifying the requirement patterns, instead of having a monolithic list of them, they are usually assigned to a &lt;strong&gt;domain&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Each domain needs an introduction to explain its theme (features in common to all its patterns)&lt;/li&gt;
+&lt;li&gt;Some types of requirements depends on &lt;strong&gt;infrastructure&lt;/strong&gt;. They may be added to the pattern through &lt;strong&gt;infrastructure overviews&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Requirement pattern groups&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;When requirement patterns have &lt;strong&gt;features in common&lt;/strong&gt;, a &lt;strong&gt;pattern group&lt;/strong&gt; can be created&lt;/li&gt;
+&lt;li&gt;Pattern groups differ from domains in the sense the domain patterns share a common &lt;strong&gt;theme&lt;/strong&gt;, and the groups have &lt;strong&gt;detailed features&lt;/strong&gt; in common.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Relationships between requirement patterns&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A pattern mught refer to other patterns&lt;/li&gt;
+&lt;li&gt;The relationship can be fundamentally a &lt;strong&gt;mention&lt;/strong&gt; (&lt;strong&gt;refers to&lt;/strong&gt;) or a pattern &lt;strong&gt;extension&lt;/strong&gt; (&lt;strong&gt;specialization&lt;/strong&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Contents of requirement specifications</title>
+   <link href="http://jjcorrea.github.io/2015/01/02/contents-of-requirement-specifications/"/>
    <updated>2015-01-02T00:00:00-02:00</updated>
-   <id>http://jjcorrea.github.io/2015/01/02/the-contents-of-requirement-specification</id>
+   <id>http://jjcorrea.github.io/2015/01/02/contents-of-requirement-specifications</id>
    <content type="html">&lt;p&gt;There is not a single right way to &lt;strong&gt;organize requirements specification&lt;/strong&gt;, but certain topics recur in most systems and deserve their own sections. The following model is a suggested &lt;strong&gt;structure&lt;/strong&gt; for requirements specification.&lt;/p&gt;
 
 &lt;h2&gt;Introduction section&lt;/h2&gt;
@@ -127,6 +197,10 @@
 &lt;ul&gt;
 &lt;li&gt;Describe important non-functional aspects of a system&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h1&gt;References&lt;/h1&gt;
+
+&lt;p&gt;Software requirement patterns - Stephen Withall &lt;/p&gt;
 </content>
  </entry>
  
