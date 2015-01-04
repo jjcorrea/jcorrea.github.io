@@ -3,8 +3,6 @@ layout: post
 title: Requirement patterns - Introduction
 ---
 
-> DRAFT
-
 ## Definition
 
 - **Traditional approach**: Up-to-front. Requirements specified before moving to development.
