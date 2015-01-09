@@ -4,7 +4,7 @@
  <title>Joel Corrêa</title>
  <link href="http://jjcorrea.github.io/atom.xml" rel="self"/>
  <link href="http://jjcorrea.github.io/"/>
- <updated>2015-01-04T16:31:34-02:00</updated>
+ <updated>2015-01-08T22:16:04-02:00</updated>
  <id>http://jjcorrea.github.io</id>
  <author>
    <name>Joel Correa</name>
@@ -361,7 +361,7 @@
 &lt;li&gt;Avoid blocking: Clients can use an &lt;strong&gt;async response handler&lt;/strong&gt; pattern to avoid being blocked during the service processment&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2&gt;Messaging API&lt;/h2&gt;
+&lt;h2&gt;Message API&lt;/h2&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;How can clients send commands, notifications or other information to remote systems over HTTP while avoiding direct coupling to remote procedures&lt;/p&gt;
@@ -959,11 +959,7 @@
    <link href="http://jjcorrea.github.io/2014/12/17/software-requirement-patterns/"/>
    <updated>2014-12-17T00:00:00-02:00</updated>
    <id>http://jjcorrea.github.io/2014/12/17/software-requirement-patterns</id>
-   <content type="html">&lt;blockquote&gt;
-&lt;p&gt;DRAFT&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2&gt;Definition&lt;/h2&gt;
+   <content type="html">&lt;h2&gt;Definition&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Traditional approach&lt;/strong&gt;: Up-to-front. Requirements specified before moving to development.&lt;/li&gt;
@@ -1104,11 +1100,7 @@
    <link href="http://jjcorrea.github.io/2014/12/15/service-design-patterns-web-services/"/>
    <updated>2014-12-15T00:00:00-02:00</updated>
    <id>http://jjcorrea.github.io/2014/12/15/service-design-patterns-web-services</id>
-   <content type="html">&lt;blockquote&gt;
-&lt;p&gt;DRAFT&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Challenges:&lt;/p&gt;
+   <content type="html">&lt;p&gt;Challenges:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;When should a particular api style be used&lt;/li&gt;
