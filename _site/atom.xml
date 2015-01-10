@@ -4,13 +4,88 @@
  <title>Joel Corrêa</title>
  <link href="http://jjcorrea.github.io/atom.xml" rel="self"/>
  <link href="http://jjcorrea.github.io/"/>
- <updated>2015-01-08T22:16:04-02:00</updated>
+ <updated>2015-01-10T17:12:26-02:00</updated>
  <id>http://jjcorrea.github.io</id>
  <author>
    <name>Joel Correa</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Twitter architecture overview</title>
+   <link href="http://jjcorrea.github.io/2015/01/10/case-twitter/"/>
+   <updated>2015-01-10T00:00:00-02:00</updated>
+   <id>http://jjcorrea.github.io/2015/01/10/case-twitter</id>
+   <content type="html">&lt;h2&gt;Cache&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Clear need for caching. Each tweet is tracked in average by 126 users&lt;/li&gt;
+&lt;li&gt;On original configuration, the API have a cache, which was invalidated each time a tweet was coming from a user.&lt;/li&gt;
+&lt;li&gt;1st change: Create a &lt;strong&gt;Vector Cache&lt;/strong&gt; containing an array of tweet IDs - &lt;strong&gt;99% hit rate&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;2nd change: &lt;strong&gt;Row Cache&lt;/strong&gt; containing database records: &lt;em&gt;users and tweets&lt;/em&gt; - &lt;strong&gt;95% hit rate&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;3rd change: &lt;strong&gt;Fragment Cache&lt;/strong&gt; containing &lt;strong&gt;serialized versions&lt;/strong&gt; of the tweets accessed through API clients, packaged in JSON, XML or Atom - &lt;strong&gt;95% hit rate&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;80% of the Twitter traffic comes through the API&lt;/li&gt;
+&lt;li&gt;Because of poor request locality, the fastest way to deal with requests is to &lt;strong&gt;precompute data&lt;/strong&gt; and &lt;strong&gt;store it on network RAM&lt;/strong&gt;, rather than recompute it on each server when necessary&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Message queue&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Twitter’s MQ is simple: based on Memcached protocol, no ordering of jobs, no shared state between servers, all  is kept in RAM and it is transactional.&lt;/li&gt;
+&lt;li&gt;First implementation of the MQ was using Starling, written in Ruby. Didn&amp;#39;t scale well.&lt;/li&gt;
+&lt;li&gt;Ruby’s GC is &lt;strong&gt;not generational&lt;/strong&gt;, which means that the &lt;em&gt;GC looks at every object every time it runs&lt;/em&gt;. Java, OCaml, and other static languages have a &lt;strong&gt;generational GC&lt;/strong&gt;, which means that only &lt;em&gt;recent allocations are frequently checked&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;That lead to MQ crashes because at some point the entire &lt;strong&gt;queue processing stopped for the GC&lt;/strong&gt; to finish its job&lt;/li&gt;
+&lt;li&gt;The decision was to &lt;strong&gt;port the MQ to Scala&lt;/strong&gt; which is using the &lt;strong&gt;more mature JVM GC&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Data store&lt;/h2&gt;
+
+&lt;h3&gt;Original tweeet store&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Temporal sharding. Tweets from the same date range are stored on the same shard.&lt;/li&gt;
+&lt;li&gt;The problem is tweets filled up one machine, then a second, and then a third. You end up filling up one machine after another.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Flaws&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Load balancing&lt;/strong&gt;. Most of the old machines didn&amp;#39;t get any traffic because people are interested in what is happening now, especially with Twitter. &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Expensive&lt;/strong&gt;. They filled up one machine, with all its replication slaves, every three weeks, which is an expensive setup.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Logistically complicated&lt;/strong&gt;. Building a whole new cluster every three weeks is a pain for the DBA team&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;The new data store&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;When a tweet is created it is stored in a system called &lt;strong&gt;T-bird&lt;/strong&gt;, which is built in the top of &lt;a href=&quot;https://github.com/twitter/gizzard&quot;&gt;Gizzard&lt;/a&gt; - Twitter&amp;#39;s distributed data storage framework built on top of MySQL (InnoDB). &lt;/li&gt;
+&lt;li&gt;Secondary indexes are stored in &lt;strong&gt;T-flock&lt;/strong&gt;, also based on Gizzard.&lt;/li&gt;
+&lt;li&gt;To get &lt;strong&gt;higher performance on individual nodes&lt;/strong&gt; a lot of features like &lt;em&gt;binary logs&lt;/em&gt; and &lt;em&gt;replication&lt;/em&gt; are &lt;strong&gt;turned off&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Gizzard handles sharding, replicating N copes of the data, and job scheduling. &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/twitter/snowflake&quot;&gt;Snowflake&lt;/a&gt; for generating tweet &lt;strong&gt;unique IDs&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Highlights&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Twitter values &lt;strong&gt;stability over features&lt;/strong&gt; so they&amp;#39;ve stayed with older releases. &lt;/li&gt;
+&lt;li&gt;MySQL doesn&amp;#39;t work for &lt;em&gt;ID generation&lt;/em&gt; and &lt;em&gt;graph storage&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cassandra&lt;/strong&gt; is used for &lt;em&gt;high velocity writes&lt;/em&gt;, and &lt;em&gt;lower velocity reads&lt;/em&gt;. The advantage is Cassandra can run on &lt;em&gt;cheaper hardware than MySQL&lt;/em&gt;, it can expand easier, and they like &lt;em&gt;schemaless design&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hadoop&lt;/strong&gt; is used to process &lt;strong&gt;unstructured&lt;/strong&gt; and &lt;strong&gt;large datasets&lt;/strong&gt;, hundreds of billions of rows.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Vertica&lt;/strong&gt; is being used for analytics and &lt;strong&gt;large aggregations and joins&lt;/strong&gt; so they don&amp;#39;t have to write MapReduce jobs&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Soft launches&lt;/strong&gt;: Features can be enabled / disabled&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;References&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;http://highscalability.com/blog/2011/12/19/how-twitter-stores-250-million-tweets-a-day-using-mysql.html&lt;/li&gt;
+&lt;li&gt;http://www.infoq.com/news/2009/06/Twitter-Architecture&lt;/li&gt;
+&lt;li&gt;http://blog.evanweaver.com/2009/04/09/ruby-gc-tuning/&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Requirement pattern concepts</title>
