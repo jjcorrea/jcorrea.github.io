@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Twitter architecture overview
+title: Twitter highlights
 ---
 
 
