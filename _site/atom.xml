@@ -4,13 +4,85 @@
  <title>Joel Corrêa</title>
  <link href="http://jjcorrea.github.io/atom.xml" rel="self"/>
  <link href="http://jjcorrea.github.io/"/>
- <updated>2015-01-10T17:19:52-02:00</updated>
+ <updated>2015-01-11T22:42:13-02:00</updated>
  <id>http://jjcorrea.github.io</id>
  <author>
    <name>Joel Correa</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Requirement patterns catalog</title>
+   <link href="http://jjcorrea.github.io/2015/01/10/requirement-pattern-catalog/"/>
+   <updated>2015-01-10T00:00:00-02:00</updated>
+   <id>http://jjcorrea.github.io/2015/01/10/requirement-pattern-catalog</id>
+   <content type="html">&lt;h2&gt;Inter-system Interface requirement pattern&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Specify basic details for an interface between the system being specified and any external system or component with which it needs to interact.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Use for external interfaces, not for internal&lt;/li&gt;
+&lt;li&gt;Interaction&lt;/li&gt;
+&lt;li&gt;Exchange of information&lt;/li&gt;
+&lt;li&gt;Unique interface ID&lt;/li&gt;
+&lt;li&gt;Different systems treated separately&lt;/li&gt;
+&lt;li&gt;Interface adapters&lt;/li&gt;
+&lt;li&gt;Interface ownership&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Extra requirements&lt;/h3&gt;
+
+&lt;h4&gt;Throughput&lt;/h4&gt;
+
+&lt;p&gt;How much traffic must the interface be able to handle?&lt;/p&gt;
+
+&lt;h4&gt;Scalability&lt;/h4&gt;
+
+&lt;p&gt;How well must the interface deal with increases in thoughput?&lt;/p&gt;
+
+&lt;h4&gt;Extendability&lt;/h4&gt;
+
+&lt;p&gt;Do you need to be able to slot extra interfaces of this type?&lt;/p&gt;
+
+&lt;h4&gt;Resilience and availability&lt;/h4&gt;
+
+&lt;p&gt;How well and how quickly must the interface recover from failure? Identify anomalies and deal with them. During what hours it needs to be running?&lt;/p&gt;
+
+&lt;h4&gt;Traffic verification and recording&lt;/h4&gt;
+
+&lt;p&gt;Must we be abke ti tekk exactky what was sent and received?&lt;/p&gt;
+
+&lt;h4&gt;Upgrading&lt;/h4&gt;
+
+&lt;p&gt;What happens when the interface changes? Versioning.&lt;/p&gt;
+
+&lt;h4&gt;Security&lt;/h4&gt;
+
+&lt;p&gt;Are we worried about strangers getting their hands on the information that is passing along the interface?&lt;/p&gt;
+
+&lt;h2&gt;Inter-system Interaction requirement pattern&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Specify a particular type of interaction across an inter-system interface&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Each interface involves a range of different interactions.&lt;/li&gt;
+&lt;li&gt;The interface may hold a number of business related functions, but might also possess a number of more technical and supporting interactions&lt;/li&gt;
+&lt;li&gt;Interaction type = Exchange of a particular type of information&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Considerations for testing&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt; Formulate both valid and invalid (erroneous) cases&lt;/li&gt;
+&lt;li&gt;Try to cover as representative a spread of situations as possible &lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Twitter highlights</title>
