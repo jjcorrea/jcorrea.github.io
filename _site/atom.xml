@@ -4,13 +4,584 @@
  <title>Joel Corrêa</title>
  <link href="http://jjcorrea.github.io/atom.xml" rel="self"/>
  <link href="http://jjcorrea.github.io/"/>
- <updated>2015-01-11T22:42:13-02:00</updated>
+ <updated>2015-03-15T22:06:02-03:00</updated>
  <id>http://jjcorrea.github.io</id>
  <author>
    <name>Joel Correa</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Netflix Stack - Turbine</title>
+   <link href="http://jjcorrea.github.io/2015/03/15/netflix-stack-turbine/"/>
+   <updated>2015-03-15T00:00:00-03:00</updated>
+   <id>http://jjcorrea.github.io/2015/03/15/netflix-stack-turbine</id>
+   <content type="html">&lt;p&gt;Turbine is a tool for &lt;strong&gt;aggregating streams of Server-Sent Event (SSE) JSON data&lt;/strong&gt; into a single stream. The targeted use case is metrics streams from instances in an SOA being aggregated for dashboards.&lt;/p&gt;
+
+&lt;p&gt;For example, Netflix uses &lt;strong&gt;Hystrix&lt;/strong&gt; which has a realtime dashboard that &lt;strong&gt;uses Turbine to aggregate data&lt;/strong&gt; from 100s or 1000s of machines.&lt;/p&gt;
+
+&lt;h2&gt;References&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;https://github.com/Netflix/Turbine/wiki&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Netflix Stack - Simian army</title>
+   <link href="http://jjcorrea.github.io/2015/03/15/netflix-stack-simian-army/"/>
+   <updated>2015-03-15T00:00:00-03:00</updated>
+   <id>http://jjcorrea.github.io/2015/03/15/netflix-stack-simian-army</id>
+   <content type="html">&lt;p&gt;The Simian Army is a suite of tools for keeping your cloud operating in top form. Chaos Monkey, the first member, is a resiliency tool that helps ensure that your applications can tolerate random instance failures.&lt;/p&gt;
+
+&lt;p&gt;Consists of services (Monkeys) in the cloud for generating various kinds of failures, detecting abnormal conditions, and testing our ability to survive them. The goal is to &lt;strong&gt;keep our cloud safe, secure, and highly available&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2&gt;References&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;https://github.com/Netflix/SimianArmy/wiki&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Netflix Stack - Ribbon</title>
+   <link href="http://jjcorrea.github.io/2015/03/15/netflix-stack-ribbon/"/>
+   <updated>2015-03-15T00:00:00-03:00</updated>
+   <id>http://jjcorrea.github.io/2015/03/15/netflix-stack-ribbon</id>
+   <content type="html">&lt;p&gt;Ribbon is a client side IPC -  Inter Process Communication (remote procedure calls) - library that is battle-tested in cloud. It provides the following features&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Load balancing&lt;/li&gt;
+&lt;li&gt;Fault tolerance&lt;/li&gt;
+&lt;li&gt;Multiple protocol (HTTP, TCP, UDP) support in an asynchronous and reactive model&lt;/li&gt;
+&lt;li&gt;Caching and batching&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;References&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;https://github.com/Netflix/ribbon&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Netflix Stack - Hystrix</title>
+   <link href="http://jjcorrea.github.io/2015/03/15/netflix-stack-hystrix/"/>
+   <updated>2015-03-15T00:00:00-03:00</updated>
+   <id>http://jjcorrea.github.io/2015/03/15/netflix-stack-hystrix</id>
+   <content type="html">&lt;h2&gt;What does it do?&lt;/h2&gt;
+
+&lt;h3&gt;1) Latency and Fault Tolerance&lt;/h3&gt;
+
+&lt;p&gt;Fallbacks and graceful degradation. Fail fast and rapid recovery. Thread and semaphore isolation with circuit breakers.&lt;/p&gt;
+
+&lt;h3&gt;2) Realtime Operations&lt;/h3&gt;
+
+&lt;p&gt;Realtime monitoring and configuration changes. Watch service and property changes take effect immediately as they spread across a fleet. Be alerted, make decisions, affect change and see results in seconds.&lt;/p&gt;
+
+&lt;h3&gt;3) Concurrency&lt;/h3&gt;
+
+&lt;p&gt;Parallel execution. Concurrency aware request caching. Automated batching through request collapsing.&lt;/p&gt;
+
+&lt;p&gt;Sample:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;CommandHelloWorld&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;HystrixCommand&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;CommandHelloWorld&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HystrixCommandGroupKey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;Factory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;asKey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;ExampleGroup&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;protected&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Hello &amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;!&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This command could be used like this:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CommandHelloWorld&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Bob&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;execute&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Future&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CommandHelloWorld&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Bob&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;queue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Observable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CommandHelloWorld&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Bob&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;observe&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;https://github.com/Netflix/Hystrix&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Netflix Stack</title>
+   <link href="http://jjcorrea.github.io/2015/03/15/netflilx-stack/"/>
+   <updated>2015-03-15T00:00:00-03:00</updated>
+   <id>http://jjcorrea.github.io/2015/03/15/netflilx-stack</id>
+   <content type="html">&lt;p&gt;A summary of the Netflix open source tools. Categorizes into:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Availability&lt;/strong&gt;: &lt;a href=&quot;/2015/03/15/netflix-stack-hystrix/&quot;&gt;Hystrix&lt;/a&gt;, &lt;a href=&quot;/2015/03/15/netflix-stack-simian-army/&quot;&gt;SimianArmy&lt;/a&gt;, &lt;a href=&quot;/2015/03/15/netflix-stack-turbine/&quot;&gt;Turbine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cloud Management&lt;/strong&gt;: ICE, Asgard, Frigga, Glisten&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Persistence Systems&lt;/strong&gt;: Astyanax, CassJMeter, Curator, EvCache, Exhibitor, Priam, Staash, Dynomite, Dyno, Raigad&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Platform libraries&lt;/strong&gt;: Archaius, Denominator, Feign, Karyon, &lt;a href=&quot;/2015/03/15/netflix-stack-ribbon/&quot;&gt;Ribbon&lt;/a&gt;, Servo, Blitz4J, Governator&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Infrastructure Services&lt;/strong&gt;: Atlas, Edda, Suro, Eureka, Zuul, Prana&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Developer productivity&lt;/strong&gt;: GCViz, Pytheas, Nicobar&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Build and Deploy tools&lt;/strong&gt;: Aminator&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Big Data tools&lt;/strong&gt;: Aegisthus, Genie, Inviso, Lipstick, Pigpen, S3mper, Surus&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;In memory data management&lt;/strong&gt;: Netflix-graph, Zeno&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Security&lt;/strong&gt;: MSL, Scumblr, Security_Monkey, Sketchy&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Sample applications and recipes&lt;/strong&gt;: Recipes RSS&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Availability&lt;/h2&gt;
+
+&lt;h3&gt;Hystrix&lt;/h3&gt;
+
+&lt;p&gt;A &lt;strong&gt;latency and fault tolerance&lt;/strong&gt; library designed to isolate points of access to remote systems, services and 3rd party libraries, stop cascading failure and enable resilience in complex distributed systems where failure is inevitable.&lt;/p&gt;
+
+&lt;h3&gt;SimianArmy&lt;/h3&gt;
+
+&lt;p&gt;Tools for keeping your cloud operating in top form. Chaos Monkey is a resiliency tool that helps applications tolerate random instance failures.&lt;/p&gt;
+
+&lt;h3&gt;Turbine&lt;/h3&gt;
+
+&lt;p&gt;SSE Stream Aggregator&lt;/p&gt;
+
+&lt;h2&gt;Cloud Management&lt;/h2&gt;
+
+&lt;h3&gt;Ice&lt;/h3&gt;
+
+&lt;p&gt;AWS Usage Tool&lt;/p&gt;
+
+&lt;h3&gt;Asgard&lt;/h3&gt;
+
+&lt;p&gt;Web interface for application deployments and cloud management in Amazon Web Services (AWS). Binary download: http://github.com/Netflix/asgard/releases Snapshot builds: https://netflixoss.ci.cloudbees.com/job/asgard-master/ Twitter: http://twitter.com/AsgardOSS
+http://netflix.github.com/asgard&lt;/p&gt;
+
+&lt;h3&gt;Frigga&lt;/h3&gt;
+
+&lt;p&gt;Utilities for working with Asgard named objects&lt;/p&gt;
+
+&lt;h3&gt;Glisten&lt;/h3&gt;
+
+&lt;p&gt;Ease of use Groovy library for building JVM applications with Amazon Simple Workflow (SWF)&lt;/p&gt;
+
+&lt;h2&gt;Persistence Systems&lt;/h2&gt;
+
+&lt;h3&gt;Astyanax&lt;/h3&gt;
+
+&lt;p&gt;Cassandra Java Client&lt;/p&gt;
+
+&lt;h3&gt;CassJMeter&lt;/h3&gt;
+
+&lt;p&gt;JMeter plugin to run cassandra tests.&lt;/p&gt;
+
+&lt;h3&gt;Curator&lt;/h3&gt;
+
+&lt;p&gt;ZooKeeper client wrapper and rich ZooKeeper framework.&lt;/p&gt;
+
+&lt;h3&gt;EVCache&lt;/h3&gt;
+
+&lt;p&gt;A distributed in-memory data store for the cloud&lt;/p&gt;
+
+&lt;h3&gt;Exhibitor&lt;/h3&gt;
+
+&lt;p&gt;ZooKeeper co-process for instance monitoring, backup/recovery, cleanup and visualization.&lt;/p&gt;
+
+&lt;h3&gt;Priam&lt;/h3&gt;
+
+&lt;p&gt;Co-Process for backup/recovery, Token Management, and Centralized Configuration management for Cassandra.&lt;/p&gt;
+
+&lt;h3&gt;Staash&lt;/h3&gt;
+
+&lt;p&gt;A language-agnostic as well as storage-agnostic web interface for storing data into persistent storage systems, the metadata layer abstracts a lot of storage details and the pattern automation APIs take care of automating common data access patterns. &lt;/p&gt;
+
+&lt;h3&gt;Dynomite&lt;/h3&gt;
+
+&lt;p&gt;A generic dynamo implementation for different k-v storage engines &lt;/p&gt;
+
+&lt;h3&gt;Dyno&lt;/h3&gt;
+
+&lt;p&gt;Java client for Dynomite.&lt;/p&gt;
+
+&lt;h3&gt;Raigad&lt;/h3&gt;
+
+&lt;p&gt;Co-Process for backup/recovery, Auto Deployments and Centralized Configuration management for ElasticSearch.&lt;/p&gt;
+
+&lt;h2&gt;Platform Libraries&lt;/h2&gt;
+
+&lt;h3&gt;Archaius&lt;/h3&gt;
+
+&lt;p&gt;Library for configuration management API&lt;/p&gt;
+
+&lt;h3&gt;Denominator&lt;/h3&gt;
+
+&lt;p&gt;Portably control DNS clouds using java or bash.&lt;/p&gt;
+
+&lt;h3&gt;Feign&lt;/h3&gt;
+
+&lt;p&gt;Feign makes writing java http clients easier.&lt;/p&gt;
+
+&lt;h3&gt;Karyon&lt;/h3&gt;
+
+&lt;p&gt;The nucleus or the base container for Applications and Services built using the NetflixOSS ecosystem.&lt;/p&gt;
+
+&lt;h3&gt;Ribbon&lt;/h3&gt;
+
+&lt;p&gt;Ribbon is a Inter Process Communication (remote procedure calls) library with built in software load balancers. The primary usage model involves REST calls with various serialization scheme support.&lt;/p&gt;
+
+&lt;h3&gt;Servo&lt;/h3&gt;
+
+&lt;p&gt;Netflix Application Monitoring Library.&lt;/p&gt;
+
+&lt;h3&gt;Blitz4j&lt;/h3&gt;
+
+&lt;p&gt;Logging framework for fast asynchronous logging.&lt;/p&gt;
+
+&lt;h3&gt;Governator&lt;/h3&gt;
+
+&lt;p&gt;Governator is a library of extensions and utilities that enhance Google Guice to provide: classpath scanning and automatic binding, lifecycle management, configuration to field mapping, field validation and parallelized object warmup.&lt;/p&gt;
+
+&lt;h2&gt;Infrastructure Services&lt;/h2&gt;
+
+&lt;h3&gt;Atlas&lt;/h3&gt;
+
+&lt;p&gt;Backend for managing dimensional time series data.&lt;/p&gt;
+
+&lt;h3&gt;Edda&lt;/h3&gt;
+
+&lt;p&gt;Service to track changes in your cloud.&lt;/p&gt;
+
+&lt;h3&gt;Suro&lt;/h3&gt;
+
+&lt;p&gt;Netflix&amp;#39;s distributed Data Pipeline. Suro is a data pipeline service for collecting, aggregating, and dispatching large volume of application events including log data.&lt;/p&gt;
+
+&lt;h3&gt;Eureka&lt;/h3&gt;
+
+&lt;p&gt;AWS Service registry for resilient mid-tier load balancing and failover.&lt;/p&gt;
+
+&lt;h3&gt;Zuul&lt;/h3&gt;
+
+&lt;p&gt;Zuul is an edge service that provides dynamic routing, monitoring, resiliency, security, and more.&lt;/p&gt;
+
+&lt;h3&gt;Prana&lt;/h3&gt;
+
+&lt;p&gt;A sidecar for your NetflixOSS based services.&lt;/p&gt;
+
+&lt;h2&gt;Developer Productivity&lt;/h2&gt;
+
+&lt;h3&gt;Gcviz&lt;/h3&gt;
+
+&lt;p&gt;Garbage Collector Visualization Tool/Framework&lt;/p&gt;
+
+&lt;h3&gt;Pytheas&lt;/h3&gt;
+
+&lt;p&gt;Web Resources and UI Framework &lt;/p&gt;
+
+&lt;h3&gt;Nicobar&lt;/h3&gt;
+
+&lt;p&gt;Dynamic Scripting and Module Loader Framework for Java.&lt;/p&gt;
+
+&lt;h2&gt;Build and Deploy Tools&lt;/h2&gt;
+
+&lt;h3&gt;Aminator&lt;/h3&gt;
+
+&lt;p&gt;A tool for creating EBS AMIs. This tool currently works for CentOS/RedHat Linux images and is intended to run on an EC2 instance.&lt;/p&gt;
+
+&lt;h2&gt;Big Data Tools&lt;/h2&gt;
+
+&lt;h3&gt;Aegisthus&lt;/h3&gt;
+
+&lt;p&gt;A Bulk Data Pipeline out of Cassandra&lt;/p&gt;
+
+&lt;h3&gt;Genie&lt;/h3&gt;
+
+&lt;p&gt;Federated Job Execution Engine.&lt;/p&gt;
+
+&lt;h3&gt;Inviso&lt;/h3&gt;
+
+&lt;p&gt;Inviso is a lightweight tool that provides the ability to search for Hadoop jobs, visualize the performance, and view cluster utilization.&lt;/p&gt;
+
+&lt;h3&gt;Lipstick&lt;/h3&gt;
+
+&lt;p&gt;Pig Visualization framework.&lt;/p&gt;
+
+&lt;h3&gt;PigPen&lt;/h3&gt;
+
+&lt;p&gt;Map-Reduce for Clojure.&lt;/p&gt;
+
+&lt;h3&gt;S3mper&lt;/h3&gt;
+
+&lt;p&gt;s3mper - Consistent Listing for S3.&lt;/p&gt;
+
+&lt;h3&gt;Surus&lt;/h3&gt;
+
+&lt;p&gt;A collection of tools for analysis in Pig and Hive.&lt;/p&gt;
+
+&lt;h2&gt;In-Memory Data Management&lt;/h2&gt;
+
+&lt;h3&gt;Netflix-Graph&lt;/h3&gt;
+
+&lt;p&gt;Compact in-memory representation of directed graph data&lt;/p&gt;
+
+&lt;h3&gt;Zeno&lt;/h3&gt;
+
+&lt;p&gt;Netflix&amp;#39;s In-Memory Data Propagation Framework.&lt;/p&gt;
+
+&lt;h2&gt;Security&lt;/h2&gt;
+
+&lt;h3&gt;Msl&lt;/h3&gt;
+
+&lt;p&gt;Message Security Layer.&lt;/p&gt;
+
+&lt;h3&gt;Scumblr&lt;/h3&gt;
+
+&lt;p&gt;Web application that allows performing periodic searches and storing / taking actions on the identified results. Uses the Workflowable gem to allow setting up flexible workflows for different types of results.&lt;/p&gt;
+
+&lt;h3&gt;Security_monkey&lt;/h3&gt;
+
+&lt;p&gt;Monitors policy changes and alerts on insecure configurations in an AWS account. &lt;/p&gt;
+
+&lt;h3&gt;Sketchy&lt;/h3&gt;
+
+&lt;p&gt;Sketchy is a task based API for taking screenshots and scraping text from websites.&lt;/p&gt;
+
+&lt;h2&gt;Sample Applications and Recipes&lt;/h2&gt;
+
+&lt;h3&gt;Recipes-Rss&lt;/h3&gt;
+
+&lt;p&gt;RSS Reader Recipes that uses several of the Netflix OSS components&lt;/p&gt;
+
+&lt;h2&gt;Uncategorized&lt;/h2&gt;
+
+&lt;h3&gt;NfWebCrypto&lt;/h3&gt;
+
+&lt;p&gt;Web Cryptography API Polyfill &lt;/p&gt;
+
+&lt;h3&gt;Brutal&lt;/h3&gt;
+
+&lt;p&gt;A multi-network asynchronous chat bot framework using twisted.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Amazon AWS Stack</title>
+   <link href="http://jjcorrea.github.io/2015/03/15/Amazon-AWS-stack/"/>
+   <updated>2015-03-15T00:00:00-03:00</updated>
+   <id>http://jjcorrea.github.io/2015/03/15/Amazon-AWS-stack</id>
+   <content type="html"></content>
+ </entry>
+ 
+ <entry>
+   <title>Google Guice</title>
+   <link href="http://jjcorrea.github.io/2015/03/14/google-guice/"/>
+   <updated>2015-03-14T00:00:00-03:00</updated>
+   <id>http://jjcorrea.github.io/2015/03/14/google-guice</id>
+   <content type="html">&lt;blockquote&gt;
+&lt;p&gt;Guice (pronounced &amp;#39;juice&amp;#39;) is a &lt;strong&gt;lightweight dependency injection framework&lt;/strong&gt; for Java 6 and above, brought to you by Google&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Wiring up the application dependencies and handling all the dependency-related complexity, which comes in several flavors, as &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;boilerplate code&lt;/strong&gt; in sense of maintainability&lt;/li&gt;
+&lt;li&gt;a strong upfront &lt;strong&gt;type checking&lt;/strong&gt; for antecipating potential issues &lt;/li&gt;
+&lt;li&gt;as well as managing &lt;strong&gt;cross-cutting concerns&lt;/strong&gt; (Transactions, Security, Performance...), &lt;strong&gt;scopes&lt;/strong&gt;, etc&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For solving these sort of problems there is Google Guice.&lt;/p&gt;
+
+&lt;h2&gt;Binder&lt;/h2&gt;
+
+&lt;p&gt;A Binding refers a mapping for an &lt;strong&gt;Interface to its corresponding Implementation&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2&gt;Injector&lt;/h2&gt;
+
+&lt;p&gt;Injectors take care of &lt;strong&gt;creating and maintaining objects&lt;/strong&gt; that are used by the Clients.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;Add&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;addObject&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;injector&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getInstance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Add&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Module&lt;/h2&gt;
+
+&lt;p&gt;Modules are objects which will &lt;strong&gt;maintain the set of Bindings&lt;/strong&gt;, which defines &lt;strong&gt;how dependencies are resolved&lt;/strong&gt;. It is possible to have multiple Modules in an Application. Injectors, in turn, will interact with the Modules to get the possible Bindings. Module is represented by an interface with a method called Module.configure() which should be overridden by the Application to populate the Bindings.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MyModule&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AbstractModule&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;configure&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Binder&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;binder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// Code that binds information using the various&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// flavours of bind method.&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Guice&lt;/h2&gt;
+
+&lt;p&gt;Guice is a class which Clients directly depends upon to interact with other Objects.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;MyModule&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MyModule&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Injector&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;injector&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Guice&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;createInjector&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;module&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Providers&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Enables to &lt;strong&gt;lazily&lt;/strong&gt; resolve dependencies, and &lt;strong&gt;get multiple instances&lt;/strong&gt; of a certain type. Kind of factory.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Scopes&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Unscoped&lt;/strong&gt;: Create / Use / Drop.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;@Singleton&lt;/strong&gt;: One per application&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;@RequestScoped&lt;/strong&gt;: One per web or RPC request&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;@SessionScoped&lt;/strong&gt;: One per HTTP session (usefull for caching, etc)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Annotations&lt;/h2&gt;
+
+&lt;h3&gt;@ImplementedBy&lt;/h3&gt;
+
+&lt;p&gt;This Annotation points to a Class object that provides Implementation to the interface.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;nd&quot;&gt;@ImplementedBy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SimpleAdd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Add&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;@Inject&lt;/h3&gt;
+
+&lt;p&gt;For &lt;strong&gt;injecting instances&lt;/strong&gt;, we can use this Inject Annotation.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Client&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nd&quot;&gt;@Inject&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Client&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MyService&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;service&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;@ProvidedBy&lt;/h3&gt;
+
+&lt;p&gt;Assuming that we want to customize the Object creation process for some interface type, then we would depend on Guice Provider mechanism. Let’s say, for Add interface we want AddProvider to create and return objects of type SimpleAdd.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;nd&quot;&gt;@ProvidedBy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;AddProvider&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Add&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;@Singleton&lt;/h3&gt;
+
+&lt;p&gt;If you want the dependency to be resolved in a single instance for all the application, you need to mark your class with a @Singleton annotation.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;nd&quot;&gt;@Singleton&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MyConnection&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;connect&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;disconnect&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Examples&lt;/h2&gt;
+
+&lt;h3&gt;Message services&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MessageService&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; 
+    &lt;span class=&quot;kt&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;sendMessage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;receipient&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Sample implementation:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;javax.inject.Singleton&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//import com.google.inject.Singleton; --&amp;gt; **Guice 3.0** added the support for JSR-330 and we can use annotations from **com.google.inject** or **javax.inject** package.&lt;/span&gt;
+
+&lt;span class=&quot;nd&quot;&gt;@Singleton&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;EmailService&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MessageService&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;sendMessage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;receipient&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;//some fancy code to send email&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; 
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Let’s say we have another service implementation to send facebook messages.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;nd&quot;&gt;@Singleton&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;FacebookService&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MessageService&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;sendMessage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;receipient&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;//some complex code to send Facebook message&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Some application which requires the dependency:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MyApplication&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; 
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MessageService&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;service&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;//  constructor based injector&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//  @Inject&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//  public MyApplication(MessageService svc){&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//      this.service=svc;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//  }&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;//setter method injector&lt;/span&gt;
+    &lt;span class=&quot;nd&quot;&gt;@Inject&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setService&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MessageService&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;svc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;service&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;svc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;sendMessage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rec&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;//some business logic here&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;service&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;sendMessage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rec&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The bindings (map types to their implementations):&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;AppInjector&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AbstractModule&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; 
+    &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;protected&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;configure&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;//bind the service to implementation class&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;//bind(MessageService.class).to(EmailService.class);&lt;/span&gt;
+
+        &lt;span class=&quot;c1&quot;&gt;//bind MessageService to Facebook Message implementation&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;bind&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MessageService&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;to&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;FacebookService&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Client application:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ClientApplication&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;Injector&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;injector&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Guice&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;createInjector&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AppInjector&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;                 
+        &lt;span class=&quot;n&quot;&gt;MyApplication&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;app&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;injector&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getInstance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MyApplication&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;         
+        &lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;sendMessage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Hi Pankaj&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;pankaj@abc.com&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Injection: Constructor vs Method vs Field&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Constructor injection&lt;/strong&gt; combines &lt;strong&gt;instantiation with injection&lt;/strong&gt;. Most constructors will then assign the parameters to final fields. Works nicely with &lt;strong&gt;unit testing&lt;/strong&gt;.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;RealBillingService&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BillingService&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CreditCardProcessor&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;processorProvider&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TransactionLog&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;transactionLogProvider&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;nd&quot;&gt;@Inject&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;RealBillingService&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CreditCardProcessor&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;processorProvider&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TransactionLog&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;transactionLogProvider&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;processorProvider&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;processorProvider&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;transactionLogProvider&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;transactionLogProvider&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;On &lt;strong&gt;Method injection&lt;/strong&gt; dependencies take the form of parameters, which the injector resolves before invoking the method.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;PayPalCreditCardProcessor&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CreditCardProcessor&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DEFAULT_API_KEY&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;development-use-only&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;apiKey&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DEFAULT_API_KEY&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;nd&quot;&gt;@Inject&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setApiKey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;@Named&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;PayPal API key&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;apiKey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;apiKey&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;apiKey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Field injection&lt;/strong&gt;: This is the most concise injection, but the &lt;strong&gt;least testable&lt;/strong&gt;.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;DatabaseTransactionLogProvider&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Provider&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;TransactionLog&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nd&quot;&gt;@Inject&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Connection&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;connection&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TransactionLog&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;DatabaseTransactionLog&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;connection&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;https://github.com/google/guice/wiki/Injections&lt;/li&gt;
+&lt;li&gt;http://www.javabeat.net/introduction-to-google-guice/&lt;/li&gt;
+&lt;li&gt;http://www.journaldev.com/2403/google-guice-dependency-injection-example-tutorial&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Requirement patterns catalog</title>
