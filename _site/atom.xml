@@ -4,7 +4,7 @@
  <title>Joel Corrêa</title>
  <link href="http://jjcorrea.github.io/atom.xml" rel="self"/>
  <link href="http://jjcorrea.github.io/"/>
- <updated>2015-03-15T22:06:02-03:00</updated>
+ <updated>2015-03-15T22:42:27-03:00</updated>
  <id>http://jjcorrea.github.io</id>
  <author>
    <name>Joel Correa</name>
@@ -372,7 +372,261 @@ http://netflix.github.com/asgard&lt;/p&gt;
    <link href="http://jjcorrea.github.io/2015/03/15/Amazon-AWS-stack/"/>
    <updated>2015-03-15T00:00:00-03:00</updated>
    <id>http://jjcorrea.github.io/2015/03/15/Amazon-AWS-stack</id>
-   <content type="html"></content>
+   <content type="html">&lt;p&gt;A summary of the Amazon AWS stack. Categorizes into:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Compute&lt;/strong&gt;: EC2, EC2 Container Service, Lambda, Auto Scaling, VPC, Elastic Load Balancing &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Storage &amp;amp; Content Delivery&lt;/strong&gt;: S3, Glacier, EBS, Storage Gateway, CloudFront.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Databases&lt;/strong&gt;: RDS, DynamoDB, Redshift, ElastiCache&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Networking&lt;/strong&gt;: VPC, Direct Connect, Route 53. Elastic Load Balancing&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Administration &amp;amp; Security&lt;/strong&gt;: Directory Service, Identity and Access Management (IAM), Trusted Advisor, CloudTrail, Config, CloudHSM, Key Management Service, CloudWatch, Service Catalog.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Analytics&lt;/strong&gt;: EMR, Kinesis, Redshift, Data Pipeline.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Application Services&lt;/strong&gt;: SQS, SWF, AppStream, Elastic Transcoder, SES, CloudSearch, SNS, FPS.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Deployment &amp;amp; Management&lt;/strong&gt;: Elastic Beanstalk, OpsWorks, CloudFormation, CodeDeploy, CodePipeline, CodeCommit, Management Console, Command Line Interface.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mobile Services&lt;/strong&gt;: Cognito, Mobile Analytics, SNS, Mobile SDK.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Enterprise Applications&lt;/strong&gt;: WorkSpaces, WorkMail, WorkDocs&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1&gt;Compute&lt;/h1&gt;
+
+&lt;h2&gt;Amazon EC2&lt;/h2&gt;
+
+&lt;p&gt;Virtual Servers in the Cloud&lt;/p&gt;
+
+&lt;h2&gt;Amazon EC2 Container Service&lt;/h2&gt;
+
+&lt;p&gt;Scalable Container Management Service&lt;/p&gt;
+
+&lt;h2&gt;AWS Lambda&lt;/h2&gt;
+
+&lt;p&gt;Run Your Code in Response to Events&lt;/p&gt;
+
+&lt;h2&gt;Auto Scaling&lt;/h2&gt;
+
+&lt;h2&gt;Amazon VPC&lt;/h2&gt;
+
+&lt;p&gt;Isolated Cloud Resources&lt;/p&gt;
+
+&lt;h2&gt;Elastic Load Balancing&lt;/h2&gt;
+
+&lt;h1&gt;Storage &amp;amp; Content Delivery&lt;/h1&gt;
+
+&lt;h2&gt;Amazon S3&lt;/h2&gt;
+
+&lt;p&gt;Scalable Storage in the Cloud&lt;/p&gt;
+
+&lt;h2&gt;Amazon Glacier&lt;/h2&gt;
+
+&lt;p&gt;Low-Cost Archive Storage in the Cloud&lt;/p&gt;
+
+&lt;h2&gt;Amazon EBS&lt;/h2&gt;
+
+&lt;p&gt;EC2 Block Storage Volumes&lt;/p&gt;
+
+&lt;h2&gt;AWS Storage Gateway&lt;/h2&gt;
+
+&lt;p&gt;Integrates on-premises IT environments with Cloud storage&lt;/p&gt;
+
+&lt;h2&gt;Amazon CloudFront&lt;/h2&gt;
+
+&lt;p&gt;Global Content Delivery Network&lt;/p&gt;
+
+&lt;h1&gt;Databases&lt;/h1&gt;
+
+&lt;h2&gt;Amazon RDS&lt;/h2&gt;
+
+&lt;p&gt;Managed Relational Database Service for MySQL, Postgres, Oracle, SQL Server, and Amazon Aurora&lt;/p&gt;
+
+&lt;h2&gt;Amazon DynamoDB&lt;/h2&gt;
+
+&lt;p&gt;Fast, Flexible, Highly Scalable NoSQL Database Service&lt;/p&gt;
+
+&lt;h2&gt;Amazon Redshift&lt;/h2&gt;
+
+&lt;p&gt;Fast, Powerful, Fully Managed, Petabyte-scale Data Warehouse Service&lt;/p&gt;
+
+&lt;h2&gt;Amazon ElastiCache&lt;/h2&gt;
+
+&lt;p&gt;In-Memory Caching Service&lt;/p&gt;
+
+&lt;h1&gt;Networking&lt;/h1&gt;
+
+&lt;h2&gt;Amazon VPC&lt;/h2&gt;
+
+&lt;p&gt;Isolated Cloud Resources&lt;/p&gt;
+
+&lt;h2&gt;AWS Direct Connect&lt;/h2&gt;
+
+&lt;p&gt;Dedicated Network Connection to AWS&lt;/p&gt;
+
+&lt;h2&gt;Amazon Route 53&lt;/h2&gt;
+
+&lt;p&gt;Scalable Domain Name System (DNS)&lt;/p&gt;
+
+&lt;h2&gt;Elastic Load Balancing&lt;/h2&gt;
+
+&lt;h1&gt;Administration &amp;amp; Security&lt;/h1&gt;
+
+&lt;h2&gt;AWS Directory Service&lt;/h2&gt;
+
+&lt;p&gt;Managed Directories in the Cloud&lt;/p&gt;
+
+&lt;h2&gt;AWS Identity and Access Management (IAM)&lt;/h2&gt;
+
+&lt;p&gt;Configurable AWS Access Controls&lt;/p&gt;
+
+&lt;h2&gt;Trusted Advisor&lt;/h2&gt;
+
+&lt;p&gt;AWS Cloud Optimization Expert&lt;/p&gt;
+
+&lt;h2&gt;AWS CloudTrail&lt;/h2&gt;
+
+&lt;p&gt;User Activity and Change Tracking&lt;/p&gt;
+
+&lt;h2&gt;AWS Config&lt;/h2&gt;
+
+&lt;p&gt;Resource Inventory, Configuration History, and Configuration Change Notifications&lt;/p&gt;
+
+&lt;h2&gt;AWS CloudHSM&lt;/h2&gt;
+
+&lt;p&gt;Hardware-based Key Storage for Regulatory Compliance&lt;/p&gt;
+
+&lt;h2&gt;AWS Key Management Service&lt;/h2&gt;
+
+&lt;p&gt;Managed Creation and Control of Encryption Keys&lt;/p&gt;
+
+&lt;h2&gt;Amazon CloudWatch&lt;/h2&gt;
+
+&lt;p&gt;Resource and Application Monitoring&lt;/p&gt;
+
+&lt;h2&gt;AWS Service Catalog&lt;/h2&gt;
+
+&lt;p&gt;Find and Launch Products Using a Personalized Portal&lt;/p&gt;
+
+&lt;h1&gt;Analytics&lt;/h1&gt;
+
+&lt;h2&gt;Amazon EMR&lt;/h2&gt;
+
+&lt;p&gt;Hosted Hadoop Framework&lt;/p&gt;
+
+&lt;h2&gt;Amazon Kinesis&lt;/h2&gt;
+
+&lt;p&gt;Real-Time Data Stream Processing&lt;/p&gt;
+
+&lt;h2&gt;Amazon Redshift&lt;/h2&gt;
+
+&lt;p&gt;Fast, Powerful, Fully Managed, Petabyte-scale Data Warehouse Service&lt;/p&gt;
+
+&lt;h2&gt;AWS Data Pipeline&lt;/h2&gt;
+
+&lt;p&gt;Orchestration Service for Periodic, Data-Driven Workflows&lt;/p&gt;
+
+&lt;h1&gt;Application Services&lt;/h1&gt;
+
+&lt;h2&gt;Amazon SQS&lt;/h2&gt;
+
+&lt;p&gt;Message Queue Service&lt;/p&gt;
+
+&lt;h2&gt;Amazon SWF&lt;/h2&gt;
+
+&lt;p&gt;Workflow service for coordinating application components&lt;/p&gt;
+
+&lt;h2&gt;Amazon AppStream&lt;/h2&gt;
+
+&lt;p&gt;Low-Latency Application Streaming&lt;/p&gt;
+
+&lt;h2&gt;Amazon Elastic Transcoder&lt;/h2&gt;
+
+&lt;p&gt;Easy-to-use scalable media transcoding&lt;/p&gt;
+
+&lt;h2&gt;Amazon SES&lt;/h2&gt;
+
+&lt;p&gt;Email Sending Service&lt;/p&gt;
+
+&lt;h2&gt;Amazon CloudSearch&lt;/h2&gt;
+
+&lt;p&gt;Managed Search Service&lt;/p&gt;
+
+&lt;h2&gt;Amazon SNS&lt;/h2&gt;
+
+&lt;p&gt;Push Notification Service&lt;/p&gt;
+
+&lt;h2&gt;Amazon FPS&lt;/h2&gt;
+
+&lt;p&gt;API based payment service&lt;/p&gt;
+
+&lt;h1&gt;Deployment &amp;amp; Management&lt;/h1&gt;
+
+&lt;h2&gt;AWS Elastic Beanstalk&lt;/h2&gt;
+
+&lt;p&gt;AWS Application Container&lt;/p&gt;
+
+&lt;h2&gt;AWS OpsWorks&lt;/h2&gt;
+
+&lt;p&gt;DevOps Application Management Services&lt;/p&gt;
+
+&lt;h2&gt;AWS CloudFormation&lt;/h2&gt;
+
+&lt;p&gt;Templates for AWS Resource Creation&lt;/p&gt;
+
+&lt;h2&gt;AWS CodeDeploy&lt;/h2&gt;
+
+&lt;p&gt;Automated Deployments&lt;/p&gt;
+
+&lt;h2&gt;AWS CodePipeline&lt;/h2&gt;
+
+&lt;p&gt;Continuous Delivery and Release Automation Service&lt;/p&gt;
+
+&lt;h2&gt;AWS CodeCommit&lt;/h2&gt;
+
+&lt;p&gt;Secure, Highly Scalable, Managed Revision Control Service&lt;/p&gt;
+
+&lt;h2&gt;AWS Management Console&lt;/h2&gt;
+
+&lt;p&gt;Web-Based User Interface&lt;/p&gt;
+
+&lt;h2&gt;AWS Command Line Interface&lt;/h2&gt;
+
+&lt;p&gt;Unified tool to manage AWS services&lt;/p&gt;
+
+&lt;h1&gt;Mobile Services&lt;/h1&gt;
+
+&lt;h2&gt;Amazon Cognito&lt;/h2&gt;
+
+&lt;p&gt;User identity and data synchronization&lt;/p&gt;
+
+&lt;h2&gt;Amazon Mobile Analytics&lt;/h2&gt;
+
+&lt;p&gt;Fast, secure app usage analytics&lt;/p&gt;
+
+&lt;h2&gt;Amazon SNS&lt;/h2&gt;
+
+&lt;p&gt;Send notifications, updates, and promotions across platforms&lt;/p&gt;
+
+&lt;h2&gt;AWS Mobile SDK&lt;/h2&gt;
+
+&lt;p&gt;Build high quality mobile apps quickly and easily&lt;/p&gt;
+
+&lt;h1&gt;Enterprise Applications&lt;/h1&gt;
+
+&lt;h2&gt;Amazon WorkSpaces&lt;/h2&gt;
+
+&lt;p&gt;Virtual Desktops in the Cloud&lt;/p&gt;
+
+&lt;h2&gt;Amazon WorkMail&lt;/h2&gt;
+
+&lt;p&gt;Secure Email and Calendaring&lt;/p&gt;
+
+&lt;h2&gt;Amazon WorkDocs&lt;/h2&gt;
+
+&lt;p&gt;Secure enterprise document storage and sharing&lt;/p&gt;
+
+&lt;h1&gt;References&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;https://aws.amazon.com/&lt;/li&gt;
+&lt;/ul&gt;
+</content>
  </entry>
  
  <entry>
