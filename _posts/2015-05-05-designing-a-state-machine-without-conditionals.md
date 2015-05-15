@@ -62,7 +62,7 @@ These are the main components which were designed (the state machine **core**):
 public class EntryPoint {
   // ...
   public List<string> UpdateStatus(Input input) {
-    return transitions.All(input).Where(x => x.Item1 == true)
+    return transitions.All(input).Where(x => x.Item1)
 	  .Select(x => x.Item2())
 	  .DefaultIfEmpty(new List<string>());
   }
