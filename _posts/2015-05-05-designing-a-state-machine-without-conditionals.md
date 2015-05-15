@@ -130,6 +130,7 @@ public class Rules {
 - A great **communication** is as important as a great design.
 - As well as continuous **involvement** during the development
 - We delivered the module with more than **250 (real) unit tests**
+- Giving meaningfull names through a **centralized point-of-control** made it a lot easier to handle changes and properly understanding the context.
 - The **time spent** on development was much lower than we were expecting
 - There were **changes** to the predicates & rules, and all the team was pretty confident to perform them due to the test coverage.
 

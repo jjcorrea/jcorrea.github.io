@@ -4,7 +4,7 @@
  <title>Joel Corrêa</title>
  <link href="http://jjcorrea.github.io/atom.xml" rel="self"/>
  <link href="http://jjcorrea.github.io/"/>
- <updated>2015-05-05T23:01:24-03:00</updated>
+ <updated>2015-05-14T23:24:34-03:00</updated>
  <id>http://jjcorrea.github.io</id>
  <author>
    <name>Joel Correa</name>
@@ -161,6 +161,76 @@ Now they avoid ifs!
 &lt;p&gt;You shouldn&amp;#39;t. Its good to remind that this solution was created based on several considerations mainly driven by the problem nature &amp;amp; constraints. &lt;/p&gt;
 
 &lt;p&gt;On the other hand, if you look at this as a hammer, which make everything magically turn into a nail, you just got it all wrong.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Facebook - React JS</title>
+   <link href="http://jjcorrea.github.io/2015/04/03/facebook-react-js/"/>
+   <updated>2015-04-03T00:00:00-03:00</updated>
+   <id>http://jjcorrea.github.io/2015/04/03/facebook-react-js</id>
+   <content type="html">&lt;h2&gt;Topics&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Virtual DOM&lt;/li&gt;
+&lt;li&gt;Interactive vs Reactive&lt;/li&gt;
+&lt;li&gt;Observable&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Interactive&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Passive: exposes functions so others can change it&lt;/li&gt;
+&lt;li&gt;Proactive: changes and forces passive modules&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Passive is BAD&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&amp;quot;Someone else is responsible for me.&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Roles in Reactive Programming&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Reactive: listens to events, and exposes events that can listened by others&lt;/li&gt;
+&lt;li&gt;No other role&lt;/li&gt;
+&lt;li&gt;&amp;quot;I am in full control over myself.&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;What is react?&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Virtual DOM Rendering&lt;/li&gt;
+&lt;li&gt;Reusable hierarchical components&lt;/li&gt;
+&lt;li&gt;Hides Virtual DOM data structure from the programmer&lt;/li&gt;
+&lt;li&gt;Mostly Passive API&lt;/li&gt;
+&lt;li&gt;Not a framework, an opinionated building block&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;React virtual elements are not observable&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Criticism&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Great ideas, bad API&lt;/li&gt;
+&lt;li&gt;React is not Reactive Programming&lt;/li&gt;
+&lt;li&gt;Rendering is Reactive, all the rest is Passive&lt;/li&gt;
+&lt;li&gt;React is unsuitable for Reactive Programming&lt;/li&gt;
+&lt;li&gt;React could be better&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Virtual DOM alternatives&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;https://github.com/Raynos/mercury&lt;/li&gt;
+&lt;li&gt;http://lhorie.github.io/mithril/ (MVC)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;References&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;http://staltz.com/dont-react/&lt;/li&gt;
+&lt;/ul&gt;
 </content>
  </entry>
  
@@ -994,70 +1064,137 @@ http://netflix.github.com/asgard&lt;/p&gt;
    <link href="http://jjcorrea.github.io/2015/01/10/requirement-pattern-catalog/"/>
    <updated>2015-01-10T00:00:00-02:00</updated>
    <id>http://jjcorrea.github.io/2015/01/10/requirement-pattern-catalog</id>
-   <content type="html">&lt;h2&gt;Inter-system Interface requirement pattern&lt;/h2&gt;
+   <content type="html">&lt;h2&gt;Fundamental requirement patterns&lt;/h2&gt;
+
+&lt;h3&gt;Inter-system Interface&lt;/h3&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;Specify basic details for an interface between the system being specified and any external system or component with which it needs to interact.&lt;/p&gt;
+&lt;p&gt;Specify basic details for an &lt;strong&gt;interface (exchange of information) between the system being specified and any &lt;u&gt;external&lt;/u&gt; system&lt;/strong&gt; or component with which it needs to interact.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Extra requirements&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Throughput: How much traffic? &lt;/li&gt;
+&lt;li&gt;Scalability: How well must the interface deal with increases in throughput?&lt;/li&gt;
+&lt;li&gt;Resilience and availability: How quickly must the interface recover from failure? During what hours it needs to be running?&lt;/li&gt;
+&lt;li&gt;Upgrading: What happens when the interface changes? Must we be able to support old and new versions?&lt;/li&gt;
+&lt;li&gt;Security: Are we worried about strangers getting their hands on the information that is passing, along the interface?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Inter-system Interaction&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Specify a particular type of &lt;strong&gt;interaction&lt;/strong&gt; across an inter-system interface&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;Technology&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Compatibility&lt;/strong&gt; with particular technology&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;Comply-with-Standard&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Standards, Laws and Regulations &lt;strong&gt;to comply&lt;/strong&gt; with&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;Refer-to-Requirements&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;External requirements&lt;/strong&gt; to be satisfied&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;Documentation&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Types of documentation&lt;/strong&gt; to be produced&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;hr /&gt;&lt;/p&gt;
+
+&lt;h2&gt;Information Requirement patterns&lt;/h2&gt;
+
+&lt;h3&gt;Data type&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;How a particular atomic item of information for a particular business purpose is to be represented and / or displayed &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;Data structure&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Define a compound data item (one that comprises multiple individual pieces of information)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;ID&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;How to identify data entities&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;Calculation formula&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;How to calculate values&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;Data longevity&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;How long to keep the information&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Use for external interfaces, not for internal&lt;/li&gt;
-&lt;li&gt;Interaction&lt;/li&gt;
-&lt;li&gt;Exchange of information&lt;/li&gt;
-&lt;li&gt;Unique interface ID&lt;/li&gt;
-&lt;li&gt;Different systems treated separately&lt;/li&gt;
-&lt;li&gt;Interface adapters&lt;/li&gt;
-&lt;li&gt;Interface ownership&lt;/li&gt;
+&lt;li&gt;Manner of storage?&lt;/li&gt;
+&lt;li&gt;Length of time to retain the data?&lt;/li&gt;
+&lt;li&gt;Purpose: Why do we want to keep this information for this length of time?&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3&gt;Extra requirements&lt;/h3&gt;
-
-&lt;h4&gt;Throughput&lt;/h4&gt;
-
-&lt;p&gt;How much traffic must the interface be able to handle?&lt;/p&gt;
-
-&lt;h4&gt;Scalability&lt;/h4&gt;
-
-&lt;p&gt;How well must the interface deal with increases in thoughput?&lt;/p&gt;
-
-&lt;h4&gt;Extendability&lt;/h4&gt;
-
-&lt;p&gt;Do you need to be able to slot extra interfaces of this type?&lt;/p&gt;
-
-&lt;h4&gt;Resilience and availability&lt;/h4&gt;
-
-&lt;p&gt;How well and how quickly must the interface recover from failure? Identify anomalies and deal with them. During what hours it needs to be running?&lt;/p&gt;
-
-&lt;h4&gt;Traffic verification and recording&lt;/h4&gt;
-
-&lt;p&gt;Must we be abke ti tekk exactky what was sent and received?&lt;/p&gt;
-
-&lt;h4&gt;Upgrading&lt;/h4&gt;
-
-&lt;p&gt;What happens when the interface changes? Versioning.&lt;/p&gt;
-
-&lt;h4&gt;Security&lt;/h4&gt;
-
-&lt;p&gt;Are we worried about strangers getting their hands on the information that is passing along the interface?&lt;/p&gt;
-
-&lt;h2&gt;Inter-system Interaction requirement pattern&lt;/h2&gt;
+&lt;h3&gt;Data archiving&lt;/h3&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;Specify a particular type of interaction across an inter-system interface&lt;/p&gt;
+&lt;p&gt;Specify the moving or copying from one place of permanent storage to another&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Each interface involves a range of different interactions.&lt;/li&gt;
-&lt;li&gt;The interface may hold a number of business related functions, but might also possess a number of more technical and supporting interactions&lt;/li&gt;
-&lt;li&gt;Interaction type = Exchange of a particular type of information&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;hr /&gt;&lt;/p&gt;
 
-&lt;h3&gt;Considerations for testing&lt;/h3&gt;
+&lt;h2&gt;Data Entity&lt;/h2&gt;
 
-&lt;ul&gt;
-&lt;li&gt; Formulate both valid and invalid (erroneous) cases&lt;/li&gt;
-&lt;li&gt;Try to cover as representative a spread of situations as possible &lt;/li&gt;
-&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Features common to all types of information&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;Living Entity&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Entities that have a lifespan&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;Transaction&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Events in the life of living entities&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;Configuration&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Parameters that control how system behaves&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;Chronicle&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Record of system events (logs, audit trails)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;Information Storage infrastructure&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Infrastructure to store the information (eg database)&lt;/p&gt;
+&lt;/blockquote&gt;
 </content>
  </entry>
  
