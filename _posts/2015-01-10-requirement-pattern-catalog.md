@@ -3,65 +3,97 @@ layout: post
 title: Requirement patterns catalog
 ---
 
+## Fundamental requirement patterns
 
-## Inter-system Interface requirement pattern
+### Inter-system Interface
 
+> Specify basic details for an **interface (exchange of information) between the system being specified and any <u>external</u> system** or component with which it needs to interact.
 
-> Specify basic details for an interface between the system being specified and any external system or component with which it needs to interact.
+Extra requirements
 
+- Throughput: How much traffic? 
+- Scalability: How well must the interface deal with increases in throughput?
+- Resilience and availability: How quickly must the interface recover from failure? During what hours it needs to be running?
+- Upgrading: What happens when the interface changes? Must we be able to support old and new versions?
+- Security: Are we worried about strangers getting their hands on the information that is passing, along the interface?
 
-- Use for external interfaces, not for internal
-- Interaction
-- Exchange of information
-- Unique interface ID
-- Different systems treated separately
-- Interface adapters
-- Interface ownership
+### Inter-system Interaction
 
+> Specify a particular type of **interaction** across an inter-system interface
 
-### Extra requirements
+### Technology
 
-#### Throughput
+> **Compatibility** with particular technology
 
-How much traffic must the interface be able to handle?
+### Comply-with-Standard
 
-#### Scalability
+> Standards, Laws and Regulations **to comply** with
 
-How well must the interface deal with increases in thoughput?
+### Refer-to-Requirements
 
-#### Extendability
+> **External requirements** to be satisfied
 
-Do you need to be able to slot extra interfaces of this type?
+### Documentation
 
-#### Resilience and availability
+> **Types of documentation** to be produced
 
-How well and how quickly must the interface recover from failure? Identify anomalies and deal with them. During what hours it needs to be running?
+<hr />
 
-#### Traffic verification and recording
+## Information Requirement patterns
 
-Must we be abke ti tekk exactky what was sent and received?
+### Data type
 
-#### Upgrading
+> How a particular atomic item of information for a particular business purpose is to be represented and / or displayed 
 
-What happens when the interface changes? Versioning.
+### Data structure
 
-#### Security
+> Define a compound data item (one that comprises multiple individual pieces of information)
 
-Are we worried about strangers getting their hands on the information that is passing along the interface?
+### ID
 
+> How to identify data entities
 
-## Inter-system Interaction requirement pattern
+### Calculation formula
 
-> Specify a particular type of interaction across an inter-system interface
+> How to calculate values
 
-- Each interface involves a range of different interactions.
-- The interface may hold a number of business related functions, but might also possess a number of more technical and supporting interactions
-- Interaction type = Exchange of a particular type of information
+### Data longevity
 
-### Considerations for testing
+> How long to keep the information
 
--  Formulate both valid and invalid (erroneous) cases
-- Try to cover as representative a spread of situations as possible 
+- Manner of storage?
+- Length of time to retain the data?
+- Purpose: Why do we want to keep this information for this length of time?
+
+### Data archiving
+
+> Specify the moving or copying from one place of permanent storage to another
+
+<hr />
+
+## Data Entity
+
+> Features common to all types of information
+
+### Living Entity
+
+> Entities that have a lifespan
+
+### Transaction
+
+> Events in the life of living entities
+
+### Configuration
+
+> Parameters that control how system behaves
+
+### Chronicle
+
+> Record of system events (logs, audit trails)
+
+### Information Storage infrastructure
+
+> Infrastructure to store the information (eg database)
 
 
 
