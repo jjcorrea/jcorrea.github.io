@@ -4,13 +4,85 @@
  <title>Joel Corrêa</title>
  <link href="http://jjcorrea.github.io/atom.xml" rel="self"/>
  <link href="http://jjcorrea.github.io/"/>
- <updated>2015-05-14T23:24:34-03:00</updated>
+ <updated>2016-04-16T00:28:31-03:00</updated>
  <id>http://jjcorrea.github.io</id>
  <author>
    <name>Joel Correa</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>LXC - Linux Containers</title>
+   <link href="http://jjcorrea.github.io/2016/04/15/lxc-linux-containers/"/>
+   <updated>2016-04-15T00:00:00-03:00</updated>
+   <id>http://jjcorrea.github.io/2016/04/15/lxc-linux-containers</id>
+   <content type="html">&lt;p&gt;The &lt;a href=&quot;https://linuxcontainers.org/&quot;&gt;LXC&lt;/a&gt; project, formerly LinuxContainers*, is an open source implementation of a relatively recent hype, an isolation paradigm so called OS level virtualization. &lt;/p&gt;
+
+&lt;p&gt;The overhead caused by working with Virtual machines required a better abstraction due to the penalties involved in maintaining, in terms of simplicity, performance, so this initiative aims to provide better and simpler isolation mechanisms (special thanks to Linux kernel).&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Our main focus is &lt;strong&gt;system containers&lt;/strong&gt;. That is, containers which offer an environment as close to possible as the one you&amp;#39;d get from a VM but without the &lt;strong&gt;overhead&lt;/strong&gt; that comes with &lt;strong&gt;running a separate kernel&lt;/strong&gt; and &lt;strong&gt;simulating all the hardware&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;This is achieved through a combination of kernel security features such as &lt;strong&gt;namespaces&lt;/strong&gt;, mandatory access control and &lt;strong&gt;control groups&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;(LinuxContainers.org)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;The first Production-ready release&lt;/h3&gt;
+
+&lt;p&gt;LXC&amp;#39;s very first release came with Kernel 2.6.32 (2009), and approximately 5 years later came the first self-entitled &amp;quot;production-ready&amp;quot; release: LXC 1.0.0 (Feb 2014).&lt;/p&gt;
+
+&lt;h3&gt;Outline&lt;/h3&gt;
+
+&lt;p&gt;The general idea around OS level virtualization is to provide lighter mechanisms for creating and maintaining multiple &lt;strong&gt;isolated environments&lt;/strong&gt; per host. The isolation comes in two flavors:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Resource isolation&lt;/strong&gt;: Part of a properly isolated environment involves isolating it in terms of resources. You should be able to dedicate part of your computer&amp;#39;s capabilities (CPU, Memory, I/O) for use in a specific process, or to balance your resources according to its specific needs. Linux kernel provides &lt;a href=&quot;https://wiki.archlinux.org/index.php/cgroups&quot;&gt;CGROUPS&lt;/a&gt; which are used by LXC for doing so.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Security isolation&lt;/strong&gt;: The second important piece of properly isolated units are the security constraints. As well as the cgroups work on resource isolation, the kernel also provides &lt;a href=&quot;http://man7.org/linux/man-pages/man7/namespaces.7.html&quot;&gt;NAMESPACES&lt;/a&gt; for keeping the necessary isolation on the processes level.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3&gt;Templates&lt;/h3&gt;
+
+&lt;p&gt;Creating a container generally involves a set of per-distribution actions, as each of those often requires tools which may not be available for other distros. LXC templates are shipped with lxc and include templates for creating containers for several different distributions.&lt;/p&gt;
+
+&lt;h3&gt;Examples&lt;/h3&gt;
+
+&lt;p&gt;Creating a simple container&lt;/p&gt;
+
+&lt;pre class=&quot;message&quot;&gt;
+$ lxc-create -t ubuntu -n testcontainer
+&lt;/pre&gt;
+
+&lt;p&gt;Displaying container status
+&lt;pre class=&quot;message&quot;&gt;
+$ lxc-info -n testcontainer
+&lt;/pre&gt;&lt;/p&gt;
+
+&lt;p&gt;Starting container
+&lt;pre class=&quot;message&quot;&gt;
+$ lxc-start -n testcontainer
+$ lxc-info -n testcontainer
+Name:       testcontainer
+State:      RUNNING
+PID:        1689
+IP:         10.0.3.146
+...
+&lt;/pre&gt;&lt;/p&gt;
+
+&lt;h3&gt;Footnotes&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;LXC isn&amp;#39;t the only project below the LinuxContainers umbrella nowadays, it includes &lt;a href=&quot;https://linuxcontainers.org/lxd/introduction/&quot;&gt;LXD&lt;/a&gt; and &lt;a href=&quot;https://linuxcontainers.org/lxcfs/introduction/&quot;&gt;LXCFS&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;References&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://help.ubuntu.com/lts/serverguide/lxc.html#lxc-templates&quot;&gt;Ubuntu LXC Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Designing a State Machine without conditionals</title>
@@ -82,7 +154,7 @@ Now they avoid ifs!
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-csharp&quot; data-lang=&quot;csharp&quot;&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;EntryPoint&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
   &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;UpdateStatus&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Input&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;transitions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;All&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Where&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Item1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;transitions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;All&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Where&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Item1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
       &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Select&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Item2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
       &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;DefaultIfEmpty&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;());&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
@@ -140,6 +212,7 @@ Now they avoid ifs!
 &lt;li&gt;A great &lt;strong&gt;communication&lt;/strong&gt; is as important as a great design.&lt;/li&gt;
 &lt;li&gt;As well as continuous &lt;strong&gt;involvement&lt;/strong&gt; during the development&lt;/li&gt;
 &lt;li&gt;We delivered the module with more than &lt;strong&gt;250 (real) unit tests&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Giving meaningfull names through a &lt;strong&gt;centralized point-of-control&lt;/strong&gt; made it a lot easier to handle changes and properly understanding the context.&lt;/li&gt;
 &lt;li&gt;The &lt;strong&gt;time spent&lt;/strong&gt; on development was much lower than we were expecting&lt;/li&gt;
 &lt;li&gt;There were &lt;strong&gt;changes&lt;/strong&gt; to the predicates &amp;amp; rules, and all the team was pretty confident to perform them due to the test coverage.&lt;/li&gt;
 &lt;/ul&gt;
@@ -1064,23 +1137,15 @@ http://netflix.github.com/asgard&lt;/p&gt;
    <link href="http://jjcorrea.github.io/2015/01/10/requirement-pattern-catalog/"/>
    <updated>2015-01-10T00:00:00-02:00</updated>
    <id>http://jjcorrea.github.io/2015/01/10/requirement-pattern-catalog</id>
-   <content type="html">&lt;h2&gt;Fundamental requirement patterns&lt;/h2&gt;
+   <content type="html">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2&gt;Fundamental requirement patterns&lt;/h2&gt;
 
 &lt;h3&gt;Inter-system Interface&lt;/h3&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Specify basic details for an &lt;strong&gt;interface (exchange of information) between the system being specified and any &lt;u&gt;external&lt;/u&gt; system&lt;/strong&gt; or component with which it needs to interact.&lt;/p&gt;
 &lt;/blockquote&gt;
-
-&lt;p&gt;Extra requirements&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Throughput: How much traffic? &lt;/li&gt;
-&lt;li&gt;Scalability: How well must the interface deal with increases in throughput?&lt;/li&gt;
-&lt;li&gt;Resilience and availability: How quickly must the interface recover from failure? During what hours it needs to be running?&lt;/li&gt;
-&lt;li&gt;Upgrading: What happens when the interface changes? Must we be able to support old and new versions?&lt;/li&gt;
-&lt;li&gt;Security: Are we worried about strangers getting their hands on the information that is passing, along the interface?&lt;/li&gt;
-&lt;/ul&gt;
 
 &lt;h3&gt;Inter-system Interaction&lt;/h3&gt;
 
@@ -1112,7 +1177,9 @@ http://netflix.github.com/asgard&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Types of documentation&lt;/strong&gt; to be produced&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;hr /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;hr /&gt;
+&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2&gt;Information Requirement patterns&lt;/h2&gt;
 
@@ -1158,13 +1225,15 @@ http://netflix.github.com/asgard&lt;/p&gt;
 &lt;p&gt;Specify the moving or copying from one place of permanent storage to another&lt;/p&gt;
 &lt;/blockquote&gt;
 
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
 &lt;p&gt;&lt;hr /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
 
 &lt;h2&gt;Data Entity&lt;/h2&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;Features common to all types of information&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
 
 &lt;h3&gt;Living Entity&lt;/h3&gt;
 
@@ -1195,6 +1264,212 @@ http://netflix.github.com/asgard&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Infrastructure to store the information (eg database)&lt;/p&gt;
 &lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;hr /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;h2&gt;User function&lt;/h2&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;h3&gt;Inquiry&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Define a screen display function that shows specified information to the user.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;Report&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Define a report that shows specified information to the user. The information being displayed is not modified by the report - although it might involve some background generation of data.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;Accessibility&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Specify the extend to which the system (or part of it) must be accessible by people with &lt;strong&gt;certain kind of disability&lt;/strong&gt; or other specific need - That is, how convenient it must be for them to use.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;User interface infrastructure&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Coherent set of components that together enable a user to interact with the system&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;Reporting infrastructure&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Produces reports for us and usually lets us design new reports.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;hr /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;h2&gt;Performance&lt;/h2&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;h3&gt;Response time&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;How long&lt;/strong&gt; it takes to the system to satisfy requests&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;Throughput&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The &lt;strong&gt;rate&lt;/strong&gt; at which the system can process things&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;Dynamic capacity&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;How many things&lt;/strong&gt; the system can cope with and work at once&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;Static capacity&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;How many entities of a particular type&lt;/strong&gt; the system can store&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;Availability&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;When the system is available to users&lt;/strong&gt; and how reliably&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;hr /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;h2&gt;Flexibility&lt;/h2&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;h3&gt;Scalability&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Ready to cope with &lt;strong&gt;increases in business volumes&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;Extendability&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Able to &lt;strong&gt;plug in extra software&lt;/strong&gt; easily&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;Unparochialness&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Avoid limitations &lt;strong&gt;preventing installation elsewhere&lt;/strong&gt; (by another company, in another region, or country, and so on)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;Multiness&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Support &lt;strong&gt;multiple companies, currencies&lt;/strong&gt; at the same time&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;Multi-lingual&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Supports user interfaces in &lt;strong&gt;multiple languages&lt;/strong&gt; at the same type&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;Installability&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;How easy the system must be to &lt;strong&gt;install&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;hr /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;h2&gt;Access control&lt;/h2&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;h3&gt;User registration&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Making people known&lt;/strong&gt; to the system&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;Authentication&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Recognizing&lt;/strong&gt; a user as a known person&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;Authorization&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;What a user is &lt;strong&gt;allowed to do and see&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;Specific authorization&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Concrete user &lt;strong&gt;authorization rules&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;Configurable authorization&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Insisting that definitions of who can do, what can be changed dynamically&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;Approval&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Forcing selected actions &lt;strong&gt;to be approved by a second person&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;hr /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;h2&gt;Commercial&lt;/h2&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;h3&gt;Multi organization unit&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Accomodating the way a business structures&lt;/strong&gt; itself (multiple departments, offices, companies and so on)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;Fee / tax&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Ways to &lt;strong&gt;charge&lt;/strong&gt; people money&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;hr /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;h2&gt;References&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Book: Software requirement patterns - Best practices. Stephen Withall&lt;/li&gt;
+&lt;/ul&gt;
 </content>
  </entry>
  
