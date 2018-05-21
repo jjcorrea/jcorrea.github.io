@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Contents of requirement specifications &middot; Joel Corrêa
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400">
+
+  <link href="/public/css/bootstrap.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-34374176-1', 'auto');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+  </script>
+
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>Software engineer at @ilegra</p>
+  </div>
+
+  <nav class="sidebar-nav">
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/about/">About</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/archive/">Archive</a>
+        
+      
+    
+      
+    
+      
+    
+    <a class="sidebar-nav-item" href="mailto:joel.correa@icloud.com">@mail</a>
+    <a class="sidebar-nav-item" target="_blank" href="https://twitter.com/joelcorrea_">@twitter</a>
+    <a class="sidebar-nav-item" target="_blank" href="https://www.linkedin.com/profile/view?id=78338366">@linkedin</a>
+    <a class="sidebar-nav-item" target="_blank" href="https://github.com/jjcorrea">@github</a>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2018. All rights reserved.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+          <h3 class="masthead-title">
+            <a href="/" title="Home">Joel Corrêa</a>
+            <small>Blog</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  <h1 class="post-title">Contents of requirement specifications</h1>
+  <span class="post-date">02 Jan 2015</span>
+  <p>There is not a single right way to <strong>organize requirements specification</strong>, but certain topics recur in most systems and deserve their own sections. The following model is a suggested <strong>structure</strong> for requirements specification.</p>
+
+<h2>Introduction section</h2>
+
+<h3>System purpose</h3>
+
+<ul>
+<li>What the system <strong>is for</strong></li>
+<li><strong>Who wants it</strong>, and <strong>why</strong></li>
+<li><strong>Who will use</strong> it</li>
+<li>what is the <strong>business motivation</strong> behind it?</li>
+<li>Describe the <strong>system itself</strong>, not the project which implements it</li>
+</ul>
+
+<h3>Document purpose</h3>
+
+<ul>
+<li>The <strong>role the document plays</strong></li>
+<li>Brief and concise explanation</li>
+<li>Identify the <strong>audience</strong></li>
+<li>State disclaimers</li>
+</ul>
+
+<h3>Requirement format</h3>
+
+<ol>
+<li><strong>Requirement ID</strong>: Unique identifier. Should be concise, distinctive and sequential</li>
+<li><strong>Definition</strong>: Description, in a free-text format</li>
+<li><strong>Priority</strong>: How important the requirement is</li>
+<li><strong>Summary</strong> description: Sums up the requirement as briefly as possible</li>
+</ol>
+
+<h3>Glossary</h3>
+
+<ul>
+<li>Relevant items</li>
+<li>Term + Definition</li>
+</ul>
+
+<h3>References</h3>
+
+<ul>
+<li><strong>Documents</strong> and <strong>sources</strong> used</li>
+</ul>
+
+<h3>Document history</h3>
+
+<ul>
+<li>Details of <strong>each version</strong> of the document</li>
+</ul>
+
+<h2>Context section</h2>
+
+<h3>Scope</h3>
+
+<ul>
+<li><strong>How the system fits on real world</strong> around it</li>
+<li>A local map showing where our territory ends, and that of the neighbors starts</li>
+<li><strong>Context diagram</strong> is a good starting point</li>
+</ul>
+
+<p>Main kinds of information are:</p>
+
+<ol>
+<li><strong>Components</strong>: All <strong>distinct pieces</strong> that must be in-place and <strong>how they connect to each other</strong></li>
+<li><strong>User roles</strong>: Main <strong>roles</strong> in which people interact with the system. System <strong>actors</strong></li>
+<li><strong>Scope boundary</strong>: What is the system <strong>responsability</strong> and what isn&#39;t</li>
+<li><strong>Intersystem interfaces</strong>: All interfaces via each component <strong>interacts with other systems</strong> and logical components</li>
+</ol>
+
+<h3>Major assumptions</h3>
+
+<ul>
+<li>Each thing which is <strong>assumed to be true</strong> and that would have a <strong>significant impact</strong> on the system if it were not so</li>
+</ul>
+
+<h3>Major exclusions</h3>
+
+<ul>
+<li>Something the system <strong>does not</strong> do</li>
+<li>Any feature <strong>not planned to be supported</strong></li>
+</ul>
+
+<h3>Key business entities</h3>
+
+<ul>
+<li>Major system entities around which the system performs a set of activities</li>
+<li>State transition diagram to express it</li>
+</ul>
+
+<h3>Infrastructures</h3>
+
+<ul>
+<li>The underlying set of <strong>capabilities needed</strong> to support one or more requirements</li>
+</ul>
+
+<h2>Functional area sections</h2>
+
+<h3>Functional areas</h3>
+
+<ul>
+<li>Top-level section for each logical grouping of functions</li>
+<li>Order sections according to their importance</li>
+</ul>
+
+<h2>Major non-functional capabilities section</h2>
+
+<ul>
+<li>Describe important non-functional aspects of a system</li>
+</ul>
+
+<h1>References</h1>
+
+<p>Software requirement patterns - Stephen Withall </p>
+
+</div>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'joelcorrea'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2018/05/20/better-decision-making/">
+            A better decision making framework
+            <small>20 May 2018</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2016/04/15/lxc-linux-containers/">
+            LXC - Linux Containers
+            <small>15 Apr 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2015/05/05/designing-a-state-machine-without-conditionals/">
+            Designing a State Machine without conditionals
+            <small>05 May 2015</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+      </div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Netflix Stack &middot; Joel Corrêa
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400">
+
+  <link href="/public/css/bootstrap.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-34374176-1', 'auto');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+  </script>
+
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>Software engineer at @ilegra</p>
+  </div>
+
+  <nav class="sidebar-nav">
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/about/">About</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/archive/">Archive</a>
+        
+      
+    
+      
+    
+      
+    
+    <a class="sidebar-nav-item" href="mailto:joel.correa@icloud.com">@mail</a>
+    <a class="sidebar-nav-item" target="_blank" href="https://twitter.com/joelcorrea_">@twitter</a>
+    <a class="sidebar-nav-item" target="_blank" href="https://www.linkedin.com/profile/view?id=78338366">@linkedin</a>
+    <a class="sidebar-nav-item" target="_blank" href="https://github.com/jjcorrea">@github</a>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2018. All rights reserved.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+          <h3 class="masthead-title">
+            <a href="/" title="Home">Joel Corrêa</a>
+            <small>Blog</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  <h1 class="post-title">Netflix Stack</h1>
+  <span class="post-date">15 Mar 2015</span>
+  <p>A summary of the Netflix open source tools. Categorizes into:</p>
+
+<ul>
+<li><strong>Availability</strong>: <a href="/2015/03/15/netflix-stack-hystrix/">Hystrix</a>, <a href="/2015/03/15/netflix-stack-simian-army/">SimianArmy</a>, <a href="/2015/03/15/netflix-stack-turbine/">Turbine</a></li>
+<li><strong>Cloud Management</strong>: ICE, Asgard, Frigga, Glisten</li>
+<li><strong>Persistence Systems</strong>: Astyanax, CassJMeter, Curator, EvCache, Exhibitor, Priam, Staash, Dynomite, Dyno, Raigad</li>
+<li><strong>Platform libraries</strong>: Archaius, Denominator, Feign, Karyon, <a href="/2015/03/15/netflix-stack-ribbon/">Ribbon</a>, Servo, Blitz4J, Governator</li>
+<li><strong>Infrastructure Services</strong>: Atlas, Edda, Suro, Eureka, Zuul, Prana</li>
+<li><strong>Developer productivity</strong>: GCViz, Pytheas, Nicobar</li>
+<li><strong>Build and Deploy tools</strong>: Aminator</li>
+<li><strong>Big Data tools</strong>: Aegisthus, Genie, Inviso, Lipstick, Pigpen, S3mper, Surus</li>
+<li><strong>In memory data management</strong>: Netflix-graph, Zeno</li>
+<li><strong>Security</strong>: MSL, Scumblr, Security_Monkey, Sketchy</li>
+<li><strong>Sample applications and recipes</strong>: Recipes RSS</li>
+</ul>
+
+<h2>Availability</h2>
+
+<h3>Hystrix</h3>
+
+<p>A <strong>latency and fault tolerance</strong> library designed to isolate points of access to remote systems, services and 3rd party libraries, stop cascading failure and enable resilience in complex distributed systems where failure is inevitable.</p>
+
+<h3>SimianArmy</h3>
+
+<p>Tools for keeping your cloud operating in top form. Chaos Monkey is a resiliency tool that helps applications tolerate random instance failures.</p>
+
+<h3>Turbine</h3>
+
+<p>SSE Stream Aggregator</p>
+
+<h2>Cloud Management</h2>
+
+<h3>Ice</h3>
+
+<p>AWS Usage Tool</p>
+
+<h3>Asgard</h3>
+
+<p>Web interface for application deployments and cloud management in Amazon Web Services (AWS). Binary download: http://github.com/Netflix/asgard/releases Snapshot builds: https://netflixoss.ci.cloudbees.com/job/asgard-master/ Twitter: http://twitter.com/AsgardOSS
+http://netflix.github.com/asgard</p>
+
+<h3>Frigga</h3>
+
+<p>Utilities for working with Asgard named objects</p>
+
+<h3>Glisten</h3>
+
+<p>Ease of use Groovy library for building JVM applications with Amazon Simple Workflow (SWF)</p>
+
+<h2>Persistence Systems</h2>
+
+<h3>Astyanax</h3>
+
+<p>Cassandra Java Client</p>
+
+<h3>CassJMeter</h3>
+
+<p>JMeter plugin to run cassandra tests.</p>
+
+<h3>Curator</h3>
+
+<p>ZooKeeper client wrapper and rich ZooKeeper framework.</p>
+
+<h3>EVCache</h3>
+
+<p>A distributed in-memory data store for the cloud</p>
+
+<h3>Exhibitor</h3>
+
+<p>ZooKeeper co-process for instance monitoring, backup/recovery, cleanup and visualization.</p>
+
+<h3>Priam</h3>
+
+<p>Co-Process for backup/recovery, Token Management, and Centralized Configuration management for Cassandra.</p>
+
+<h3>Staash</h3>
+
+<p>A language-agnostic as well as storage-agnostic web interface for storing data into persistent storage systems, the metadata layer abstracts a lot of storage details and the pattern automation APIs take care of automating common data access patterns. </p>
+
+<h3>Dynomite</h3>
+
+<p>A generic dynamo implementation for different k-v storage engines </p>
+
+<h3>Dyno</h3>
+
+<p>Java client for Dynomite.</p>
+
+<h3>Raigad</h3>
+
+<p>Co-Process for backup/recovery, Auto Deployments and Centralized Configuration management for ElasticSearch.</p>
+
+<h2>Platform Libraries</h2>
+
+<h3>Archaius</h3>
+
+<p>Library for configuration management API</p>
+
+<h3>Denominator</h3>
+
+<p>Portably control DNS clouds using java or bash.</p>
+
+<h3>Feign</h3>
+
+<p>Feign makes writing java http clients easier.</p>
+
+<h3>Karyon</h3>
+
+<p>The nucleus or the base container for Applications and Services built using the NetflixOSS ecosystem.</p>
+
+<h3>Ribbon</h3>
+
+<p>Ribbon is a Inter Process Communication (remote procedure calls) library with built in software load balancers. The primary usage model involves REST calls with various serialization scheme support.</p>
+
+<h3>Servo</h3>
+
+<p>Netflix Application Monitoring Library.</p>
+
+<h3>Blitz4j</h3>
+
+<p>Logging framework for fast asynchronous logging.</p>
+
+<h3>Governator</h3>
+
+<p>Governator is a library of extensions and utilities that enhance Google Guice to provide: classpath scanning and automatic binding, lifecycle management, configuration to field mapping, field validation and parallelized object warmup.</p>
+
+<h2>Infrastructure Services</h2>
+
+<h3>Atlas</h3>
+
+<p>Backend for managing dimensional time series data.</p>
+
+<h3>Edda</h3>
+
+<p>Service to track changes in your cloud.</p>
+
+<h3>Suro</h3>
+
+<p>Netflix&#39;s distributed Data Pipeline. Suro is a data pipeline service for collecting, aggregating, and dispatching large volume of application events including log data.</p>
+
+<h3>Eureka</h3>
+
+<p>AWS Service registry for resilient mid-tier load balancing and failover.</p>
+
+<h3>Zuul</h3>
+
+<p>Zuul is an edge service that provides dynamic routing, monitoring, resiliency, security, and more.</p>
+
+<h3>Prana</h3>
+
+<p>A sidecar for your NetflixOSS based services.</p>
+
+<h2>Developer Productivity</h2>
+
+<h3>Gcviz</h3>
+
+<p>Garbage Collector Visualization Tool/Framework</p>
+
+<h3>Pytheas</h3>
+
+<p>Web Resources and UI Framework </p>
+
+<h3>Nicobar</h3>
+
+<p>Dynamic Scripting and Module Loader Framework for Java.</p>
+
+<h2>Build and Deploy Tools</h2>
+
+<h3>Aminator</h3>
+
+<p>A tool for creating EBS AMIs. This tool currently works for CentOS/RedHat Linux images and is intended to run on an EC2 instance.</p>
+
+<h2>Big Data Tools</h2>
+
+<h3>Aegisthus</h3>
+
+<p>A Bulk Data Pipeline out of Cassandra</p>
+
+<h3>Genie</h3>
+
+<p>Federated Job Execution Engine.</p>
+
+<h3>Inviso</h3>
+
+<p>Inviso is a lightweight tool that provides the ability to search for Hadoop jobs, visualize the performance, and view cluster utilization.</p>
+
+<h3>Lipstick</h3>
+
+<p>Pig Visualization framework.</p>
+
+<h3>PigPen</h3>
+
+<p>Map-Reduce for Clojure.</p>
+
+<h3>S3mper</h3>
+
+<p>s3mper - Consistent Listing for S3.</p>
+
+<h3>Surus</h3>
+
+<p>A collection of tools for analysis in Pig and Hive.</p>
+
+<h2>In-Memory Data Management</h2>
+
+<h3>Netflix-Graph</h3>
+
+<p>Compact in-memory representation of directed graph data</p>
+
+<h3>Zeno</h3>
+
+<p>Netflix&#39;s In-Memory Data Propagation Framework.</p>
+
+<h2>Security</h2>
+
+<h3>Msl</h3>
+
+<p>Message Security Layer.</p>
+
+<h3>Scumblr</h3>
+
+<p>Web application that allows performing periodic searches and storing / taking actions on the identified results. Uses the Workflowable gem to allow setting up flexible workflows for different types of results.</p>
+
+<h3>Security_monkey</h3>
+
+<p>Monitors policy changes and alerts on insecure configurations in an AWS account. </p>
+
+<h3>Sketchy</h3>
+
+<p>Sketchy is a task based API for taking screenshots and scraping text from websites.</p>
+
+<h2>Sample Applications and Recipes</h2>
+
+<h3>Recipes-Rss</h3>
+
+<p>RSS Reader Recipes that uses several of the Netflix OSS components</p>
+
+<h2>Uncategorized</h2>
+
+<h3>NfWebCrypto</h3>
+
+<p>Web Cryptography API Polyfill </p>
+
+<h3>Brutal</h3>
+
+<p>A multi-network asynchronous chat bot framework using twisted.</p>
+
+</div>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'joelcorrea'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2018/05/20/better-decision-making/">
+            A better decision making framework
+            <small>20 May 2018</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2016/04/15/lxc-linux-containers/">
+            LXC - Linux Containers
+            <small>15 Apr 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2015/05/05/designing-a-state-machine-without-conditionals/">
+            Designing a State Machine without conditionals
+            <small>05 May 2015</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+      </div>
+    </div>
+
+  </body>
+</html>

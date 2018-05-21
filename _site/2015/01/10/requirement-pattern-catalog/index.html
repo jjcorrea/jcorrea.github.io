@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Requirement patterns catalog &middot; Joel Corrêa
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400">
+
+  <link href="/public/css/bootstrap.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-34374176-1', 'auto');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+  </script>
+
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>Software engineer at @ilegra</p>
+  </div>
+
+  <nav class="sidebar-nav">
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/about/">About</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/archive/">Archive</a>
+        
+      
+    
+      
+    
+      
+    
+    <a class="sidebar-nav-item" href="mailto:joel.correa@icloud.com">@mail</a>
+    <a class="sidebar-nav-item" target="_blank" href="https://twitter.com/joelcorrea_">@twitter</a>
+    <a class="sidebar-nav-item" target="_blank" href="https://www.linkedin.com/profile/view?id=78338366">@linkedin</a>
+    <a class="sidebar-nav-item" target="_blank" href="https://github.com/jjcorrea">@github</a>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2018. All rights reserved.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+          <h3 class="masthead-title">
+            <a href="/" title="Home">Joel Corrêa</a>
+            <small>Blog</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  <h1 class="post-title">Requirement patterns catalog</h1>
+  <span class="post-date">10 Jan 2015</span>
+  <p><br /></p>
+
+<h2>Fundamental requirement patterns</h2>
+
+<h3>Inter-system Interface</h3>
+
+<blockquote>
+<p>Specify basic details for an <strong>interface (exchange of information) between the system being specified and any <u>external</u> system</strong> or component with which it needs to interact.</p>
+</blockquote>
+
+<h3>Inter-system Interaction</h3>
+
+<blockquote>
+<p>Specify a particular type of <strong>interaction</strong> across an inter-system interface</p>
+</blockquote>
+
+<h3>Technology</h3>
+
+<blockquote>
+<p><strong>Compatibility</strong> with particular technology</p>
+</blockquote>
+
+<h3>Comply-with-Standard</h3>
+
+<blockquote>
+<p>Standards, Laws and Regulations <strong>to comply</strong> with</p>
+</blockquote>
+
+<h3>Refer-to-Requirements</h3>
+
+<blockquote>
+<p><strong>External requirements</strong> to be satisfied</p>
+</blockquote>
+
+<h3>Documentation</h3>
+
+<blockquote>
+<p><strong>Types of documentation</strong> to be produced</p>
+</blockquote>
+
+<p><br />
+<hr />
+<br /></p>
+
+<h2>Information Requirement patterns</h2>
+
+<h3>Data type</h3>
+
+<blockquote>
+<p>How a particular atomic item of information for a particular business purpose is to be represented and / or displayed </p>
+</blockquote>
+
+<h3>Data structure</h3>
+
+<blockquote>
+<p>Define a compound data item (one that comprises multiple individual pieces of information)</p>
+</blockquote>
+
+<h3>ID</h3>
+
+<blockquote>
+<p>How to identify data entities</p>
+</blockquote>
+
+<h3>Calculation formula</h3>
+
+<blockquote>
+<p>How to calculate values</p>
+</blockquote>
+
+<h3>Data longevity</h3>
+
+<blockquote>
+<p>How long to keep the information</p>
+</blockquote>
+
+<ul>
+<li>Manner of storage?</li>
+<li>Length of time to retain the data?</li>
+<li>Purpose: Why do we want to keep this information for this length of time?</li>
+</ul>
+
+<h3>Data archiving</h3>
+
+<blockquote>
+<p>Specify the moving or copying from one place of permanent storage to another</p>
+</blockquote>
+
+<p><br/></p>
+
+<p><hr /></p>
+
+<p><br/></p>
+
+<h2>Data Entity</h2>
+
+<p><br/></p>
+
+<h3>Living Entity</h3>
+
+<blockquote>
+<p>Entities that have a lifespan</p>
+</blockquote>
+
+<h3>Transaction</h3>
+
+<blockquote>
+<p>Events in the life of living entities</p>
+</blockquote>
+
+<h3>Configuration</h3>
+
+<blockquote>
+<p>Parameters that control how system behaves</p>
+</blockquote>
+
+<h3>Chronicle</h3>
+
+<blockquote>
+<p>Record of system events (logs, audit trails)</p>
+</blockquote>
+
+<h3>Information Storage infrastructure</h3>
+
+<blockquote>
+<p>Infrastructure to store the information (eg database)</p>
+</blockquote>
+
+<p><br/></p>
+
+<p><hr /></p>
+
+<p><br/></p>
+
+<h2>User function</h2>
+
+<p><br/></p>
+
+<h3>Inquiry</h3>
+
+<blockquote>
+<p>Define a screen display function that shows specified information to the user.</p>
+</blockquote>
+
+<h3>Report</h3>
+
+<blockquote>
+<p>Define a report that shows specified information to the user. The information being displayed is not modified by the report - although it might involve some background generation of data.</p>
+</blockquote>
+
+<h3>Accessibility</h3>
+
+<blockquote>
+<p>Specify the extend to which the system (or part of it) must be accessible by people with <strong>certain kind of disability</strong> or other specific need - That is, how convenient it must be for them to use.</p>
+</blockquote>
+
+<h3>User interface infrastructure</h3>
+
+<blockquote>
+<p>Coherent set of components that together enable a user to interact with the system</p>
+</blockquote>
+
+<h3>Reporting infrastructure</h3>
+
+<blockquote>
+<p>Produces reports for us and usually lets us design new reports.</p>
+</blockquote>
+
+<p><br/></p>
+
+<p><hr /></p>
+
+<p><br/></p>
+
+<h2>Performance</h2>
+
+<p><br/></p>
+
+<h3>Response time</h3>
+
+<blockquote>
+<p><strong>How long</strong> it takes to the system to satisfy requests</p>
+</blockquote>
+
+<h3>Throughput</h3>
+
+<blockquote>
+<p>The <strong>rate</strong> at which the system can process things</p>
+</blockquote>
+
+<h3>Dynamic capacity</h3>
+
+<blockquote>
+<p><strong>How many things</strong> the system can cope with and work at once</p>
+</blockquote>
+
+<h3>Static capacity</h3>
+
+<blockquote>
+<p><strong>How many entities of a particular type</strong> the system can store</p>
+</blockquote>
+
+<h3>Availability</h3>
+
+<blockquote>
+<p><strong>When the system is available to users</strong> and how reliably</p>
+</blockquote>
+
+<p><br/></p>
+
+<p><hr /></p>
+
+<p><br/></p>
+
+<h2>Flexibility</h2>
+
+<p><br/></p>
+
+<h3>Scalability</h3>
+
+<blockquote>
+<p>Ready to cope with <strong>increases in business volumes</strong></p>
+</blockquote>
+
+<h3>Extendability</h3>
+
+<blockquote>
+<p>Able to <strong>plug in extra software</strong> easily</p>
+</blockquote>
+
+<h3>Unparochialness</h3>
+
+<blockquote>
+<p>Avoid limitations <strong>preventing installation elsewhere</strong> (by another company, in another region, or country, and so on)</p>
+</blockquote>
+
+<h3>Multiness</h3>
+
+<blockquote>
+<p>Support <strong>multiple companies, currencies</strong> at the same time</p>
+</blockquote>
+
+<h3>Multi-lingual</h3>
+
+<blockquote>
+<p>Supports user interfaces in <strong>multiple languages</strong> at the same type</p>
+</blockquote>
+
+<h3>Installability</h3>
+
+<blockquote>
+<p>How easy the system must be to <strong>install</strong></p>
+</blockquote>
+
+<p><br/></p>
+
+<p><hr /></p>
+
+<p><br/></p>
+
+<h2>Access control</h2>
+
+<p><br/></p>
+
+<h3>User registration</h3>
+
+<blockquote>
+<p><strong>Making people known</strong> to the system</p>
+</blockquote>
+
+<h3>Authentication</h3>
+
+<blockquote>
+<p><strong>Recognizing</strong> a user as a known person</p>
+</blockquote>
+
+<h3>Authorization</h3>
+
+<blockquote>
+<p>What a user is <strong>allowed to do and see</strong></p>
+</blockquote>
+
+<h3>Specific authorization</h3>
+
+<blockquote>
+<p>Concrete user <strong>authorization rules</strong></p>
+</blockquote>
+
+<h3>Configurable authorization</h3>
+
+<blockquote>
+<p>Insisting that definitions of who can do, what can be changed dynamically</p>
+</blockquote>
+
+<h3>Approval</h3>
+
+<blockquote>
+<p>Forcing selected actions <strong>to be approved by a second person</strong></p>
+</blockquote>
+
+<p><br/></p>
+
+<p><hr /></p>
+
+<p><br/></p>
+
+<h2>Commercial</h2>
+
+<p><br/></p>
+
+<h3>Multi organization unit</h3>
+
+<blockquote>
+<p><strong>Accomodating the way a business structures</strong> itself (multiple departments, offices, companies and so on)</p>
+</blockquote>
+
+<h3>Fee / tax</h3>
+
+<blockquote>
+<p>Ways to <strong>charge</strong> people money</p>
+</blockquote>
+
+<p><br/></p>
+
+<p><hr /></p>
+
+<p><br/></p>
+
+<h2>References</h2>
+
+<ul>
+<li>Book: Software requirement patterns - Best practices. Stephen Withall</li>
+</ul>
+
+</div>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'joelcorrea'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2018/05/20/better-decision-making/">
+            A better decision making framework
+            <small>20 May 2018</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2016/04/15/lxc-linux-containers/">
+            LXC - Linux Containers
+            <small>15 Apr 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2015/05/05/designing-a-state-machine-without-conditionals/">
+            Designing a State Machine without conditionals
+            <small>05 May 2015</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+      </div>
+    </div>
+
+  </body>
+</html>

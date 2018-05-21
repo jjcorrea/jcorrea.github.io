@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Webservices API styles &middot; Joel Corrêa
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400">
+
+  <link href="/public/css/bootstrap.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-34374176-1', 'auto');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+  </script>
+
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>Software engineer at @ilegra</p>
+  </div>
+
+  <nav class="sidebar-nav">
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/about/">About</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/archive/">Archive</a>
+        
+      
+    
+      
+    
+      
+    
+    <a class="sidebar-nav-item" href="mailto:joel.correa@icloud.com">@mail</a>
+    <a class="sidebar-nav-item" target="_blank" href="https://twitter.com/joelcorrea_">@twitter</a>
+    <a class="sidebar-nav-item" target="_blank" href="https://www.linkedin.com/profile/view?id=78338366">@linkedin</a>
+    <a class="sidebar-nav-item" target="_blank" href="https://github.com/jjcorrea">@github</a>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2018. All rights reserved.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+          <h3 class="masthead-title">
+            <a href="/" title="Home">Joel Corrêa</a>
+            <small>Blog</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  <h1 class="post-title">Webservices API styles</h1>
+  <span class="post-date">28 Dec 2014</span>
+  <ul>
+<li>Distinct APIs</li>
+<li>Attend multiple client types</li>
+<li>API reflecting client needs (top-down)</li>
+<li>External vs Internal API</li>
+</ul>
+
+<h2>Design considerations</h2>
+
+<h3>Encapsulation</h3>
+
+<ul>
+<li>Services should <strong>hide implementation details</strong></li>
+<li>Prevents <strong>coupling</strong> the clients</li>
+<li>Service design should avoid exposing its internals</li>
+<li>&quot;Bottom-up&quot; design if making domain entities accessible to external clients</li>
+<li><strong>Indirection</strong> enables internals evolve or even to be replaced</li>
+</ul>
+
+<h3>Service contract</h3>
+
+<ul>
+<li><strong>Agreement</strong> on how clients and services may interact</li>
+<li>Pre / Post <strong>conditions</strong> indicating the client <strong>expectations</strong></li>
+</ul>
+
+<h3>Autonomy</h3>
+
+<ul>
+<li><strong>Dependencies</strong> on outside forces</li>
+<li>External entities, services, etc</li>
+<li>Distributed transactions</li>
+</ul>
+
+<h3>Latency</h3>
+
+<ul>
+<li><strong>Serialization / Deserialization</strong> cost</li>
+<li><strong>Network</strong></li>
+<li>Payload size</li>
+<li>Few <strong>&quot;chunky&quot; messages</strong> are normally better than &quot;chatty conversation&quot; (several smaller messages)</li>
+</ul>
+
+<h3>Partial failures</h3>
+
+<ul>
+<li><strong>Failure scenarios handling</strong></li>
+<li>&quot;Clients need to be prepared to service failures and vice-versa&quot;</li>
+</ul>
+
+<h3>Binary message encoding of text-based data</h3>
+
+<ul>
+<li>Information exchanged is generally text-based</li>
+<li>Text information may be <strong>encoded as binary</strong> data before being serialized</li>
+<li><strong>Compression</strong></li>
+</ul>
+
+<h2>RPC API</h2>
+
+<blockquote>
+<p>How can clients execute remote procedures over HTTP?</p>
+</blockquote>
+
+<ul>
+<li>Not easy (low-level communication protocols)</li>
+<li>Different platforms use different <strong>encodings</strong></li>
+<li>Remoting technologies (CORBA, DCOM) made it easier to share and use remote procedures</li>
+<li>Request: Procedure(i.e. service) name + arguments</li>
+<li>Response: Procedure results</li>
+<li>Service frameworks: JAX-WS &amp; WCF for abstracting structural formats (JSON / XML), encoding, generating XSD, etc</li>
+</ul>
+
+<h3>Considerations</h3>
+
+<ul>
+<li><strong>Flat APIs</strong> inclination: Tendency to create service signatures just as class method signatures</li>
+<li><strong>Breaking changes</strong>: Argument order - Add, remove and reorder breaks the client</li>
+<li>Single-Message argument pattern to resolve the issue (+ flexibility)</li>
+<li><strong>Proxies</strong> and <strong>service descriptors</strong>: Clients applications typically use proxies to connect to services on this style. Typically reads service descriptors (e.g. WSDL)</li>
+<li>Location transparency</li>
+<li>Async: RPC APIs often use <strong>request-acknowlege</strong> instead of <strong>request-response</strong> interaction pattern. </li>
+<li>Avoid blocking: Clients can use an <strong>async response handler</strong> pattern to avoid being blocked during the service processment</li>
+</ul>
+
+<h2>Message API</h2>
+
+<blockquote>
+<p>How can clients send commands, notifications or other information to remote systems over HTTP while avoiding direct coupling to remote procedures</p>
+</blockquote>
+
+<ul>
+<li>Signature changes may be breaking</li>
+<li>Determines the procedure based on message content</li>
+<li>Style is normally used when external entities <strong>drive the requirements</strong> definition</li>
+<li>Messages are typycally defined using XML Schema language, however messages can be defined through other means (e.g. Google protocol buffers / ProtoBuff).</li>
+<li>API provides <strong>endpoints</strong></li>
+<li>Messages are generically of three types: <em>Command messages</em> (triggers a specific task on the receiver) <em>Event messages</em> (notify) or <em>Document messages</em> (like business documents).</li>
+<li>WSDL as <strong>service descriptor</strong> and for <strong>specifications</strong> (WS-Policy, WS-Security, etc)</li>
+</ul>
+
+<h3>Considerations</h3>
+
+<ul>
+<li><strong>Service descriptors and connectors</strong>: Message APIs often employ a <strong>service descriptor</strong> 
+(most common is WSDL) to aid in client-side <strong>connectors</strong>. Operations are grouped into an abstract type (an <em>interface</em> on WSDL 2.0)</li>
+<li><strong>Delegation of work</strong>: The logic used to process specific message types is often triggered by a <strong>command invoker</strong> - when the logic is sufficiently complicated. An alternative is to use a <strong>workflow connector</strong> - when triggering a complex, long-running job.</li>
+<li>Async: Message APIs often use <strong>request-acknowlege</strong> instead of <strong>request-response</strong> interaction pattern. </li>
+<li>Avoid blocking: Clients can use an <strong>async response handler</strong> pattern to avoid being blocked during the service processment</li>
+<li>Late binding: Often provide addresses to related services clients may use</li>
+</ul>
+
+<h2>Resource API</h2>
+
+<p>A client application that consumes or manipulates text, images, documents or other media files managed by a remote system.</p>
+
+<blockquote>
+<p>How can a client manipulate data managed by remote system, avoid direct coupling to remote procedures, and minimize the need for domain-specific API</p>
+</blockquote>
+
+<ul>
+<li>Provides access to resources (media file, collection of related data, database information, a logical transaction, etc)</li>
+<li>Often adhere to REST</li>
+<li>Since each URI refers to a single resource / collection, services can often be added, changed or removed with <strong>minimal impact</strong></li>
+<li>Contracts are composed of: protocol, media types produced or consumed by the service, status codes, and URI schemes to identify the resources.</li>
+</ul>
+
+<h3>Considerations</h3>
+
+<ul>
+<li>Use with <strong>disparate clients</strong>: Good choice when having a wide mix of clients</li>
+<li><strong>Addressability</strong>: Make it easy to save and share links to services</li>
+<li>Code generation of service connectors: Client developers can&#39;t take advantage of code generation tools (no service descriptors).</li>
+<li><strong>Async</strong>: Resource APIs often use <strong>request-response</strong>, but can use <strong>request-acknowlege</strong> interaction pattern as well. </li>
+<li>Avoid <strong>blocking</strong>: Clients can use an <strong>async response handler</strong> pattern to avoid being blocked during the service processment</li>
+<li>Support to client <strong>preferences</strong>: Supports multiple representation of the same resource. Rather than a different URI, you can use <strong>media type negotiation</strong> to enable clients to indicate their preferences.</li>
+<li>Late binding: Often provide addresses to related services clients may use</li>
+<li>Ability to leverage commodity <strong>caching</strong> technologies</li>
+<li>Resources API and REST: Not every Resource API adhere to REST, but they often do.</li>
+</ul>
+
+</div>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'joelcorrea'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2018/05/20/better-decision-making/">
+            A better decision making framework
+            <small>20 May 2018</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2016/04/15/lxc-linux-containers/">
+            LXC - Linux Containers
+            <small>15 Apr 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2015/05/05/designing-a-state-machine-without-conditionals/">
+            Designing a State Machine without conditionals
+            <small>05 May 2015</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+      </div>
+    </div>
+
+  </body>
+</html>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Joel Corrêa</title>
- <link href="http://jjcorrea.github.io/atom.xml" rel="self"/>
- <link href="http://jjcorrea.github.io/"/>
- <updated>2016-04-16T00:28:31-03:00</updated>
- <id>http://jjcorrea.github.io</id>
+ <link href="http://localhost:4000/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/"/>
+ <updated>2018-05-20T23:35:52-03:00</updated>
+ <id>http://localhost:4000</id>
  <author>
    <name>Joel Correa</name>
    <email></email>
@@ -13,10 +13,47 @@
 
  
  <entry>
+   <title>A better decision making framework</title>
+   <link href="http://localhost:4000/2018/05/20/better-decision-making/"/>
+   <updated>2018-05-20T00:00:00-03:00</updated>
+   <id>http://localhost:4000/2018/05/20/better-decision-making</id>
+   <content type="html">&lt;p&gt;The process of making good decision in uncertain scenarios may not be easy, and can also require several soft skills. I collected some book references regarding how to learn and improve those skills and to be a better decision maker (if thats your case).&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788&quot;&gt;Hooked: How to Build Habit-Forming Products&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://www.amazon.com/gp/product/0062273205&quot;&gt;The Hard Thing About Hard Things: Building a Business When There Are No Easy Answers&lt;/a&gt;: This book captures what it is like leading a startup.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://www.amazon.com/gp/product/078949647X&quot;&gt;Re-Imagine! Business Excellence in a Disruptive Age&lt;/a&gt;: One of the great Tom Peters books&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://www.amazon.com/gp/product/0679762884&quot;&gt;High Output Management &lt;/a&gt;: The book that started the recent OKR trend used by Google and many other companies to manage priorities.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://www.amazon.com/gp/product/0984380213&quot;&gt;Predictable Revenue: Turn Your Business Into a Sales Machine with the $100 Million Best Practices of Salesforce.com&lt;/a&gt;: Guide to running a sales team from an early Salesforce.com sales leader&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://www.amazon.com/gp/product/0553562835&quot;&gt;Sam Walton: Made In America&lt;/a&gt;: The story of how Sam Walton created Wal-Mart and became the richest man in the world&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://www.amazon.com/gp/product/1401301436&quot;&gt;Zingerman&amp;#39;s Guide to Giving Great Service&lt;/a&gt;: Creating a great customer experience&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://www.amazon.com/gp/product/142212312X&quot;&gt;Managing Oneself (Harvard Business Review Classics)&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://www.amazon.com/gp/product/0470521163&quot;&gt;Behind the Cloud: The Untold Story of How Salesforce.com Went from Idea to Billion-Dollar Company-and Revolutionized an Industry&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://www.amazon.com/gp/product/0143037838&quot;&gt;Let My People Go Surfing: The Education of a Reluctant Businessman&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://www.amazon.com/gp/product/0071373586&quot;&gt;Positioning: The Battle for Your Mind&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://www.amazon.com/gp/product/006124189X&quot;&gt;Influence: The Psychology of Persuasion, Revised Edition&lt;/a&gt;: Understand the cognitive biases we all use to make decisions.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://www.amazon.com/gp/product/1451617852&quot;&gt;EntreLeadership: 20 Years of Practical Business Wisdom from the Trenches&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://www.amazon.com/gp/product/1591841038&quot;&gt;The Big Moo: Stop Trying to Be Perfect and Start Being Remarkable&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://www.amazon.com/gp/product/1578644283&quot;&gt;Seeking Wisdom: From Darwin to Munger, 3rd Edition&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://www.amazon.com/Creativity-Inc-Overcoming-Unseen-Inspiration-ebook&quot;&gt;Creativity, Inc.: Overcoming the Unseen Forces That Stand in the Way of True Inspiration&lt;/a&gt;: In-depth look into the world of Pixar. Named one of the best books of 2014 by The Huffington Post, Financial Times, Success, Inc. and the Library Journal&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://www.amazon.com/Zero-One-Notes-Startups-Future&quot;&gt;Zero to One: Notes on Startups, or How to Build the Future&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://www.amazon.com/Lean-Startup-Entrepreneurs-Continuous-Innovation&quot;&gt;The Lean Startup: How Today&amp;#39;s Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;References&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://davidcancel.com/the-books-every-startup-ceo-should-read&quot;&gt;David Cancel Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.wisestamp.com/corporate/resources/wisestamp-knowledge-base/startups/the-9-best-books-every-startup-founder-should-read/&quot;&gt;Wise stamp Blog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>LXC - Linux Containers</title>
-   <link href="http://jjcorrea.github.io/2016/04/15/lxc-linux-containers/"/>
+   <link href="http://localhost:4000/2016/04/15/lxc-linux-containers/"/>
    <updated>2016-04-15T00:00:00-03:00</updated>
-   <id>http://jjcorrea.github.io/2016/04/15/lxc-linux-containers</id>
+   <id>http://localhost:4000/2016/04/15/lxc-linux-containers</id>
    <content type="html">&lt;p&gt;The &lt;a href=&quot;https://linuxcontainers.org/&quot;&gt;LXC&lt;/a&gt; project, formerly LinuxContainers*, is an open source implementation of a relatively recent hype, an isolation paradigm so called OS level virtualization. &lt;/p&gt;
 
 &lt;p&gt;The overhead caused by working with Virtual machines required a better abstraction due to the penalties involved in maintaining, in terms of simplicity, performance, so this initiative aims to provide better and simpler isolation mechanisms (special thanks to Linux kernel).&lt;/p&gt;
@@ -86,9 +123,9 @@ IP:         10.0.3.146
  
  <entry>
    <title>Designing a State Machine without conditionals</title>
-   <link href="http://jjcorrea.github.io/2015/05/05/designing-a-state-machine-without-conditionals/"/>
+   <link href="http://localhost:4000/2015/05/05/designing-a-state-machine-without-conditionals/"/>
    <updated>2015-05-05T00:00:00-03:00</updated>
-   <id>http://jjcorrea.github.io/2015/05/05/designing-a-state-machine-without-conditionals</id>
+   <id>http://localhost:4000/2015/05/05/designing-a-state-machine-without-conditionals</id>
    <content type="html">&lt;p&gt;I&amp;#39;ve recently worked in a project, where we had the opportunity to design and implement an &lt;strong&gt;SMS sending component&lt;/strong&gt;, and I&amp;#39;d like to share our experience while elaborating the solution, and also a quick example. &lt;/p&gt;
 
 &lt;p&gt;The general idea was to generate calls to an external SMS sending API when certain events occur on 3 distinct web applications (a.k.a Channels). Given an event, the state transition it generates, and also depending on some rules (&lt;strong&gt;State Machine&lt;/strong&gt;) it may be the case to generate an SMS send or not. &lt;/p&gt;
@@ -151,60 +188,60 @@ Now they avoid ifs!
 &lt;p&gt;(Assuming the statuses as strings).&lt;/p&gt;
 
 &lt;h3&gt;EntryPoint&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-csharp&quot; data-lang=&quot;csharp&quot;&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;EntryPoint&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;UpdateStatus&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Input&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;transitions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;All&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Where&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Item1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Select&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Item2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;DefaultIfEmpty&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;());&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-csharp&quot; data-lang=&quot;csharp&quot;&gt;public class EntryPoint {
+  // ...
+  public List&amp;lt;string&amp;gt; UpdateStatus(Input input) {
+    return transitions.All(input).Where(x =&amp;gt; x.Item1)
+      .Select(x =&amp;gt; x.Item2())
+      .DefaultIfEmpty(new List&amp;lt;string&amp;gt;());
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;h3&gt;Transitions&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-csharp&quot; data-lang=&quot;csharp&quot;&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Transitions&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Tuple&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Func&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;All&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Input&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-csharp&quot; data-lang=&quot;csharp&quot;&gt;public class Transitions {
+  public List&amp;lt;Tuple&amp;lt;bool, Func&amp;lt;string&amp;gt;&amp;gt;&amp;gt; All(Input input) {
 
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Tuple&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Func&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&amp;gt;&amp;gt;(){&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Tuple&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Func&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&amp;gt;(&lt;/span&gt; 
-          &lt;span class=&quot;n&quot;&gt;predicates&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;FirstCase&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Status&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NextStateFn&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Tuple&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Func&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&amp;gt;(&lt;/span&gt; 
-        &lt;span class=&quot;n&quot;&gt;predicates&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SecondCase&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Status&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PreviousStateFn&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;)};&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+    return new List&amp;lt;Tuple&amp;lt;bool, Func&amp;lt;string&amp;gt;&amp;gt;&amp;gt;(){
+      new Tuple&amp;lt;bool, Func&amp;lt;string&amp;gt;&amp;gt;( 
+          predicates.FirstCase(input), Status.NextStateFn
+      ),
+      new Tuple&amp;lt;bool, Func&amp;lt;string&amp;gt;&amp;gt;( 
+        predicates.SecondCase(input), Status.PreviousStateFn
+      )};
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;h3&gt;Predicates&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-csharp&quot; data-lang=&quot;csharp&quot;&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Predicates&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-csharp&quot; data-lang=&quot;csharp&quot;&gt;public class Predicates {
+  // ...
 
-  &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;FirstCase&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Input&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rules&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;EmptyStatus&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rules&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IsFirstEventType&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  public bool FirstCase(Input input) {
+    return rules.EmptyStatus(input.status) &amp;amp;&amp;amp; rules.IsFirstEventType(input.type);
+  }
 
-  &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;SecondCase&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Input&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rules&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;EmptyStatus&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rules&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IsSecondEventType&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  public bool SecondCase(Input input) {
+    return rules.EmptyStatus(input.status) &amp;amp;&amp;amp; rules.IsSecondEventType(input.type);
+  }
 
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;h3&gt;Rules&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-csharp&quot; data-lang=&quot;csharp&quot;&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Rules&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;// ... &lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-csharp&quot; data-lang=&quot;csharp&quot;&gt;public class Rules {
+    // ... 
 
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;EmptyStatus&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Equals&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;-&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    public bool EmptyStatus(string status) {
+        return status.Equals(&amp;quot;-&amp;quot;);
+    }
 
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;IsFirstEventType&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;eventType&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;EventTypes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;FirstType&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Contains&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;eventType&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    public bool IsFirstEventType(string eventType) {
+        return EventTypes.FirstType().Contains(eventType);
+    }
 
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;IsSecondEventType&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;eventType&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;EventTypes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SecondType&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Contains&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;eventType&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+    public bool IsSecondEventType(string eventType) {
+        return EventTypes.SecondType().Contains(eventType);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;h3&gt;The design outcomes&lt;/h3&gt;
 
 &lt;ul&gt;
@@ -239,9 +276,9 @@ Now they avoid ifs!
  
  <entry>
    <title>Facebook - React JS</title>
-   <link href="http://jjcorrea.github.io/2015/04/03/facebook-react-js/"/>
+   <link href="http://localhost:4000/2015/04/03/facebook-react-js/"/>
    <updated>2015-04-03T00:00:00-03:00</updated>
-   <id>http://jjcorrea.github.io/2015/04/03/facebook-react-js</id>
+   <id>http://localhost:4000/2015/04/03/facebook-react-js</id>
    <content type="html">&lt;h2&gt;Topics&lt;/h2&gt;
 
 &lt;ul&gt;
@@ -309,9 +346,9 @@ Now they avoid ifs!
  
  <entry>
    <title>Netflix Stack - Turbine</title>
-   <link href="http://jjcorrea.github.io/2015/03/15/netflix-stack-turbine/"/>
+   <link href="http://localhost:4000/2015/03/15/netflix-stack-turbine/"/>
    <updated>2015-03-15T00:00:00-03:00</updated>
-   <id>http://jjcorrea.github.io/2015/03/15/netflix-stack-turbine</id>
+   <id>http://localhost:4000/2015/03/15/netflix-stack-turbine</id>
    <content type="html">&lt;p&gt;Turbine is a tool for &lt;strong&gt;aggregating streams of Server-Sent Event (SSE) JSON data&lt;/strong&gt; into a single stream. The targeted use case is metrics streams from instances in an SOA being aggregated for dashboards.&lt;/p&gt;
 
 &lt;p&gt;For example, Netflix uses &lt;strong&gt;Hystrix&lt;/strong&gt; which has a realtime dashboard that &lt;strong&gt;uses Turbine to aggregate data&lt;/strong&gt; from 100s or 1000s of machines.&lt;/p&gt;
@@ -326,9 +363,9 @@ Now they avoid ifs!
  
  <entry>
    <title>Netflix Stack - Simian army</title>
-   <link href="http://jjcorrea.github.io/2015/03/15/netflix-stack-simian-army/"/>
+   <link href="http://localhost:4000/2015/03/15/netflix-stack-simian-army/"/>
    <updated>2015-03-15T00:00:00-03:00</updated>
-   <id>http://jjcorrea.github.io/2015/03/15/netflix-stack-simian-army</id>
+   <id>http://localhost:4000/2015/03/15/netflix-stack-simian-army</id>
    <content type="html">&lt;p&gt;The Simian Army is a suite of tools for keeping your cloud operating in top form. Chaos Monkey, the first member, is a resiliency tool that helps ensure that your applications can tolerate random instance failures.&lt;/p&gt;
 
 &lt;p&gt;Consists of services (Monkeys) in the cloud for generating various kinds of failures, detecting abnormal conditions, and testing our ability to survive them. The goal is to &lt;strong&gt;keep our cloud safe, secure, and highly available&lt;/strong&gt;.&lt;/p&gt;
@@ -343,9 +380,9 @@ Now they avoid ifs!
  
  <entry>
    <title>Netflix Stack - Ribbon</title>
-   <link href="http://jjcorrea.github.io/2015/03/15/netflix-stack-ribbon/"/>
+   <link href="http://localhost:4000/2015/03/15/netflix-stack-ribbon/"/>
    <updated>2015-03-15T00:00:00-03:00</updated>
-   <id>http://jjcorrea.github.io/2015/03/15/netflix-stack-ribbon</id>
+   <id>http://localhost:4000/2015/03/15/netflix-stack-ribbon</id>
    <content type="html">&lt;p&gt;Ribbon is a client side IPC -  Inter Process Communication (remote procedure calls) - library that is battle-tested in cloud. It provides the following features&lt;/p&gt;
 
 &lt;ul&gt;
@@ -365,9 +402,9 @@ Now they avoid ifs!
  
  <entry>
    <title>Netflix Stack - Hystrix</title>
-   <link href="http://jjcorrea.github.io/2015/03/15/netflix-stack-hystrix/"/>
+   <link href="http://localhost:4000/2015/03/15/netflix-stack-hystrix/"/>
    <updated>2015-03-15T00:00:00-03:00</updated>
-   <id>http://jjcorrea.github.io/2015/03/15/netflix-stack-hystrix</id>
+   <id>http://localhost:4000/2015/03/15/netflix-stack-hystrix</id>
    <content type="html">&lt;h2&gt;What does it do?&lt;/h2&gt;
 
 &lt;h3&gt;1) Latency and Fault Tolerance&lt;/h3&gt;
@@ -383,25 +420,25 @@ Now they avoid ifs!
 &lt;p&gt;Parallel execution. Concurrency aware request caching. Automated batching through request collapsing.&lt;/p&gt;
 
 &lt;p&gt;Sample:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;CommandHelloWorld&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;HystrixCommand&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;public class CommandHelloWorld extends HystrixCommand&amp;lt;String&amp;gt; {
+    private final String name;
 
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;CommandHelloWorld&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;kd&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HystrixCommandGroupKey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;Factory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;asKey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;ExampleGroup&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+    public CommandHelloWorld(String name) {
+        super(HystrixCommandGroupKey.Factory.asKey(&amp;quot;ExampleGroup&amp;quot;));
+        this.name = name;
+    }
 
-    &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;protected&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Hello &amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;!&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+    @Override
+    protected String run() {
+        return &amp;quot;Hello &amp;quot; + name + &amp;quot;!&amp;quot;;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;p&gt;This command could be used like this:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;CommandHelloWorld&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Bob&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;execute&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;Future&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;CommandHelloWorld&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Bob&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;queue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;Observable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;CommandHelloWorld&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Bob&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;observe&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;String s = new CommandHelloWorld(&amp;quot;Bob&amp;quot;).execute();
+Future&amp;lt;String&amp;gt; s = new CommandHelloWorld(&amp;quot;Bob&amp;quot;).queue();
+Observable&amp;lt;String&amp;gt; s = new CommandHelloWorld(&amp;quot;Bob&amp;quot;).observe();
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;h2&gt;References&lt;/h2&gt;
 
 &lt;ul&gt;
@@ -412,9 +449,9 @@ Now they avoid ifs!
  
  <entry>
    <title>Netflix Stack</title>
-   <link href="http://jjcorrea.github.io/2015/03/15/netflilx-stack/"/>
+   <link href="http://localhost:4000/2015/03/15/netflilx-stack/"/>
    <updated>2015-03-15T00:00:00-03:00</updated>
-   <id>http://jjcorrea.github.io/2015/03/15/netflilx-stack</id>
+   <id>http://localhost:4000/2015/03/15/netflilx-stack</id>
    <content type="html">&lt;p&gt;A summary of the Netflix open source tools. Categorizes into:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -664,9 +701,9 @@ http://netflix.github.com/asgard&lt;/p&gt;
  
  <entry>
    <title>Amazon AWS Stack</title>
-   <link href="http://jjcorrea.github.io/2015/03/15/Amazon-AWS-stack/"/>
+   <link href="http://localhost:4000/2015/03/15/Amazon-AWS-stack/"/>
    <updated>2015-03-15T00:00:00-03:00</updated>
-   <id>http://jjcorrea.github.io/2015/03/15/Amazon-AWS-stack</id>
+   <id>http://localhost:4000/2015/03/15/Amazon-AWS-stack</id>
    <content type="html">&lt;p&gt;A summary of the Amazon AWS stack. Categorizes into:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -926,9 +963,9 @@ http://netflix.github.com/asgard&lt;/p&gt;
  
  <entry>
    <title>Google Guice</title>
-   <link href="http://jjcorrea.github.io/2015/03/14/google-guice/"/>
+   <link href="http://localhost:4000/2015/03/14/google-guice/"/>
    <updated>2015-03-14T00:00:00-03:00</updated>
-   <id>http://jjcorrea.github.io/2015/03/14/google-guice</id>
+   <id>http://localhost:4000/2015/03/14/google-guice</id>
    <content type="html">&lt;blockquote&gt;
 &lt;p&gt;Guice (pronounced &amp;#39;juice&amp;#39;) is a &lt;strong&gt;lightweight dependency injection framework&lt;/strong&gt; for Java 6 and above, brought to you by Google&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -950,24 +987,24 @@ http://netflix.github.com/asgard&lt;/p&gt;
 &lt;h2&gt;Injector&lt;/h2&gt;
 
 &lt;p&gt;Injectors take care of &lt;strong&gt;creating and maintaining objects&lt;/strong&gt; that are used by the Clients.&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;Add&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;addObject&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;injector&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getInstance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Add&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;Add addObject = injector.getInstance(Add.class)
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;h2&gt;Module&lt;/h2&gt;
 
 &lt;p&gt;Modules are objects which will &lt;strong&gt;maintain the set of Bindings&lt;/strong&gt;, which defines &lt;strong&gt;how dependencies are resolved&lt;/strong&gt;. It is possible to have multiple Modules in an Application. Injectors, in turn, will interact with the Modules to get the possible Bindings. Module is represented by an interface with a method called Module.configure() which should be overridden by the Application to populate the Bindings.&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MyModule&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AbstractModule&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;configure&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Binder&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;binder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-        &lt;span class=&quot;c1&quot;&gt;// Code that binds information using the various&lt;/span&gt;
-        &lt;span class=&quot;c1&quot;&gt;// flavours of bind method.&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;class MyModule extends AbstractModule{
+    public void configure(Binder binder){
+        // Code that binds information using the various
+        // flavours of bind method.
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;h2&gt;Guice&lt;/h2&gt;
 
 &lt;p&gt;Guice is a class which Clients directly depends upon to interact with other Objects.&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;MyModule&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;MyModule&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;Injector&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;injector&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Guice&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;createInjector&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;module&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;MyModule module = new MyModule();
+Injector injector = Guice.createInjector(module);
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;h2&gt;Providers&lt;/h2&gt;
 
 &lt;ul&gt;
@@ -988,140 +1025,140 @@ http://netflix.github.com/asgard&lt;/p&gt;
 &lt;h3&gt;@ImplementedBy&lt;/h3&gt;
 
 &lt;p&gt;This Annotation points to a Class object that provides Implementation to the interface.&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;nd&quot;&gt;@ImplementedBy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SimpleAdd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Add&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;@ImplementedBy(SimpleAdd.class)
+interface Add{
+    public int add(int a, int b);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;h3&gt;@Inject&lt;/h3&gt;
 
 &lt;p&gt;For &lt;strong&gt;injecting instances&lt;/strong&gt;, we can use this Inject Annotation.&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Client&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nd&quot;&gt;@Inject&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Client&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MyService&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;service&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;class Client{
+    @Inject
+    public Client(MyService service){
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;h3&gt;@ProvidedBy&lt;/h3&gt;
 
 &lt;p&gt;Assuming that we want to customize the Object creation process for some interface type, then we would depend on Guice Provider mechanism. Let’s say, for Add interface we want AddProvider to create and return objects of type SimpleAdd.&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;nd&quot;&gt;@ProvidedBy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;AddProvider&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Add&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;@ProvidedBy(AddProvider.class)
+public interface Add{
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;h3&gt;@Singleton&lt;/h3&gt;
 
 &lt;p&gt;If you want the dependency to be resolved in a single instance for all the application, you need to mark your class with a @Singleton annotation.&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;nd&quot;&gt;@Singleton&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MyConnection&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;connect&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;@Singleton
+public class MyConnection{
+    public void connect(){
+    }
 
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;disconnect&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+    public void disconnect(){
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;h2&gt;Examples&lt;/h2&gt;
 
 &lt;h3&gt;Message services&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MessageService&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; 
-    &lt;span class=&quot;kt&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;sendMessage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;receipient&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;public interface MessageService { 
+    boolean sendMessage(String msg, String receipient);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;p&gt;Sample implementation:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;javax.inject.Singleton&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;//import com.google.inject.Singleton; --&amp;gt; **Guice 3.0** added the support for JSR-330 and we can use annotations from **com.google.inject** or **javax.inject** package.&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;import javax.inject.Singleton;
+//import com.google.inject.Singleton; --&amp;gt; **Guice 3.0** added the support for JSR-330 and we can use annotations from **com.google.inject** or **javax.inject** package.
 
-&lt;span class=&quot;nd&quot;&gt;@Singleton&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;EmailService&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MessageService&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;sendMessage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;receipient&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;c1&quot;&gt;//some fancy code to send email&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; 
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+@Singleton
+public class EmailService implements MessageService {
+    public boolean sendMessage(String msg, String receipient) {
+        //some fancy code to send email
+    } 
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;p&gt;Let’s say we have another service implementation to send facebook messages.&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;nd&quot;&gt;@Singleton&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;FacebookService&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MessageService&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;sendMessage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;receipient&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;c1&quot;&gt;//some complex code to send Facebook message&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;@Singleton
+public class FacebookService implements MessageService {
+    public boolean sendMessage(String msg, String receipient) {
+        //some complex code to send Facebook message
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;p&gt;Some application which requires the dependency:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MyApplication&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; 
-    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MessageService&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;service&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;public class MyApplication { 
+    private MessageService service;
 
-&lt;span class=&quot;c1&quot;&gt;//  constructor based injector&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;//  @Inject&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;//  public MyApplication(MessageService svc){&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;//      this.service=svc;&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;//  }&lt;/span&gt;
+//  constructor based injector
+//  @Inject
+//  public MyApplication(MessageService svc){
+//      this.service=svc;
+//  }
 
-    &lt;span class=&quot;c1&quot;&gt;//setter method injector&lt;/span&gt;
-    &lt;span class=&quot;nd&quot;&gt;@Inject&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setService&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MessageService&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;svc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;service&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;svc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+    //setter method injector
+    @Inject
+    public void setService(MessageService svc){
+        this.service=svc;
+    }
 
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;sendMessage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rec&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-        &lt;span class=&quot;c1&quot;&gt;//some business logic here&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;service&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;sendMessage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rec&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+    public boolean sendMessage(String msg, String rec){
+        //some business logic here
+        return service.sendMessage(msg, rec);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;p&gt;The bindings (map types to their implementations):&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;AppInjector&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AbstractModule&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; 
-    &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;protected&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;configure&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;c1&quot;&gt;//bind the service to implementation class&lt;/span&gt;
-        &lt;span class=&quot;c1&quot;&gt;//bind(MessageService.class).to(EmailService.class);&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;public class AppInjector extends AbstractModule { 
+    @Override
+    protected void configure() {
+        //bind the service to implementation class
+        //bind(MessageService.class).to(EmailService.class);
 
-        &lt;span class=&quot;c1&quot;&gt;//bind MessageService to Facebook Message implementation&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;bind&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MessageService&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;to&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;FacebookService&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+        //bind MessageService to Facebook Message implementation
+        bind(MessageService.class).to(FacebookService.class);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;p&gt;Client application:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ClientApplication&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;Injector&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;injector&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Guice&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;createInjector&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;AppInjector&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;                 
-        &lt;span class=&quot;n&quot;&gt;MyApplication&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;app&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;injector&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getInstance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MyApplication&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;         
-        &lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;sendMessage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Hi Pankaj&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;pankaj@abc.com&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;public class ClientApplication {
+    public static void main(String[] args) {
+        Injector injector = Guice.createInjector(new AppInjector());                 
+        MyApplication app = injector.getInstance(MyApplication.class);         
+        app.sendMessage(&amp;quot;Hi Pankaj&amp;quot;, &amp;quot;pankaj@abc.com&amp;quot;);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;h2&gt;Injection: Constructor vs Method vs Field&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Constructor injection&lt;/strong&gt; combines &lt;strong&gt;instantiation with injection&lt;/strong&gt;. Most constructors will then assign the parameters to final fields. Works nicely with &lt;strong&gt;unit testing&lt;/strong&gt;.&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;RealBillingService&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BillingService&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CreditCardProcessor&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;processorProvider&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TransactionLog&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;transactionLogProvider&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;public class RealBillingService implements BillingService {
+  private final CreditCardProcessor processorProvider;
+  private final TransactionLog transactionLogProvider;
 
-  &lt;span class=&quot;nd&quot;&gt;@Inject&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;RealBillingService&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CreditCardProcessor&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;processorProvider&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TransactionLog&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;transactionLogProvider&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;processorProvider&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;processorProvider&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;transactionLogProvider&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;transactionLogProvider&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+  @Inject
+  public RealBillingService(CreditCardProcessor processorProvider, TransactionLog transactionLogProvider) {
+    this.processorProvider = processorProvider;
+    this.transactionLogProvider = transactionLogProvider;
+  }
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;p&gt;On &lt;strong&gt;Method injection&lt;/strong&gt; dependencies take the form of parameters, which the injector resolves before invoking the method.&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;PayPalCreditCardProcessor&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CreditCardProcessor&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DEFAULT_API_KEY&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;development-use-only&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;apiKey&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DEFAULT_API_KEY&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;public class PayPalCreditCardProcessor implements CreditCardProcessor {
+  private static final String DEFAULT_API_KEY = &amp;quot;development-use-only&amp;quot;;
+  private String apiKey = DEFAULT_API_KEY;
 
-  &lt;span class=&quot;nd&quot;&gt;@Inject&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setApiKey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;@Named&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;PayPal API key&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;apiKey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;apiKey&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;apiKey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+  @Inject
+  public void setApiKey(@Named(&amp;quot;PayPal API key&amp;quot;) String apiKey) {
+    this.apiKey = apiKey;
+  }
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;p&gt;&lt;strong&gt;Field injection&lt;/strong&gt;: This is the most concise injection, but the &lt;strong&gt;least testable&lt;/strong&gt;.&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;DatabaseTransactionLogProvider&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Provider&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;TransactionLog&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nd&quot;&gt;@Inject&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Connection&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;connection&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;public class DatabaseTransactionLogProvider implements Provider&amp;lt;TransactionLog&amp;gt; {
+  @Inject Connection connection;
 
-  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TransactionLog&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;DatabaseTransactionLog&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;connection&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+  public TransactionLog get() {
+    return new DatabaseTransactionLog(connection);
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;h2&gt;References&lt;/h2&gt;
 
 &lt;ul&gt;
@@ -1134,9 +1171,9 @@ http://netflix.github.com/asgard&lt;/p&gt;
  
  <entry>
    <title>Requirement patterns catalog</title>
-   <link href="http://jjcorrea.github.io/2015/01/10/requirement-pattern-catalog/"/>
+   <link href="http://localhost:4000/2015/01/10/requirement-pattern-catalog/"/>
    <updated>2015-01-10T00:00:00-02:00</updated>
-   <id>http://jjcorrea.github.io/2015/01/10/requirement-pattern-catalog</id>
+   <id>http://localhost:4000/2015/01/10/requirement-pattern-catalog</id>
    <content type="html">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2&gt;Fundamental requirement patterns&lt;/h2&gt;
@@ -1475,9 +1512,9 @@ http://netflix.github.com/asgard&lt;/p&gt;
  
  <entry>
    <title>Twitter highlights</title>
-   <link href="http://jjcorrea.github.io/2015/01/10/case-twitter/"/>
+   <link href="http://localhost:4000/2015/01/10/case-twitter/"/>
    <updated>2015-01-10T00:00:00-02:00</updated>
-   <id>http://jjcorrea.github.io/2015/01/10/case-twitter</id>
+   <id>http://localhost:4000/2015/01/10/case-twitter</id>
    <content type="html">&lt;h2&gt;Cache&lt;/h2&gt;
 
 &lt;ul&gt;
@@ -1550,9 +1587,9 @@ http://netflix.github.com/asgard&lt;/p&gt;
  
  <entry>
    <title>Requirement pattern concepts</title>
-   <link href="http://jjcorrea.github.io/2015/01/04/requirement-pattern-concepts/"/>
+   <link href="http://localhost:4000/2015/01/04/requirement-pattern-concepts/"/>
    <updated>2015-01-04T00:00:00-02:00</updated>
-   <id>http://jjcorrea.github.io/2015/01/04/requirement-pattern-concepts</id>
+   <id>http://localhost:4000/2015/01/04/requirement-pattern-concepts</id>
    <content type="html">&lt;blockquote&gt;
 &lt;p&gt;&amp;quot;Each pattern describes a problem which occurs over and over again in our environment&amp;quot; - Christopher Alexander&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1620,9 +1657,9 @@ http://netflix.github.com/asgard&lt;/p&gt;
  
  <entry>
    <title>Contents of requirement specifications</title>
-   <link href="http://jjcorrea.github.io/2015/01/02/contents-of-requirement-specifications/"/>
+   <link href="http://localhost:4000/2015/01/02/contents-of-requirement-specifications/"/>
    <updated>2015-01-02T00:00:00-02:00</updated>
-   <id>http://jjcorrea.github.io/2015/01/02/contents-of-requirement-specifications</id>
+   <id>http://localhost:4000/2015/01/02/contents-of-requirement-specifications</id>
    <content type="html">&lt;p&gt;There is not a single right way to &lt;strong&gt;organize requirements specification&lt;/strong&gt;, but certain topics recur in most systems and deserve their own sections. The following model is a suggested &lt;strong&gt;structure&lt;/strong&gt; for requirements specification.&lt;/p&gt;
 
 &lt;h2&gt;Introduction section&lt;/h2&gt;
@@ -1742,9 +1779,9 @@ http://netflix.github.com/asgard&lt;/p&gt;
  
  <entry>
    <title>Agile production</title>
-   <link href="http://jjcorrea.github.io/2015/01/02/agile-production/"/>
+   <link href="http://localhost:4000/2015/01/02/agile-production/"/>
    <updated>2015-01-02T00:00:00-02:00</updated>
-   <id>http://jjcorrea.github.io/2015/01/02/agile-production</id>
+   <id>http://localhost:4000/2015/01/02/agile-production</id>
    <content type="html">&lt;h2&gt;Stakeholders engagement&lt;/h2&gt;
 
 &lt;ul&gt;
@@ -1809,9 +1846,9 @@ http://netflix.github.com/asgard&lt;/p&gt;
  
  <entry>
    <title>Webservices API styles</title>
-   <link href="http://jjcorrea.github.io/2014/12/28/webservices-api-styles/"/>
+   <link href="http://localhost:4000/2014/12/28/webservices-api-styles/"/>
    <updated>2014-12-28T00:00:00-02:00</updated>
-   <id>http://jjcorrea.github.io/2014/12/28/webservices-api-styles</id>
+   <id>http://localhost:4000/2014/12/28/webservices-api-styles</id>
    <content type="html">&lt;ul&gt;
 &lt;li&gt;Distinct APIs&lt;/li&gt;
 &lt;li&gt;Attend multiple client types&lt;/li&gt;
@@ -1957,9 +1994,9 @@ http://netflix.github.com/asgard&lt;/p&gt;
  
  <entry>
    <title>Architectural analysis</title>
-   <link href="http://jjcorrea.github.io/2014/12/26/architectural-analysis/"/>
+   <link href="http://localhost:4000/2014/12/26/architectural-analysis/"/>
    <updated>2014-12-26T00:00:00-02:00</updated>
-   <id>http://jjcorrea.github.io/2014/12/26/architectural-analysis</id>
+   <id>http://localhost:4000/2014/12/26/architectural-analysis</id>
    <content type="html">&lt;p&gt;There are many different approaches for analyzing software systems, generally consisted of the following activities:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -2081,9 +2118,9 @@ http://netflix.github.com/asgard&lt;/p&gt;
  
  <entry>
    <title>Wildfly 8</title>
-   <link href="http://jjcorrea.github.io/2014/12/20/wildfly-8/"/>
+   <link href="http://localhost:4000/2014/12/20/wildfly-8/"/>
    <updated>2014-12-20T00:00:00-02:00</updated>
-   <id>http://jjcorrea.github.io/2014/12/20/wildfly-8</id>
+   <id>http://localhost:4000/2014/12/20/wildfly-8</id>
    <content type="html">&lt;p&gt;This is a basic introduction to the Wildfly 8 features.&lt;/p&gt;
 
 &lt;ul&gt;
@@ -2203,9 +2240,9 @@ http://netflix.github.com/asgard&lt;/p&gt;
  
  <entry>
    <title>Java 8</title>
-   <link href="http://jjcorrea.github.io/2014/12/20/java-8/"/>
+   <link href="http://localhost:4000/2014/12/20/java-8/"/>
    <updated>2014-12-20T00:00:00-02:00</updated>
-   <id>http://jjcorrea.github.io/2014/12/20/java-8</id>
+   <id>http://localhost:4000/2014/12/20/java-8</id>
    <content type="html">&lt;p&gt;This is a basic introduction to the Java 8 new features.&lt;/p&gt;
 
 &lt;ul&gt;
@@ -2230,36 +2267,36 @@ http://netflix.github.com/asgard&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;This:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;button&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;addClickListener&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Button&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;ClickListener&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;buttonClick&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ClickEvent&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;c1&quot;&gt;// Your code here&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;});&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;button.addClickListener(new Button.ClickListener() {
+    @Override
+    public void buttonClick(ClickEvent event) {
+        // Your code here
+    }
+});
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;p&gt;Can be written like this:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;button&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;addClickListener&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;{&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;// Your code here&lt;/span&gt;
- &lt;span class=&quot;o&quot;&gt;});&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;button.addClickListener(e-&amp;gt;{
+    // Your code here
+ });
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;p&gt;And even in one line:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;button&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;addClickListener&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Yes, it works&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;button.addClickListener(e-&amp;gt;System.out.println(&amp;quot;Yes, it works&amp;quot;));
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;p&gt;With the Runnable interface:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;java&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;lang&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;import static java.lang.System.out;
 
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Hello&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;Runnable&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;Runnable&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
+public class Hello {
+    Runnable r1 = () -&amp;gt; out.println(this);
+    Runnable r2 = () -&amp;gt; out.println(toString());
 
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Hello, world!&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+    public String toString() { return &amp;quot;Hello, world!&amp;quot;; }
 
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Hello&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;r1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//Hello, world!&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Hello&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;r2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//Hello, world!&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+    public static void main(String... args) {
+        new Hello().r1.run(); //Hello, world!
+        new Hello().r2.run(); //Hello, world!
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;h2&gt;Functional Interfaces&lt;/h2&gt;
 
 &lt;ul&gt;
@@ -2270,10 +2307,10 @@ http://netflix.github.com/asgard&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Can be assigned to anything that fullfill their contract. Example:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;Function&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;atr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;@&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;};&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;Function&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Integer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;leng&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;Function&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Integer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;leng2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;String:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;Function&amp;lt;String, String&amp;gt; atr = (name) -&amp;gt; {return &amp;quot;@&amp;quot; + name;};
+Function&amp;lt;String, Integer&amp;gt; leng = (name) -&amp;gt; name.length();
+Function&amp;lt;String, Integer&amp;gt; leng2 = String::length;
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;p&gt;Sample &lt;code&gt;java.util.function&lt;/code&gt; functional interfaces:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -2290,20 +2327,20 @@ http://netflix.github.com/asgard&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Example:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;FileFilters&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;fileIsPdf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;File&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;cm&quot;&gt;/*code*/&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;fileIsTxt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;File&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;cm&quot;&gt;/*code*/&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;fileIsRtf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;File&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;cm&quot;&gt;/*code*/&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;public class FileFilters {
+    public static boolean fileIsPdf(File file) {/*code*/}
+    public static boolean fileIsTxt(File file) {/*code*/}
+    public static boolean fileIsRtf(File file) {/*code*/}
+}
 
-&lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
+...
 
-&lt;span class=&quot;c1&quot;&gt;// getFiles() returns a Stream.&lt;/span&gt;
+// getFiles() returns a Stream.
 
-&lt;span class=&quot;n&quot;&gt;Stream&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;File&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pdfs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;getFiles&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;FileFilters:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fileIsPdf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;Stream&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;File&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;txts&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;getFiles&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;FileFilters:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fileIsTxt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;Stream&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;File&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rtfs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;getFiles&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;FileFilters:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fileIsRtf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+Stream&amp;lt;File&amp;gt; pdfs = getFiles().filter(FileFilters::fileIsPdf);
+Stream&amp;lt;File&amp;gt; txts = getFiles().filter(FileFilters::fileIsTxt);
+Stream&amp;lt;File&amp;gt; rtfs = getFiles().filter(FileFilters::fileIsRtf);
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;h2&gt;Streams&lt;/h2&gt;
 
 &lt;ul&gt;
@@ -2315,13 +2352,13 @@ http://netflix.github.com/asgard&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;To obtain a stream from a collection:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;Stream&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stream&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;collection&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;stream&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;Stream&amp;lt;T&amp;gt; stream = collection.stream();
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;p&gt;Example of functional operations on a stream:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sumOfWeights&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;blocks&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;stream&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getColor&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RED&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-                                  &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;mapToInt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getWeight&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;())&lt;/span&gt;
-                                  &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;int sumOfWeights = blocks.stream().filter(b -&amp;gt; b.getColor() == RED)
+                                  .mapToInt(b -&amp;gt; b.getWeight())
+                                  .sum();
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;h2&gt;Default methods&lt;/h2&gt;
 
 &lt;ul&gt;
@@ -2331,27 +2368,27 @@ http://netflix.github.com/asgard&lt;/p&gt;
 &lt;li&gt;Can be added to any interface&lt;/li&gt;
 &lt;li&gt;Any class that implements the interface, but doesn&amp;#39;t override the method will get the default implementation.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;k&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Stream&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;stream&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;StreamSupport&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;stream&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;spliterator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;default public Stream stream() {
+    return StreamSupport.stream(spliterator());
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;p&gt;Multiple defaults:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Foo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;talk&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Foo!&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;interface Foo {
+    default void talk() {
+        out.println(&amp;quot;Foo!&amp;quot;);
+    }
+}
 
-&lt;span class=&quot;kd&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Bar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;talk&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Bar!&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;FooBar&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Foo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Bar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;talk&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Foo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;talk&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;           
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+interface Bar {
+    default void talk() {
+        out.println(&amp;quot;Bar!&amp;quot;);
+    }
+}
+class FooBar implements Foo, Bar {
+    @Override
+    void talk() { Foo.super.talk(); }           
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;h2&gt;Nashorn&lt;/h2&gt;
 
 &lt;ul&gt;
@@ -2370,45 +2407,45 @@ http://netflix.github.com/asgard&lt;/p&gt;
 &lt;h2&gt;Comparisons to Java 7&lt;/h2&gt;
 
 &lt;p&gt;Creating an ActionListener&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// Java 7&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;ActionListener&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;al&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;ActionListener&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;actionPerformed&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ActionEvent&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getActionCommand&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;};&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;// Java 7
+ActionListener al = new ActionListener() {
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        System.out.println(e.getActionCommand());
+    }
+};
 
-&lt;span class=&quot;c1&quot;&gt;// Java 8&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;ActionListener&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;al8&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getActionCommand&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+// Java 8
+ActionListener al8 = e -&amp;gt; System.out.println(e.getActionCommand());
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;p&gt;Printing out a list of Strings&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// Java 7&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;// Java 7
+for (String s : list) {
+    System.out.println(s);
+}
 
-&lt;span class=&quot;c1&quot;&gt;//Java 8&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+//Java 8
+list.forEach(System.out::println);
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;p&gt;Sorting a list of Strings&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// Java 7&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;Collections&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Comparator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;compare&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;});&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;// Java 7
+Collections.sort(list, new Comparator&amp;lt;String&amp;gt;() {
+    @Override
+    public int compare(String s1, String s2) {
+        return s1.length() - s2.length();
+    }
+});
 
-&lt;span class=&quot;c1&quot;&gt;//Java 8&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;Collections&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
+//Java 8
+Collections.sort(list, (s1, s2) -&amp;gt; s1.length() - s2.length());
 
-&lt;span class=&quot;c1&quot;&gt;// or&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Comparator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;comparingInt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;String:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+// or
+list.sort(Comparator.comparingInt(String::length));
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;p&gt;Sorting complex objects:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Comparator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;comparing&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;Person:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getLastName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-         &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;thenComparing&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;Person:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getFirstName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;list.sort(Comparator.comparing(Person::getLastName)
+         .thenComparing(Person::getFirstName));
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;h2&gt;References:&lt;/h2&gt;
 
 &lt;ul&gt;
@@ -2420,9 +2457,9 @@ http://netflix.github.com/asgard&lt;/p&gt;
  
  <entry>
    <title>Enterprise integration patterns</title>
-   <link href="http://jjcorrea.github.io/2014/12/20/enterprise-integration-patterns/"/>
+   <link href="http://localhost:4000/2014/12/20/enterprise-integration-patterns/"/>
    <updated>2014-12-20T00:00:00-02:00</updated>
-   <id>http://jjcorrea.github.io/2014/12/20/enterprise-integration-patterns</id>
+   <id>http://localhost:4000/2014/12/20/enterprise-integration-patterns</id>
    <content type="html">&lt;blockquote&gt;
 &lt;p&gt;TODO.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -2431,9 +2468,9 @@ http://netflix.github.com/asgard&lt;/p&gt;
  
  <entry>
    <title>Property-based testing</title>
-   <link href="http://jjcorrea.github.io/2014/12/19/property-based-testing/"/>
+   <link href="http://localhost:4000/2014/12/19/property-based-testing/"/>
    <updated>2014-12-19T00:00:00-02:00</updated>
-   <id>http://jjcorrea.github.io/2014/12/19/property-based-testing</id>
+   <id>http://localhost:4000/2014/12/19/property-based-testing</id>
    <content type="html">&lt;blockquote&gt;
 &lt;p&gt;TODO.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -2442,9 +2479,9 @@ http://netflix.github.com/asgard&lt;/p&gt;
  
  <entry>
    <title>Service discovery</title>
-   <link href="http://jjcorrea.github.io/2014/12/18/service-discovery/"/>
+   <link href="http://localhost:4000/2014/12/18/service-discovery/"/>
    <updated>2014-12-18T00:00:00-02:00</updated>
-   <id>http://jjcorrea.github.io/2014/12/18/service-discovery</id>
+   <id>http://localhost:4000/2014/12/18/service-discovery</id>
    <content type="html">&lt;blockquote&gt;
 &lt;p&gt;DRAFT&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -2459,9 +2496,9 @@ http://netflix.github.com/asgard&lt;/p&gt;
  
  <entry>
    <title>Apache ZooKeeper</title>
-   <link href="http://jjcorrea.github.io/2014/12/18/apache-zookeeper/"/>
+   <link href="http://localhost:4000/2014/12/18/apache-zookeeper/"/>
    <updated>2014-12-18T00:00:00-02:00</updated>
-   <id>http://jjcorrea.github.io/2014/12/18/apache-zookeeper</id>
+   <id>http://localhost:4000/2014/12/18/apache-zookeeper</id>
    <content type="html">&lt;blockquote&gt;
 &lt;p&gt;DRAFT&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -2492,9 +2529,9 @@ http://netflix.github.com/asgard&lt;/p&gt;
  
  <entry>
    <title>Requirement patterns - Introduction</title>
-   <link href="http://jjcorrea.github.io/2014/12/17/software-requirement-patterns/"/>
+   <link href="http://localhost:4000/2014/12/17/software-requirement-patterns/"/>
    <updated>2014-12-17T00:00:00-02:00</updated>
-   <id>http://jjcorrea.github.io/2014/12/17/software-requirement-patterns</id>
+   <id>http://localhost:4000/2014/12/17/software-requirement-patterns</id>
    <content type="html">&lt;h2&gt;Definition&lt;/h2&gt;
 
 &lt;ul&gt;
@@ -2530,9 +2567,9 @@ http://netflix.github.com/asgard&lt;/p&gt;
  
  <entry>
    <title>Lean architecture - Introduction</title>
-   <link href="http://jjcorrea.github.io/2014/12/16/lean-architecture-introduction/"/>
+   <link href="http://localhost:4000/2014/12/16/lean-architecture-introduction/"/>
    <updated>2014-12-16T00:00:00-02:00</updated>
-   <id>http://jjcorrea.github.io/2014/12/16/lean-architecture-introduction</id>
+   <id>http://localhost:4000/2014/12/16/lean-architecture-introduction</id>
    <content type="html">&lt;h2&gt;Touchstones: Lean &amp;amp; Agile&lt;/h2&gt;
 
 &lt;ul&gt;
@@ -2633,9 +2670,9 @@ http://netflix.github.com/asgard&lt;/p&gt;
  
  <entry>
    <title>Service design patterns - Web services</title>
-   <link href="http://jjcorrea.github.io/2014/12/15/service-design-patterns-web-services/"/>
+   <link href="http://localhost:4000/2014/12/15/service-design-patterns-web-services/"/>
    <updated>2014-12-15T00:00:00-02:00</updated>
-   <id>http://jjcorrea.github.io/2014/12/15/service-design-patterns-web-services</id>
+   <id>http://localhost:4000/2014/12/15/service-design-patterns-web-services</id>
    <content type="html">&lt;p&gt;Challenges:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -2733,9 +2770,9 @@ http://netflix.github.com/asgard&lt;/p&gt;
  
  <entry>
    <title>Spring 4</title>
-   <link href="http://jjcorrea.github.io/2014/12/06/spring-4/"/>
+   <link href="http://localhost:4000/2014/12/06/spring-4/"/>
    <updated>2014-12-06T00:00:00-02:00</updated>
-   <id>http://jjcorrea.github.io/2014/12/06/spring-4</id>
+   <id>http://localhost:4000/2014/12/06/spring-4</id>
    <content type="html">&lt;h2&gt;A bit of history&lt;/h2&gt;
 
 &lt;p&gt;The Spring Framework was first released in 2004; since then there have been significant major revisions: &lt;/p&gt;
@@ -2779,87 +2816,88 @@ http://netflix.github.com/asgard&lt;/p&gt;
 &lt;p&gt;Scenario: If &amp;#39;servicedefault&amp;#39; environment variable is set, use &lt;code&gt;Impl1&lt;/code&gt; otherwise use &lt;code&gt;Impl2&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Using @Configuration&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;nd&quot;&gt;@Configuration&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ContextConfig&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
- &lt;span class=&quot;nd&quot;&gt;@Bean&lt;/span&gt;
- &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CustomerService&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;customerService&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getProperty&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;servicedefault&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)!=&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;CustomerServiceImpl1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;CustomerServiceImpl2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
- &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;@Configuration
+public static class ContextConfig {
+ @Bean
+ public CustomerService customerService() {
+  if (System.getProperty(&amp;quot;servicedefault&amp;quot;)!=null) return new CustomerServiceImpl1();
+  return new CustomerServiceImpl2();
+ }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;p&gt;Using BeanProfiles (Spring 3.1)&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;nd&quot;&gt;@Bean&lt;/span&gt;
-&lt;span class=&quot;nd&quot;&gt;@Profile&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;default&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CustomerService&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;service1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; 
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;CustomerServiceImpl1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt; 
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;@Bean
+@Profile(&amp;quot;default&amp;quot;)
+public CustomerService service1() { 
+    return new CustomerServiceImpl1(); 
+}
 
-&lt;span class=&quot;nd&quot;&gt;@Bean&lt;/span&gt;
-&lt;span class=&quot;nd&quot;&gt;@Profile&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;prod&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CustomerService&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;service2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; 
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;CustomerServiceImpl2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt; 
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+@Bean
+@Profile(&amp;quot;prod&amp;quot;)
+public CustomerService service2() { 
+    return new CustomerServiceImpl2(); 
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;p&gt;Using @Conditional. Depends on a set of &lt;code&gt;Condition&lt;/code&gt; classes to specify the predicates.&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;HardCodedPropertyPresentCondition&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Condition&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
- &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
- &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;matches&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ConditionContext&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AnnotatedTypeMetadata&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;metadata&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getProperty&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;servicedefault&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
- &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;class HardCodedPropertyPresentCondition implements Condition {
+ @Override
+ public boolean matches(ConditionContext context, AnnotatedTypeMetadata metadata) {
+  return (System.getProperty(&amp;quot;servicedefault&amp;quot;) != null);
+ }
+}
 
-&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;HardCodedPropertyAbsentCondition&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Condition&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
- &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
- &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;matches&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ConditionContext&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AnnotatedTypeMetadata&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;metadata&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getProperty&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;servicedefault&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
- &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+class HardCodedPropertyAbsentCondition implements Condition {
+ @Override
+ public boolean matches(ConditionContext context, AnnotatedTypeMetadata metadata) {
+  return (System.getProperty(&amp;quot;servicedefault&amp;quot;) == null);
+ }
+}
 
-&lt;span class=&quot;nd&quot;&gt;@Bean&lt;/span&gt;
-&lt;span class=&quot;nd&quot;&gt;@Conditional&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HardCodedPropertyPresentCondition&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CustomerService&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;service1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
- &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;CustomerServiceImpl1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+@Bean
+@Conditional(HardCodedPropertyPresentCondition.class)
+public CustomerService service1() {
+ return new CustomerServiceImpl1();
+}
 
-&lt;span class=&quot;nd&quot;&gt;@Bean&lt;/span&gt;
-&lt;span class=&quot;nd&quot;&gt;@Conditional&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HardCodedPropertyAbsentCondition&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CustomerService&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;service2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
- &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;CustomerServiceImpl2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+@Bean
+@Conditional(HardCodedPropertyAbsentCondition.class)
+public CustomerService service2() {
+ return new CustomerServiceImpl2();
+}
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;h2&gt;Testing meta annotations&lt;/h2&gt;
 
 &lt;p&gt;If we discover that we are repeating the following configuration across our JUnit-based test suite:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;nd&quot;&gt;@RunWith&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SpringJUnit4ClassRunner&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;nd&quot;&gt;@ContextConfiguration&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/app-config.xml&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;/test-data-access-config.xml&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;})&lt;/span&gt;
-&lt;span class=&quot;nd&quot;&gt;@ActiveProfiles&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;dev&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;nd&quot;&gt;@Transactional&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;OrderRepositoryTests&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration({&amp;quot;/app-config.xml&amp;quot;, &amp;quot;/test-data-access-config.xml&amp;quot;})
+@ActiveProfiles(&amp;quot;dev&amp;quot;)
+@Transactional
+public class OrderRepositoryTests { }
 
-&lt;span class=&quot;nd&quot;&gt;@RunWith&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SpringJUnit4ClassRunner&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;nd&quot;&gt;@ContextConfiguration&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/app-config.xml&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;/test-data-access-config.xml&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;})&lt;/span&gt;
-&lt;span class=&quot;nd&quot;&gt;@ActiveProfiles&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;dev&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;nd&quot;&gt;@Transactional&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;UserRepositoryTests&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration({&amp;quot;/app-config.xml&amp;quot;, &amp;quot;/test-data-access-config.xml&amp;quot;})
+@ActiveProfiles(&amp;quot;dev&amp;quot;)
+@Transactional
+public class UserRepositoryTests { }
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;p&gt;We can reduce it by introducing a custom composed annotation:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;nd&quot;&gt;@Target&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ElementType&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;TYPE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;nd&quot;&gt;@Retention&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RetentionPolicy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;RUNTIME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;nd&quot;&gt;@ContextConfiguration&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/app-config.xml&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;/test-data-access-config.xml&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;})&lt;/span&gt;
-&lt;span class=&quot;nd&quot;&gt;@ActiveProfiles&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;dev&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;nd&quot;&gt;@Transactional&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nd&quot;&gt;@interface&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TransactionalDevTest&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;@Target(ElementType.TYPE)
+@Retention(RetentionPolicy.RUNTIME)
+@ContextConfiguration({&amp;quot;/app-config.xml&amp;quot;, &amp;quot;/test-data-access-config.xml&amp;quot;})
+@ActiveProfiles(&amp;quot;dev&amp;quot;)
+@Transactional
+public @interface TransactionalDevTest { }
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;p&gt;Then we can use our custom @TransactionalDevTest annotation to simplify the configuration of individual test classes:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;nd&quot;&gt;@RunWith&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SpringJUnit4ClassRunner&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;nd&quot;&gt;@TransactionalDevTest&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;OrderRepositoryTests&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;@RunWith(SpringJUnit4ClassRunner.class)
+@TransactionalDevTest
+public class OrderRepositoryTests { }
 
-&lt;span class=&quot;nd&quot;&gt;@RunWith&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SpringJUnit4ClassRunner&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;nd&quot;&gt;@TransactionalDevTest&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;UserRepositoryTests&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+@RunWith(SpringJUnit4ClassRunner.class)
+@TransactionalDevTest
+public class UserRepositoryTests { }
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;h2&gt;Groovy Bean Definition DSL&lt;/h2&gt;
 
 &lt;ul&gt;
@@ -2867,25 +2905,25 @@ http://netflix.github.com/asgard&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Sample:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-groovy&quot; data-lang=&quot;groovy&quot;&gt;    &lt;span class=&quot;kt&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reader&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GroovyBeanDefinitionReader&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;myApplicationContext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;reader&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;beans&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;dataSource&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BasicDataSource&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;driverClassName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;org.hsqldb.jdbcDriver&amp;quot;&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;url&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;jdbc:hsqldb:mem:grailsDB&amp;quot;&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;username&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;sa&amp;quot;&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;password&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;settings&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;mynew:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;setting&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;sessionFactory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SessionFactory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;dataSource&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dataSource&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;myService&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MyService&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;nestedBean&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AnotherBean&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bean&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;
-                &lt;span class=&quot;n&quot;&gt;dataSource&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dataSource&lt;/span&gt;
-            &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-groovy&quot; data-lang=&quot;groovy&quot;&gt;    def reader = new GroovyBeanDefinitionReader(myApplicationContext)
+    reader.beans {
+        dataSource(BasicDataSource) {
+            driverClassName = &amp;quot;org.hsqldb.jdbcDriver&amp;quot;
+            url = &amp;quot;jdbc:hsqldb:mem:grailsDB&amp;quot;
+            username = &amp;quot;sa&amp;quot;
+            password = &amp;quot;&amp;quot;
+            settings = [mynew:&amp;quot;setting&amp;quot;]
+        }
+        sessionFactory(SessionFactory) {
+            dataSource = dataSource
+        }
+        myService(MyService) {
+            nestedBean = { AnotherBean bean -&amp;gt;
+                dataSource = dataSource
+            }
+        }
+    }
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;h2&gt;Removed deprecated stuff&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://docs.spring.io/spring-framework/docs/3.2.4.RELEASE_to_4.0.0.RELEASE/&quot;&gt;Details&lt;/a&gt;&lt;/p&gt;
@@ -2896,20 +2934,22 @@ http://netflix.github.com/asgard&lt;/p&gt;
 &lt;li&gt;Spring 3.x ignores the generic type.&lt;/li&gt;
 &lt;li&gt;Readability + Expressiveness&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;nd&quot;&gt;@Service&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MyBookAdminService&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BookAdminService&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;
+@Service
+public class MyBookAdminService implements BookAdminService{
 
-    &lt;span class=&quot;nd&quot;&gt;@Autowired&lt;/span&gt; 
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;MyBookAdminService&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MyRepository&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Account&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;repo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+    @Autowired 
+    public MyBookAdminService(MyRepository&amp;lt;Account&amp;gt; repo){
+        ...
+    }
+}
 
-&lt;span class=&quot;nd&quot;&gt;@Bean&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MyRepository&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Account&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;myAccountRepository&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;MyAccountRepositoryImpl&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+@Bean
+public MyRepository&amp;lt;Account&amp;gt; myAccountRepository(){
+    return new MyAccountRepositoryImpl();
+}
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;h2&gt;Container improvements&lt;/h2&gt;
 
 &lt;ul&gt;
@@ -2949,73 +2989,74 @@ http://netflix.github.com/asgard&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;h4&gt;Lambda&lt;/h4&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// V1 - Inline lambda style&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;JdbcTemplate&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;JdbcTemplate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;datasource&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;// V1 - Inline lambda style
+JdbcTemplate jt = new JdbcTemplate(datasource);
 
-&lt;span class=&quot;n&quot;&gt;jt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;query&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
-  &lt;span class=&quot;s&quot;&gt;&amp;quot;SELECT name, age FROM person WHERE department = ?&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; 
-  &lt;span class=&quot;n&quot;&gt;ps&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ps&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Sales&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt; 
-  &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rowNum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Person&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getInt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+jt.query(
+  &amp;quot;SELECT name, age FROM person WHERE department = ?&amp;quot;, 
+  ps -&amp;gt; ps.setString(1, &amp;quot;Sales&amp;quot;), 
+  (rs, rowNum) -&amp;gt; new Person(rs.getString(1), rs.getInt(2))
+)
 
-&lt;span class=&quot;c1&quot;&gt;// V2 style&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;JdbcTemplate&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;JdbcTemplate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;datasource&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+// V2 style
+JdbcTemplate jt = new JdbcTemplate(datasource);
 
-&lt;span class=&quot;n&quot;&gt;jt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;query&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
-  &lt;span class=&quot;s&quot;&gt;&amp;quot;SELECT name, age FROM person WHERE department = ?&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; 
-  &lt;span class=&quot;n&quot;&gt;ps&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;ps&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Sales&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;},&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rowNum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Person&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getInt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+jt.query(
+  &amp;quot;SELECT name, age FROM person WHERE department = ?&amp;quot;, 
+  ps -&amp;gt; {
+    ps.setString(1, &amp;quot;Sales&amp;quot;)
+  },
+  (rs, rowNum) -&amp;gt; {
+    new Person(rs.getString(1), rs.getInt(2))
+  }
+)
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;h4&gt;Method reference&lt;/h4&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Person&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getPersonList&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;department&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;JdbcTemplate&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;JdbcTemplate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;datasource&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;jt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;query&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
-      &lt;span class=&quot;s&quot;&gt;&amp;quot;SELECT name, age FROM person WHERE department = ?&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; 
-      &lt;span class=&quot;n&quot;&gt;ps&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ps&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Sales&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt; 
-      &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mapPerson&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;public List&amp;lt;Person&amp;gt; getPersonList(String department){
+    JdbcTemplate jt = new JdbcTemplate(datasource);
+    jt.query(
+      &amp;quot;SELECT name, age FROM person WHERE department = ?&amp;quot;, 
+      ps -&amp;gt; ps.setString(1, &amp;quot;Sales&amp;quot;), 
+      this::mapPerson)
+    )
+}
 
-&lt;span class=&quot;n&quot;&gt;Person&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;mapPerson&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ResultSet&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rowNum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;throws&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SQLException&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Person&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getInt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+Person mapPerson(ResultSet rs, int rowNum) throws SQLException{
+    return new Person(rs.getString(1), rs.getInt(2));
+}
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;h2&gt;Date and Time&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Spring formatting framework supports java 8 date and time (JSR-310)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.time.*&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;org.springframework.format.annotation.*&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;import java.time.*;
+import org.springframework.format.annotation.*;
 
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Customer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;// @DateTimeFormat(iso=ISO.DATE)&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LocalDate&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;birthDate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+public class Customer{
+    // @DateTimeFormat(iso=ISO.DATE)
+    private LocalDate birthDate;
 
-    &lt;span class=&quot;nd&quot;&gt;@DateTimeFormat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pattern&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;M/d/yy h:mm&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LocalDate&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lastContact&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    @DateTimeFormat(pattern=&amp;quot;M/d/yy h:mm&amp;quot;)
+    private LocalDate lastContact;
 
-    &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+    ...
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;h2&gt;Repeatable annotations&lt;/h2&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// java 7&lt;/span&gt;
-&lt;span class=&quot;nd&quot;&gt;@Schedules&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;({&lt;/span&gt;
-    &lt;span class=&quot;nd&quot;&gt;@Scheduled&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cron&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;0 0 12 * * ?&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
-    &lt;span class=&quot;nd&quot;&gt;@Scheduled&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cron&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;0 0 18 * * ?&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;})&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;performTempFileCleanup&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;// java 7
+@Schedules({
+    @Scheduled(cron = &amp;quot;0 0 12 * * ?&amp;quot;),
+    @Scheduled(cron = &amp;quot;0 0 18 * * ?&amp;quot;)
+})
+public void performTempFileCleanup(){ ... }
 
-&lt;span class=&quot;c1&quot;&gt;// java 8&lt;/span&gt;
-&lt;span class=&quot;nd&quot;&gt;@Scheduled&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cron&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;0 0 12 * * ?&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;nd&quot;&gt;@Scheduled&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cron&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;0 0 18 * * ?&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;performTempFileCleanup&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+// java 8
+@Scheduled(cron = &amp;quot;0 0 12 * * ?&amp;quot;)
+@Scheduled(cron = &amp;quot;0 0 18 * * ?&amp;quot;)
+public void performTempFileCleanup(){ ... }
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;h2&gt;Parameter name discovery&lt;/h2&gt;
 
 &lt;ul&gt;
@@ -3025,14 +3066,15 @@ http://netflix.github.com/asgard&lt;/p&gt;
 &lt;li&gt;ASM (bytecode manipulation based) &lt;/li&gt;
 &lt;li&gt;Java 8 parameter reflection&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;nd&quot;&gt;@Controller&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MyMvcController&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nd&quot;&gt;@RequestMapping&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/books/{id}&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;method&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;GET&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Book&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;findBook&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;bookAdminService&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;findBook&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;@Controller
+public class MyMvcController{
+    @RequestMapping(value=&amp;quot;/books/{id}&amp;quot;, method=&amp;quot;GET&amp;quot;)
+    public Book findBook(){
+        return this.bookAdminService.findBook(id);
+    }
+}
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;h2&gt;Web improvements&lt;/h2&gt;
 
 &lt;ul&gt;
@@ -3063,9 +3105,9 @@ http://netflix.github.com/asgard&lt;/p&gt;
  
  <entry>
    <title>Architectural requirements</title>
-   <link href="http://jjcorrea.github.io/2014/11/30/architectural-requirements/"/>
+   <link href="http://localhost:4000/2014/11/30/architectural-requirements/"/>
    <updated>2014-11-30T00:00:00-02:00</updated>
-   <id>http://jjcorrea.github.io/2014/11/30/architectural-requirements</id>
+   <id>http://localhost:4000/2014/11/30/architectural-requirements</id>
    <content type="html">&lt;p&gt;Generally the set of system requirements are defined during the initial steps of the development cycle. It should be seen as the &lt;strong&gt;specification&lt;/strong&gt; of what needs to be implemented. The requirements are descriptions of how the system should &lt;strong&gt;behave&lt;/strong&gt;, contains &lt;strong&gt;domain information&lt;/strong&gt; and &lt;strong&gt;restrictions&lt;/strong&gt; about the system operation.&lt;/p&gt;
 
 &lt;p&gt;During the requirement elucidation phase the software architect / engineer tries to identify the system&amp;#39;m specificities which needs to be supported. Once the set of requirements is obtained, it is then posssible to start the architectural project.&lt;/p&gt;
@@ -3209,9 +3251,9 @@ Disregard, of not consider this requirements properly is &lt;strong&gt;admittedl
  
  <entry>
    <title>Architectural styles</title>
-   <link href="http://jjcorrea.github.io/2014/11/08/architecture-oriented-development-architectural-styles/"/>
+   <link href="http://localhost:4000/2014/11/08/architecture-oriented-development-architectural-styles/"/>
    <updated>2014-11-08T00:00:00-02:00</updated>
-   <id>http://jjcorrea.github.io/2014/11/08/architecture-oriented-development-architectural-styles</id>
+   <id>http://localhost:4000/2014/11/08/architecture-oriented-development-architectural-styles</id>
    <content type="html">&lt;p&gt;Given the importance, and the growing need of dealing with &lt;strong&gt;quality&lt;/strong&gt; and &lt;strong&gt;maintainability&lt;/strong&gt; targets, through software architecture techniques (as exposed on the &lt;a href=&quot;/2014/11/03/architecture-oriented-development/&quot;&gt;previous post&lt;/a&gt;), there are categorizations of architectural styles which supports the required characteristics of software systems. &lt;/p&gt;
 
 &lt;p&gt;The &lt;strong&gt;architectural styles&lt;/strong&gt; use clear &lt;strong&gt;terminologies&lt;/strong&gt;, &lt;strong&gt;properties&lt;/strong&gt; and &lt;strong&gt;restrictions&lt;/strong&gt; to identify the components (a.k.a subsystems) and interaction mechanisms between them, what is specially usefull for software engineers to &lt;strong&gt;reuse&lt;/strong&gt; the architectural patterns on scenarios in which they are needed. &lt;/p&gt;
@@ -3230,7 +3272,7 @@ Disregard, of not consider this requirements properly is &lt;strong&gt;admittedl
 
 &lt;p&gt;An example of pipes and filters would be the following UNIX command:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sample&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;who &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; sort&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sample$ who | sort&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;The result of &lt;em&gt;who&lt;/em&gt; is a list of currently connected users, and its output is used as the input of &lt;em&gt;sort&lt;/em&gt;, which orders the values alphabetically.&lt;/p&gt;
 
@@ -3354,9 +3396,9 @@ Disregard, of not consider this requirements properly is &lt;strong&gt;admittedl
  
  <entry>
    <title>Architecture oriented development</title>
-   <link href="http://jjcorrea.github.io/2014/11/03/architecture-oriented-development/"/>
+   <link href="http://localhost:4000/2014/11/03/architecture-oriented-development/"/>
    <updated>2014-11-03T00:00:00-02:00</updated>
-   <id>http://jjcorrea.github.io/2014/11/03/architecture-oriented-development</id>
+   <id>http://localhost:4000/2014/11/03/architecture-oriented-development</id>
    <content type="html">&lt;p&gt;Aproximately 50 years ago, software consisted on a tiny part of the overall technological landscape, in which the hardware (electronic components, circuits, etc) was the most important player.&lt;/p&gt;
 
 &lt;p&gt;On the other hand, once software became significantly more important to computational systems, and once it started getting more popular, also being part of major of personal and professional activities ubiquitously, the &lt;strong&gt;size&lt;/strong&gt; and &lt;strong&gt;complexity&lt;/strong&gt; of those systems urged for better solutions than the existing &lt;strong&gt;abstraction&lt;/strong&gt; techniques which remained until the end of the 80s, as abstract data types (ADTs), high level programming languages, and modular decomposition techniques.&lt;/p&gt;
@@ -3423,9 +3465,9 @@ To be continued...&lt;/p&gt;
  
  <entry>
    <title>Gatling</title>
-   <link href="http://jjcorrea.github.io/2014/10/19/gatling/"/>
+   <link href="http://localhost:4000/2014/10/19/gatling/"/>
    <updated>2014-10-19T01:00:00-02:00</updated>
-   <id>http://jjcorrea.github.io/2014/10/19/gatling</id>
+   <id>http://localhost:4000/2014/10/19/gatling</id>
    <content type="html">&lt;p&gt;Version checked &lt;span class=&quot;label label-default&quot;&gt;2.0.0-M3a&lt;/span&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -3452,9 +3494,9 @@ To be continued...&lt;/p&gt;
  
  <entry>
    <title>Kibana</title>
-   <link href="http://jjcorrea.github.io/2014/08/31/kibana/"/>
+   <link href="http://localhost:4000/2014/08/31/kibana/"/>
    <updated>2014-08-31T00:00:00-03:00</updated>
-   <id>http://jjcorrea.github.io/2014/08/31/kibana</id>
+   <id>http://localhost:4000/2014/08/31/kibana</id>
    <content type="html">&lt;p&gt;Version checked &lt;span class=&quot;label label-default&quot;&gt;3.1.0&lt;/span&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -3494,9 +3536,9 @@ To be continued...&lt;/p&gt;
  
  <entry>
    <title>ELK Platform</title>
-   <link href="http://jjcorrea.github.io/2014/08/31/elk-platform/"/>
+   <link href="http://localhost:4000/2014/08/31/elk-platform/"/>
    <updated>2014-08-31T00:00:00-03:00</updated>
-   <id>http://jjcorrea.github.io/2014/08/31/elk-platform</id>
+   <id>http://localhost:4000/2014/08/31/elk-platform</id>
    <content type="html">&lt;p&gt;By combining the massively popular &lt;strong&gt;E&lt;/strong&gt;lasticsearch, &lt;strong&gt;L&lt;/strong&gt;ogstash and &lt;strong&gt;K&lt;/strong&gt;ibana (&lt;a target=&quot;_blank&quot; href=&quot;http://www.elasticsearch.org/overview/&quot;&gt;ELK platform overview&lt;/a&gt;) we have created an end-to-end stack that delivers actionable insights in real-time from almost any type of structured and unstructured data source. &lt;/p&gt;
 
 &lt;h3&gt;Highlights&lt;/h3&gt;
@@ -3526,9 +3568,9 @@ To be continued...&lt;/p&gt;
  
  <entry>
    <title>Logstash</title>
-   <link href="http://jjcorrea.github.io/2014/08/25/logstash/"/>
+   <link href="http://localhost:4000/2014/08/25/logstash/"/>
    <updated>2014-08-25T00:00:00-03:00</updated>
-   <id>http://jjcorrea.github.io/2014/08/25/logstash</id>
+   <id>http://localhost:4000/2014/08/25/logstash</id>
    <content type="html">&lt;p&gt;Version checked &lt;span class=&quot;label label-default&quot;&gt;1.4.2&lt;/span&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -3637,9 +3679,9 @@ output {
  
  <entry>
    <title>Elastic Search</title>
-   <link href="http://jjcorrea.github.io/2014/08/24/elastic-search/"/>
+   <link href="http://localhost:4000/2014/08/24/elastic-search/"/>
    <updated>2014-08-24T00:00:00-03:00</updated>
-   <id>http://jjcorrea.github.io/2014/08/24/elastic-search</id>
+   <id>http://localhost:4000/2014/08/24/elastic-search</id>
    <content type="html">&lt;p&gt;Version checked &lt;span class=&quot;label label-default&quot;&gt;1.3.2&lt;/span&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -3660,9 +3702,9 @@ output {
  
  <entry>
    <title>CouchBase</title>
-   <link href="http://jjcorrea.github.io/2014/08/24/couch-base/"/>
+   <link href="http://localhost:4000/2014/08/24/couch-base/"/>
    <updated>2014-08-24T00:00:00-03:00</updated>
-   <id>http://jjcorrea.github.io/2014/08/24/couch-base</id>
+   <id>http://localhost:4000/2014/08/24/couch-base</id>
    <content type="html">&lt;p&gt;Version checked &lt;span class=&quot;label label-default&quot;&gt;2.5.1&lt;/span&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -3693,9 +3735,9 @@ output {
  
  <entry>
    <title>Big Data / NoSQL Reference</title>
-   <link href="http://jjcorrea.github.io/2014/08/24/big-data-nosql/"/>
+   <link href="http://localhost:4000/2014/08/24/big-data-nosql/"/>
    <updated>2014-08-24T00:00:00-03:00</updated>
-   <id>http://jjcorrea.github.io/2014/08/24/big-data-nosql</id>
+   <id>http://localhost:4000/2014/08/24/big-data-nosql</id>
    <content type="html">&lt;h3&gt;Challenges&lt;/h3&gt;
 
 &lt;p&gt;&lt;span class=&quot;label label-primary&quot;&gt;Processing&lt;/span&gt;
@@ -3727,9 +3769,9 @@ output {
  
  <entry>
    <title>Apache Spark</title>
-   <link href="http://jjcorrea.github.io/2014/08/24/apache-spark/"/>
+   <link href="http://localhost:4000/2014/08/24/apache-spark/"/>
    <updated>2014-08-24T00:00:00-03:00</updated>
-   <id>http://jjcorrea.github.io/2014/08/24/apache-spark</id>
+   <id>http://localhost:4000/2014/08/24/apache-spark</id>
    <content type="html">&lt;p&gt;Version checked &lt;span class=&quot;label label-default&quot;&gt;1.0.2&lt;/span&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -3799,9 +3841,9 @@ output {
  
  <entry>
    <title>Apache Mesos</title>
-   <link href="http://jjcorrea.github.io/2014/08/24/apache-mesos/"/>
+   <link href="http://localhost:4000/2014/08/24/apache-mesos/"/>
    <updated>2014-08-24T00:00:00-03:00</updated>
-   <id>http://jjcorrea.github.io/2014/08/24/apache-mesos</id>
+   <id>http://localhost:4000/2014/08/24/apache-mesos</id>
    <content type="html">&lt;p&gt;Version checked &lt;span class=&quot;label label-default&quot;&gt;0.19&lt;/span&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
